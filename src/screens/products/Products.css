@@ -1,0 +1,154 @@
+.Products-Main-Container {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Product-Men-Row-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 100px 0;
+}
+
+.Product-Women-Row-Container {
+   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 100px 0;
+}
+
+.Product-Men-Collection-Img {
+  height: 500px;
+  width: 35%;
+}
+
+.Product-Men-Sub-Container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.Product-Men-Inner-Item-Row-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Product-Collection-Image {
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.Product-Collection-Type {
+  height: 50px;
+   background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Kanit', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Product-Collection-Heading {
+  font-size: 68px;
+  color: #06213c;
+  font-weight: 400;
+  font-family: "Kaisei Decol",serif;
+}
+.Products-More-Btn {
+  width: 200px;
+  height: 50px;
+  background-color: #06213c;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", serif;
+  text-decoration: none;
+}
+
+.Product-Collection-Eye-Lens-Main-Container {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Product-Collection-Eye-Lens-Bg-Container {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Product-Collection-Eye-Lens-SubHeading {
+  font-size: 48px;
+  color: #06213c;
+  font-family: 'Kaisei Decol',serif;
+  font-weight: 400;
+}
+.Product-Collection-Eye-Lens-SubContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.Product-Collection-Eye-Lens-Item-Row-Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.Product-Eye-Lens-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: 
+    linear-gradient(#fff, #fff) padding-box, /* actual content background */
+    linear-gradient(to bottom, #D5FEFF, #92CAD4) border-box; /* gradient border */
+  border: 4px solid transparent; /* needed to show the border-box background */
+}
+.Product-Eyelens-Item-Image {
+  height: 150px;
+  width: 150px;
+}
+.Product-Collection-Eye-Lens-Name {
+  font-size: 24px;
+  font-family: 'Kaisei Decol',serif;
+  color: #06213c;
+  font-weight: 400;
+  background-color: transparent;
+}
