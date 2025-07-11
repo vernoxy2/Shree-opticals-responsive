@@ -34,22 +34,22 @@
     
 }
 
+.WomensProduct-Category-btn {
+  background-color: #ABA6A6;
+  height: 71px;
+  width: 165px;
+  color: #06213C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+}
+
 .WomensProduct-Category-Icon {
     height: 150px;
     width: 150px;
-}
-
-.WomensProduct-Category-btn {
-    background-color: #ABA6A6;
-    height: 71px;
-    width: 165px;
-    color: #06213C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 400;
-    border: none;
 }
 .WomensProduct-Category-Icon.active {
   filter: brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(6920%) hue-rotate(181deg) brightness(100%) contrast(100%);

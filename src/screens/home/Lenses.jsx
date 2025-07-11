@@ -6,8 +6,8 @@ import lensImg3 from "../../assets/lensImg3.png";
 
 const Lenses = () => {
   return (
-    <div className="flex flex-col items-center w-full mb-[50px]">
-      <h1 className="text-[36px] sm:text-[42px] lg:text-[48px] text-[#06213c] font-kaisei_Decol font-normal my-6 sm:my-10">
+    <div className="flex flex-col items-center w-full py-8 sm:py-12 ">
+      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center mb-5 sm:mb-10">
         Lenses
       </h1>
 
@@ -16,11 +16,11 @@ const Lenses = () => {
         style={{ backgroundImage: `url(${lensesBg})`, minHeight: "500px" }}
       >
         {/* Left Text Content */}
-        <div className="w-full lg:w-[45%] flex flex-col items-start gap-6 lg:ml-[100px]">
-          <h2 className="text-[28px] sm:text-[36px] text-[#06213c] font-kaisei_Decol font-normal">
+        <div className="w-full lg:w-[45%] flex flex-col text-center lg:text-left items-center lg:items-start gap-6 lg:ml-[100px]">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl text-[#06213c] font-kaisei_Decol">
             Eyeglass lens options include various types
           </h2>
-          <p className="text-[18px] sm:text-[20px] text-[#334155] font-kanit">
+          <p className="text-xs md:text-xl xl:text-2xl  text-[#334155] font-semibold leading-tight">
             Explore our wide range of high-quality lenses, including contact
             lenses, anti-reflective, photochromic, and blue light protection —
             designed to enhance vision clarity, comfort, and everyday eye
@@ -28,7 +28,11 @@ const Lenses = () => {
           </p>
           <a
             href="/products"
-            className="w-[180px] h-[50px] bg-[#06213c] text-white text-[18px] flex items-center justify-center font-kanit rounded"
+            className="w-[200px] h-[50px] bg-[#06213c] text-white text-[20px] 
+                       flex items-center justify-center font-kanit no-underline rounded 
+                       transition-all duration-300 hover:bg-[#0a2e50]
+                       max-md:w-[180px] max-md:h-[45px] max-md:text-[18px]
+                       max-sm:w-[160px] max-sm:h-[40px] max-sm:text-[16px]"
           >
             More Product
           </a>

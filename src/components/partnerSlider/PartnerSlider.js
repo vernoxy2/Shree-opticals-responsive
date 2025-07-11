@@ -13,14 +13,14 @@ const partnerData = [
 
 const PartnerSlider = () => {
   return (
-    <div className="w-full overflow-hidden bg-white my-[20px]">
+    <div className="w-full overflow-hidden bg-white my-2 sm:my-[20px]">
       <div className="flex w-fit animate-scrollLeft">
         {partnerData.map((partner, i) => (
           <img
             key={i}
             src={partner}
             alt={`partner${i}`}
-            className="h-[120px] w-[200px] mr-[140px] shrink-0"
+            className="h-[60px] md:h-[120px] w-[100px] md:w-[200px] mr-[80px] sm:mr-[140px] shrink-0 object-contain"
           />
         ))}
       </div>

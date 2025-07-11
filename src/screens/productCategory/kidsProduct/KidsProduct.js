@@ -58,8 +58,19 @@ const KidsProduct = () => {
 
   const kidsProducts = getProducts();
 
+  const getIconForCategory = (category) => {
+    switch (category) {
+      case "Eye Glasses":
+        return categoryIcon1;
+      case "Eye Lens":
+        return categoryIcon3;
+      default:
+        return categoryIcon2;
+    }
+  };
+
   return (
-    <div className="KidsProduct-Main-Container">
+    <div className="w-full h-full pb-[100px] flex flex-col items-center justify-center">
       <Header
         backgroundImage={mensHeaderBg}
         headingText={"Sunglasses for Kids"}
@@ -70,42 +81,57 @@ const KidsProduct = () => {
 
       <PartnerSlider />
 
-      <h1 className="KidsProduct-Heading">Our Optical For Kids</h1>
+      <h1 className="mt-10 text-2xl md:text-5xl xl:text-6xl font-normal text-[#06213C] font-kaisei_Decol">
+        Our Optical For Kids
+      </h1>
 
-      <div className="KidsProduct-Category-Row-Container">
-        {["Eye Glasses", "Sunglasses", "Eye Lens"].map((category, index) => (
-          <div key={index} className="KidsProduct-Category-Container">
-            <img
-              src={
-                category === "Eye Lens"
-                  ? categoryIcon3
-                  : category === "Eye Glasses"
-                  ? categoryIcon1
-                  : category === "Sunglasses"
-                  ? categoryIcon2
-                  : "" // fallback if none match
-              }
-              alt={`${category} Icon`}
-              className={`KidsProduct-Category-Icon ${
-                selectedCategory === category ? "active" : ""
-              }`}
-            />
-            <button
-              className={`KidsProduct-Category-btn ${
-                selectedCategory === category ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory(category)}
+      <div className="flex flex-wrap justify-center gap-x-8 gap-y-10 my-12 md:my-24">
+        {["Eye Glasses", "Sunglasses", "Eye Lens"].map((category) => {
+          const isActive = selectedCategory === category;
+          return (
+            <div
+              key={category}
+              className="flex flex-col items-center justify-center w-[100px] sm:w-[140px] md:w-[160px]"
             >
-              {category}
-            </button>
-          </div>
-        ))}
+              <img
+                src={getIconForCategory(category)}
+                alt={`${category} Icon`}
+                className="h-[80px] w-[100px] sm:h-[120px] sm:w-[120px] md:h-[150px] md:w-[150px] object-contain"
+                style={
+                  isActive
+                    ? {
+                        filter:
+                          "brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(6920%) hue-rotate(181deg) brightness(100%) contrast(100%)",
+                      }
+                    : {}
+                }
+              />
+              <button
+                onClick={() => setSelectedCategory(category)}
+                className={`mt-3 sm:mt-4 flex items-center justify-center text-sm sm:text-lg md:text-xl font-medium transition-all duration-300 border-none 
+                  h-[30px] sm:h-[55px] md:h-[65px] 
+                  w-[100px] sm:w-[140px] md:w-[165px]
+                  ${
+                    isActive
+                      ? "bg-[#06213C] text-white"
+                      : "bg-[#ABA6A6] text-[#06213C]"
+                  }`}
+              >
+                {category}
+              </button>
+            </div>
+          );
+        })}
       </div>
 
-      <div className="KidsProduct-grid-container">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-5">
         {kidsProducts.map((product, index) => (
-          <div className="KidsProduct-grid-item" key={index}>
-            <img src={product.src} alt={`Product ${index + 1}`} />
+          <div className="w-[80%] mx-auto aspect-square border-2 border-gray-300 flex items-center justify-center my-6" key={index}>
+            <img
+              src={product.src}
+              alt={`Product ${index + 1}`}
+              className="max-w-[90%] max-h-[90%] object-contain"
+            />
           </div>
         ))}
       </div>

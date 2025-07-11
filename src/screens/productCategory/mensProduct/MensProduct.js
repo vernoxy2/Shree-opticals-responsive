@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./MensProduct.css";
 import Header from "../../../components/header/Header";
 import PartnerSlider from "../../../components/partnerSlider/PartnerSlider";
 import categoryIcon1 from "../../../assets/categoryIcon1.png";
@@ -11,53 +10,36 @@ import mensHeaderBg from "../../../assets/mensHeaderBg.png";
 import mensHeaderBg2 from "../../../assets/mensHeaderBg2.png";
 import mensHeaderBg3 from "../../../assets/mensHeaderBg3.png";
 
-// Background images array
-
-
-
 const headerContent = [
-    {
-      backgroundImage: mensHeaderBg,
-      headingText: "Sunglasses for men",
-      description: "Stylish and protective sunglasses for men, designed to elevate your everyday look with confidence."
-    },
-    {
-      backgroundImage: mensHeaderBg2,
-      headingText: "Eye lens for men",
-      description: "Stylish and protective eyelens for men, designed to elevate your everyday look with confidence."
-    },
-    {
-      backgroundImage: mensHeaderBg3,
-      headingText: "Eye glasses for men",
-      description: "Our Eye Glasses are crafted for clarity, confidence, and durability in every setting."
-    }
-  ];
-
-const sunglasses = [
-  { id: 1, src: sunglasses1 },
-  { id: 2, src: sunglasses2 },
-  { id: 3, src: sunglasses1 },
-  { id: 4, src: sunglasses2 },
-  { id: 5, src: sunglasses1 },
-  { id: 6, src: sunglasses2 },
-  { id: 7, src: sunglasses1 },
-  { id: 8, src: sunglasses2 },
-  { id: 9, src: sunglasses1 },
-  { id: 10, src: sunglasses2 },
-  { id: 11, src: sunglasses1 },
-  { id: 12, src: sunglasses2 },
+  {
+    backgroundImage: mensHeaderBg,
+    headingText: "Sunglasses for men",
+    description:
+      "Stylish and protective sunglasses for men, designed to elevate your everyday look with confidence.",
+  },
+  {
+    backgroundImage: mensHeaderBg2,
+    headingText: "Eye lens for men",
+    description:
+      "Stylish and protective eyelens for men, designed to elevate your everyday look with confidence.",
+  },
+  {
+    backgroundImage: mensHeaderBg3,
+    headingText: "Eye glasses for men",
+    description:
+      "Our Eye Glasses are crafted for clarity, confidence, and durability in every setting.",
+  },
 ];
 
-const eyeGlasses = [
-  { id: 1, src: sunglasses2 },
-  { id: 2, src: sunglasses1 },
-  { id: 3, src: sunglasses2 },
-  { id: 4, src: sunglasses1 },
-  { id: 5, src: sunglasses2 },
-  { id: 6, src: sunglasses1 },
-  { id: 7, src: sunglasses2 },
-  { id: 8, src: sunglasses1 },
-];
+const sunglasses = Array.from({ length: 12 }, (_, i) => ({
+  id: i + 1,
+  src: i % 2 === 0 ? sunglasses1 : sunglasses2,
+}));
+
+const eyeGlasses = Array.from({ length: 8 }, (_, i) => ({
+  id: i + 1,
+  src: i % 2 === 0 ? sunglasses2 : sunglasses1,
+}));
 
 const eyeLenses = [
   { id: 1, src: sunglasses2 },
@@ -68,17 +50,13 @@ const eyeLenses = [
 
 const MensProduct = () => {
   const [selectedCategory, setSelectedCategory] = useState("Sunglasses");
-  
-   const [headerIndex, setHeaderIndex] = useState(0);
+  const [headerIndex, setHeaderIndex] = useState(0);
 
-  // Auto-change header background every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      
       setHeaderIndex((prev) => (prev + 1) % headerContent.length);
     }, 3000);
-
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval);
   }, []);
 
   const getProducts = () => {
@@ -94,8 +72,20 @@ const MensProduct = () => {
 
   const products = getProducts();
 
+  const getIconForCategory = (category) => {
+    switch (category) {
+      case "Eye Glasses":
+        return categoryIcon1;
+      case "Eye Lens":
+        return categoryIcon3;
+      case "Sunglasses":
+      default:
+        return categoryIcon2;
+    }
+  };
+
   return (
-    <div className="MensProduct-Main-Container">
+    <div className="w-full h-full sm:pb-[100px] flex flex-col items-center justify-center">
       <Header
         backgroundImage={headerContent[headerIndex].backgroundImage}
         headingText={headerContent[headerIndex].headingText}
@@ -104,46 +94,65 @@ const MensProduct = () => {
 
       <PartnerSlider />
 
-      <h1 className="MensProduct-Heading">Our Optical For Men</h1>
+      <h1 className="mt-10 text-2xl md:text-5xl xl:text-6xl font-normal text-[#06213C] font-kaisei_Decol">
+        Our Optical For Men
+      </h1>
 
-      <div className="MensProduct-Category-Row-Container">
-        {["Eye Glasses", "Sunglasses", "Eye Lens"].map((category, index) => (
-          <div key={index} className="MensProduct-Category-Container">
-            <img
-              src={
-                category === "Eye Lens"
-                  ? categoryIcon3
-                  : category === "Eye Glasses"
-                  ? categoryIcon1
-                  : category === "Sunglasses"
-                  ? categoryIcon2
-                  : ""
-              }
-              alt={`${category} Icon`}
-              className={`MensProduct-Category-Icon ${
-                selectedCategory === category ? "active" : ""
-              }`}
-            />
-            <button
-              className={`MensProduct-Category-btn ${
-                selectedCategory === category ? "active" : ""
-              }`}
-              onClick={() => setSelectedCategory(category)}
+      <div className="flex flex-wrap justify-center gap-x-[30px] gap-y-[40px] my-[50px] md:my-[100px]">
+        {["Eye Glasses", "Sunglasses", "Eye Lens"].map((category) => {
+          const isActive = selectedCategory === category;
+          return (
+            <div
+              key={category}
+              className="flex flex-col items-center justify-center w-[90px] sm:w-[140px] md:w-[150px]"
             >
-              {category}
-            </button>
-          </div>
-        ))}
+              <img
+                src={getIconForCategory(category)}
+                alt={`${category} Icon`}
+                className="h-[80px] w-[100px] sm:h-[120px] sm:w-[120px] md:h-[150px] md:w-[150px] object-contain"
+                style={
+                  isActive
+                    ? {
+                        filter:
+                          "brightness(0) saturate(100%) invert(11%) sepia(10%) saturate(6920%) hue-rotate(181deg) brightness(100%) contrast(100%)",
+                      }
+                    : {}
+                }
+              />
+              <button
+                className={`mt-1 sm:mt-4 flex items-center justify-center text-[14px] sm:text-[20px] md:text-[24px] font-normal transition-all duration-300 border-none 
+            h-[30px] sm:h-[60px] md:h-[71px] 
+            w-[100px] sm:w-[150px] md:w-[165px]
+            ${
+              isActive
+                ? "bg-[#06213C] text-white"
+                : "bg-[#ABA6A6] text-[#06213C]"
+            }`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+            </div>
+          );
+        })}
       </div>
 
-      <div className="grid-container">
-        {products.map((product, index) => (
-          <div className="grid-item" key={index}>
-            <img src={product.src} alt={`Product ${index + 1}`} />
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px] p-[20px] w-full max-w-[1200px]">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="aspect-square border-[2px] border-[#ccc] flex items-center justify-center"
+          >
+            <img
+              src={product.src}
+              alt={`Product ${product.id}`}
+              className="max-w-[90%] max-h-[90%] object-contain"
+            />
           </div>
         ))}
       </div>
     </div>
   );
 };
+
 export default MensProduct;

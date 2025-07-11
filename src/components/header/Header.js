@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const Header = ({ backgroundImage, headingText, description, buttonText, onButtonClick }) => {
   return (
-    <div className="w-full h-full pb-[100px] flex flex-col items-center justify-center">
+    <div className="w-full h-full md:pb-6 sm:pb-[100px] flex flex-col items-center justify-center">
       <div
         className="w-full bg-cover bg-center h-[850px] flex flex-col items-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}

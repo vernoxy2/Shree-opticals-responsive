@@ -23,17 +23,17 @@ const cardData = [
 
 const Choose = () => {
   return (
-    <div className="flex flex-col items-center w-full my-[50px] mt-[100px] px-4">
-      <h1 className="text-[68px] text-[#06213c] font-kaisei_Decol font-normal mb-[30px] text-center">
+    <div className="flex flex-col items-center w-full py-12 sm:py-24 gap-6 px-4">
+      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center sm:mb-10">
         Why Choose Us?
       </h1>
-      <p className="text-[24px] text-[#334155] font-normal font-kaisei_Decol text-center max-w-4xl">
+      <p className="text-xs md:text-xl lg:text-2xl text-[#334155] font-normal font-kaisei_Decol text-center max-w-4xl">
         Experience the difference with our commitment to vision, style, and genuine care —
         trusted by thousands of happy customers.
       </p>
 
       <div
-        className="w-[95%] bg-[#becfd6] bg-cover bg-center gap-[30px] flex flex-col items-center justify-between my-[50px] rounded-[10px] shadow-[inset_0_30px_30px_-20px_rgba(0,0,0,0.5)] py-[30px]"
+        className="w-[95%] bg-[#becfd6] bg-cover bg-center gap-[30px] flex flex-col items-center justify-between my-[50px] rounded-[10px] shadow-[inset_0_30px_30px_-20px_rgba(0,0,0,0.5)] py-[20px]"
       >
         {/* First row (3 cards) */}
         <div className="flex flex-col lg:flex-row items-center justify-between w-[90%] gap-6">

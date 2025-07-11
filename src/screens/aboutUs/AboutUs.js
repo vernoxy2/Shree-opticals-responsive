@@ -1,11 +1,11 @@
 import React from "react";
 // import "./AboutUs.css";
-import aboutHeaderImg from "../../assets/aboutHeaderImg.png";
-import Header from "../../components/header/Header";
-import PartnerSlider from "../../components/partnerSlider/PartnerSlider";
 // import aboutShopImg from "../../assets/aboutShopImg.png";
 // import aboutValueMissionImg from "../../assets/aboutValueMissionImg.png";
 // import WhatSetApartBg from "../../assets/whatSetApartBg.png";
+import aboutHeaderImg from "../../assets/aboutHeaderImg.png";
+import Header from "../../components/header/Header";
+import PartnerSlider from "../../components/partnerSlider/PartnerSlider";
 import GetQuote from "../../components/getQuote/GetQuote";
 import aboutGetQuotebg from "../../assets/aboutGetQuotebg.png";
 import Shopstory from "./Shopstory";

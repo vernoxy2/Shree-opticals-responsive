@@ -37,7 +37,7 @@ const Home = () => {
   // const [mainImage, setMainImage] = useState(productsSectionImg);
 
   return (
-    <div className="w-full h-full pb-[100px] flex flex-col items-center justify-center">
+    <div className="w-full h-full lg:pb-[100px] flex flex-col items-center justify-center">
       {/* <div
         className="Home-Main-Container2"
         style={{ backgroundImage: `url(${headerBgImg})` }}
