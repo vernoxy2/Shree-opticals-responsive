@@ -29,11 +29,11 @@ const HappyCustomers = () => {
         Our Happy Clients
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-6 w-full px-4">
+      <div className="flex flex-wrap justify-center gap-6 lg:gap-9 w-full px-4">
         {clients.map((client, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full lg:w-[70%] md:w-[48%] gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
+            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full lg:w-[30%] md:w-[48%] gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
           >
             <img
               src={clientImg}
