@@ -319,7 +319,7 @@ const Home = () => {
       </div> */}
       <Choose />
       {/* Our Happy Customers section */}
-      <div className="Home-OurClient-Section-Container">
+      {/* <div className="Home-OurClient-Section-Container">
         <h1 className="Home-OurClient-Section-Heading">Our Happy Client</h1>
 
         <div className="Home-OurClient-Row-Container">
@@ -363,7 +363,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <HappyCustomers/>
 
       <GetQuote backgroundImage={contactSectionBg} />

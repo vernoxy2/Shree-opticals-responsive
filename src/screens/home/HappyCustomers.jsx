@@ -24,8 +24,8 @@ const clients = [
 
 const HappyCustomers = () => {
   return (
-    <div className="flex flex-col items-center w-full mt-[100px] mb-[50px]">
-      <h1 className="text-[68px] text-[#06213c] font-kaisei_Decol font-normal mb-[70px] leading-tight text-center">
+    <div className="flex flex-col gap-12 items-center w-full mt-[100px] mb-[50px]">
+      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center sm:mb-10">
         Our Happy Clients
       </h1>
 
@@ -33,7 +33,7 @@ const HappyCustomers = () => {
         {clients.map((client, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full sm:w-[70%] md:w-[30%] gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
+            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full lg:w-[70%] md:w-[48%] gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
           >
             <img
               src={clientImg}
