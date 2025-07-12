@@ -5,7 +5,7 @@ import PrimaryHeading from "../Primarycompo/PrimaryHeading";
 const GetQuote = ({ backgroundImage }) => {
   return (
     <div
-      className="py-10 md:py-20 flex flex-col items-center justify-center gap-12 bg-cover bg-center"
+      className="py-10 md:py-20 flex flex-col items-center justify-center gap-12 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="container  p-6 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-10">
