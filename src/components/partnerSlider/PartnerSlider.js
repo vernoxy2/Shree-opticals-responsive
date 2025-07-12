@@ -9,6 +9,10 @@ import partner6 from "../../assets/partner6.png";
 const partnerData = [
   partner1, partner2, partner3, partner4, partner5, partner6,
   partner1, partner2, partner3, partner4, partner5, partner6, // repeated for loop effect
+  partner1, partner2, partner3, partner4, partner5, partner6, // repeated for loop effect
+  partner1, partner2, partner3, partner4, partner5, partner6, // repeated for loop effect
+  partner1, partner2, partner3, partner4, partner5, partner6, // repeated for loop effect
+  partner1, partner2, partner3, partner4, partner5, partner6, // repeated for loop effect
 ];
 
 const PartnerSlider = () => {

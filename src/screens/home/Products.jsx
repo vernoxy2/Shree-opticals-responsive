@@ -5,73 +5,62 @@ import productsSectionImg3 from "../../assets/productsSectionImg3.png";
 import productsSpecksImg1 from "../../assets/productsSpecksImg1.png";
 import productsSpecksImg2 from "../../assets/productsSpecksImg2.png";
 import productsSpecksImg3 from "../../assets/productsSpecksImg3.png";
+import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
+import PrimaryBtn from "../../components/Primarycompo/PrimaryBtn";
+
+const thumbnails = [
+  { src: productsSpecksImg1, alt: "Thumbnail 1", main: productsSectionImg },
+  { src: productsSpecksImg2, alt: "Thumbnail 2", main: productsSectionImg2 },
+  { src: productsSpecksImg3, alt: "Thumbnail 3", main: productsSectionImg3 },
+];
 
 const Products = () => {
   const [mainImage, setMainImage] = useState(productsSectionImg);
 
   return (
-    <div className="flex flex-col items-center w-full my-12 md:my-24 ">
-      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center mb-10 md:mb-20">
-        Ours Specks
-      </h1>
-      
+    <div className="py-10 md:py-20 space-y-4 md:space-y-8">
+      <PrimaryHeading>Our Products</PrimaryHeading>
 
-      <div className="w-full max-w-[80%] flex flex-col gap-y-12 lg:flex-row items-center justify-between ">
+      <div className="container grid grid-cols-1 lg:grid-cols-2 items-center gap-y-8">
         {/* Left Main Image */}
-        <div className="w-full lg:w-[50%] ">
+        <div className="flex justify-center 2xl:justify-start">
           <img
             src={mainImage}
             alt="Main Product"
-            className="h-[280px] sm:h-[500px] w-[600px] object-contain"
+            className="w-[70%] 2xl:w-[80%] object-contain"
           />
         </div>
 
         {/* Right Content */}
-        <div className="w-full lg:w-[55%] flex flex-col items-center lg:items-end gap-4 md:gap-8 xl:gap-10 text-center lg:text-right">
+        <div className="flex flex-col justify-center items-center xl:items-end gap-4 md:gap-8 xl:gap-12 text-center xl:text-end px-4">
           {/* Heading */}
-          <h2 className="text-lg md:text-4xl xl:text-5xl text-[#06213c] font-kaisei_Decol font-bold">
+          <h2 className="text-xl sm:text-2xl md:text-4xl 2xl:text-[45px] text-[#06213c] font-kaisei_Decol font-bold leading-loose">
             See Clearly, Wear Confidently
           </h2>
 
           {/* Description */}
-          <p className="text-xs md:text-xl xl:text-2xl  text-[#334155] font-semibold leading-tight">
+          <p className="text-xs md:text-xl 2xl:text-2xl text-[#334155] font-semibold leading-relaxed">
             Discover our premium range of eyewear — blending comfort, clarity,
             and cutting-edge style. From everyday essentials to designer frames,
             we have the perfect pair for every face and lifestyle.
           </p>
 
           {/* Image Thumbnails */}
-          <div className="flex flex-wrap justify-center lg:justify-end gap-x-3 sm:gap-8 w-full">
-            <img
-              src={productsSpecksImg1}
-              alt="Thumbnail 1"
-              onClick={() => setMainImage(productsSectionImg)}
-              className="w-[80px] sm:w-[140px] lg:w-[200px] object-contain cursor-pointer"
-            />
-            <img
-              src={productsSpecksImg2}
-              alt="Thumbnail 2"
-              onClick={() => setMainImage(productsSectionImg2)}
-              className="w-[80px] sm:w-[140px] lg:w-[200px] object-contain cursor-pointer"
-            />
-            <img
-              src={productsSpecksImg3}
-              alt="Thumbnail 3"
-              onClick={() => setMainImage(productsSectionImg3)}
-              className="w-[80px] sm:w-[140px] lg:w-[200px] object-contain cursor-pointer"
-            />
+          <div className="flex flex-wrap justify-center lg:justify-end gap-x-3 sm:gap-x-5 w-full">
+            {thumbnails.map((thumb, index) => (
+              <img
+                key={index}
+                src={thumb.src}
+                alt={thumb.alt}
+                onClick={() => setMainImage(thumb.main)}
+                className="w-[80px] sm:w-[130px] lg:w-[150px] object-contain cursor-pointer transition-transform duration-200 hover:scale-105"
+              />
+            ))}
           </div>
 
           {/* CTA Button */}
-          <a
-            href="/products"
-           className="w-[200px] h-[50px] bg-[#06213c] text-white text-[20px] 
-                       flex items-center justify-center font-kanit no-underline rounded 
-                       transition-all duration-300 hover:bg-[#0a2e50]
-                       max-md:w-[180px] max-md:h-[45px] max-md:text-[18px]
-                       max-sm:w-[160px] max-sm:h-[40px] max-sm:text-[16px]"
-          >
-            More Product
+          <a href="/products">
+            <PrimaryBtn>More Products</PrimaryBtn>
           </a>
         </div>
       </div>

@@ -23,8 +23,8 @@ const cardData = [
 
 const Choose = () => {
   return (
-    <div className="flex flex-col items-center w-full py-12 sm:py-24 gap-6 px-4">
-      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center sm:mb-10">
+    <div className="py-10 md:py-20 space-y-4 md:space-y-8 container xl:px-10">
+      <h1 className="text-[32px] text-3xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center sm:mb-10">
         Why Choose Us?
       </h1>
       <p className="text-sm md:text-xl lg:text-2xl text-[#334155] font-normal font-kaisei_Decol text-center max-w-4xl">
@@ -33,7 +33,7 @@ const Choose = () => {
       </p>
 
       <div
-        className="w-[95%] bg-[#becfd6] bg-cover bg-center gap-[30px] flex flex-col items-center justify-between my-4 sm:my-[50px] rounded-[10px] shadow-[inset_0_30px_30px_-20px_rgba(0,0,0,0.5)] py-[20px]"
+        className=" bg-[#becfd6] bg-cover bg-center gap-[30px] flex flex-col items-center justify-between my-4 sm:my-[50px] rounded-[10px] shadow-[inset_0_30px_30px_-20px_rgba(0,0,0,0.5)] py-[20px]"
       >
         {/* First row (3 cards) */}
         <div className="flex flex-col lg:flex-row items-center justify-between w-[90%] gap-6">

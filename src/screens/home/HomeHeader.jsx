@@ -13,7 +13,7 @@ const HomeHeader = () => {
         <div className="flex flex-row items-center justify-between w-[90%] my-2 sm:my-[100px]">
           <div className="flex flex-col items-center justify-center h-[80%] w-[45%]">
             <div className="flex flex-col justify-center gap-5 sm:gap-6 lg:gap-[50px]">
-              <h1 className="text-2xl sm:text-3xl lg:text-[65px] text-white font-normal font-kaisei_Decol mt-[100px]">
+              <h1 className="text-2xl sm:text-3xl lg:text-5xl 2xl:text-6xl text-white font-normal font-kaisei_Decol mt-[100px] leading-none">
                 Where Vision <br /> Meets Innovation.
               </h1>
 

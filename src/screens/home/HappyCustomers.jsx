@@ -1,5 +1,6 @@
 import React from "react";
 import clientImg from "../../assets/clientImg.png";
+import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 
 const clients = [
   {
@@ -24,16 +25,14 @@ const clients = [
 
 const HappyCustomers = () => {
   return (
-    <div className="flex flex-col gap-12 items-center w-full mt-[100px] mb-[50px]">
-      <h1 className="text-[32px] text-2xl md:text-5xl xl:text-6xl text-[#06213c] font-kaisei_Decol font-normal text-center sm:mb-10">
-        Our Happy Clients
-      </h1>
+    <div className="py-10 md:py-20 space-y-5 md:space-y-8 ">
+      <PrimaryHeading>Our Happy Customers</PrimaryHeading>
 
-      <div className="flex flex-wrap justify-center gap-6 lg:gap-9 w-full px-4">
+      <div className="container flex flex-col lg:flex-row items-center justify-between gap-8">
         {clients.map((client, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full lg:w-[30%] md:w-[48%] gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
+            className="flex flex-col items-center text-center bg-[#d9d9d9] w-full gap-4 p-6 filter blur-[2px] scale-100 transition-all duration-300 ease-in-out hover:blur-0 hover:scale-105 cursor-pointer rounded-lg"
           >
             <img
               src={clientImg}

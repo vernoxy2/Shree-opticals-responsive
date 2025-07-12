@@ -12,7 +12,7 @@ import ContactFrom from "./ContactFrom";
 
 const ContactUs = () => {
   return (
-    <div className="w-full h-full pb-[100px] flex flex-col items-center justify-cente">
+    <div>
       <Header
         backgroundImage={contactHeaderImg}
         headingText={"Contact Us"}
@@ -90,33 +90,6 @@ const ContactUs = () => {
       <ContactDetails />
 
       {/* contact form */}
-      {/* <div className="Contact-Form-Main-Container">
-        <h1 className="Contact-Form-Heading">
-          We Are Ready To Serve,
-          <br />
-          Get In Touch.
-        </h1>
-        <div
-          className="Contact-Form-Bg-Container"
-          style={{ backgroundImage: `url(${contactFormBg})` }}
-        >
-          <div className="Contact-Form-Row-Container">
-            <div className="Contact-Input-Container">
-              <h1 className="Contact-Form-Input-Heading">Name</h1>
-              <input className="Contact-Input" type="text" />
-            </div>
-            <div className="Contact-Input-Container">
-              <h1 className="Contact-Form-Input-Heading">Email</h1>
-              <input className="Contact-Input" type="text" />
-            </div>
-          </div>
-          <div className="Contact-Input-Container2">
-            <h1 className="Contact-Form-Input-Heading">Message :</h1>
-            <input className="Contact-Input2" type="text" />
-          </div>
-          <button className="Contact-Input-Btn" type="submit">Submit</button>
-        </div>
-      </div> */}
       <ContactFrom  />
 
     </div>

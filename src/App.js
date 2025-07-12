@@ -1,4 +1,3 @@
-import './App.css';
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './screens/home/Home';
@@ -15,7 +14,7 @@ function App() {
   return (
     <Router>
       {/* <Navbar/> */}
-      <div className="App-Main-Container">
+      <div className="overflow-x-hidden">
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
