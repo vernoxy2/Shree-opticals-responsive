@@ -14,13 +14,13 @@ const HappyCustomers = lazy(() => import("./HappyCustomers"));
 
 const Home = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       {/* Hero/Header Section */}
       <HomeHeader />
 
       {/* Partner Logos Slider */}
       <PartnerSlider />
-
+      
       {/* Lazy-loaded Sections */}
       <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
         <About />

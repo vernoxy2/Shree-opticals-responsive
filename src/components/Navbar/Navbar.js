@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full  mx-auto">
-      <div className="w-[50%] bg-white flex flex-row justify-around items-center px-[50px] py-[10px] rounded-b-[20px] -rounded-t-[20px] mx-auto">
+      <div className="w-[70%] bg-white flex flex-row justify-around items-center px-[50px] py-[10px] rounded-b-[20px] -rounded-t-[20px] mx-auto">
         {/* Logo */}
         <img src={logo} alt="logo" className="h-[50px] w-[100px] me-[50px]" />
 

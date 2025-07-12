@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
 import headerBgImg from "../../assets/headerBgImg.png";
-import Navbar from '../../components/Navbar/Navbar'
-import SpecsHover from '../../components/specsHover/SpecsHover'
+import Navbar from "../../components/Navbar/Navbar";
+import SpecsHover from "../../components/specsHover/SpecsHover";
 
 const HomeHeader = () => {
   return (
-    <div
-        className="w-full bg-cover bg-center  flex flex-col items-center"
+    <div className="m-6 ">
+      <div
+        className="w-full bg-cover bg-center  flex flex-col items-center rounded-3xl "
         style={{ backgroundImage: `url(${headerBgImg})` }}
       >
         <Navbar />
@@ -23,7 +24,10 @@ const HomeHeader = () => {
                 enhancement.
               </p>
 
-              <a href="/contactus" className="w-[150px] sm:w-[200px] h-[45px] sm:h-[50px] bg-[#06213c] text-base sm:text-[20px] text-white flex items-center justify-center font-kaisei_Decol no-underline">
+              <a
+                href="/contactus"
+                className="w-[150px] sm:w-[200px] h-[45px] sm:h-[50px] bg-[#06213c] text-base sm:text-[20px] text-white flex items-center justify-center font-kaisei_Decol no-underline"
+              >
                 Visit Now
               </a>
             </div>
@@ -33,7 +37,8 @@ const HomeHeader = () => {
           </div>
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default HomeHeader
+export default HomeHeader;
