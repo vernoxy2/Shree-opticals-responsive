@@ -11,11 +11,11 @@ const Sunglasses = () => {
 
       <div className="container  grid grid-cols-1 lg:grid-cols-2 items-center gap-y-8">
         {/* Left Image Section */}
-        <div className="mr-auto ">
+        <div className="mx-auto xl:mr-auto ">
           <img
             src={sunglassesSectionImg}
             alt="Showcasing sunglasses"
-            className="w-[80%] -mt-12"
+            className="w-[80%] -mt-12 mx-auto xl:ml-0"
           />
         </div>
 
@@ -38,7 +38,7 @@ const Sunglasses = () => {
           <img
             src={sunglassBlackImg}
             alt="Black sunglasses"
-            className="w-[60%] object-cover hidden lg:block mr-auto"
+            className="w-[60%] object-cover hidden lg:block mr-auto -translate-y-12"
           />
         </div>
       </div>
