@@ -7,13 +7,13 @@ import mapBgImg from "../../assets/mapBgImg.png";
 const ContactDetails = () => {
   return (
     <div className="py-10 md:py-20">
-      <div className="container px-4 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5">
+      <div className="container px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5">
         {/* Left Contact Info */}
-        <div className="flex flex-col justify-center items-center md:items-start p-4 space-y-6">
+        <div className="flex flex-col justify-center items-center lg:items-start p-4 space-y-6">
           {/* Call Section */}
-          <div className="w-full bg-[#06213c] px-4 py-6 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
-              <img src={callImg} alt="call" className="h-14 w-14 md:h-20 md:w-20" />
+          <div className="w-full bg-[#06213c] px-4 py-6 text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
+              <img src={callImg} alt="call" className="h-14 w-14 lg:h-20 lg:w-20" />
               <h1 className="text-white font-kaisei_Decol text-2xl md:text-4xl">
                 Call Us:
               </h1>
@@ -24,15 +24,15 @@ const ContactDetails = () => {
           </div>
 
           {/* Description */}
-          <p className="text-[#06213c] text-base md:text-lg lg:text-xl font-kaisei_Decol text-center md:text-left">
+          <p className="text-[#06213c] text-base md:text-lg lg:text-xl font-kaisei_Decol text-center lg:text-left">
             I am text block. Click edit button to change this text. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
             nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
 
           {/* Email */}
-          <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-4 text-center lg:text-left">
-            <img src={mailImg} alt="mail" className="h-14 w-14 md:h-20 md:w-20" />
+          <div className="flex flex-col lg:flex-row items-center gap-2 md:gap-4 text-center lg:text-left">
+            <img src={mailImg} alt="mail" className="h-14 w-14 lg:h-20 lg:w-20" />
             <div>
               <h1 className="text-[#06213c] text-xl md:text-3xl font-kaisei_Decol">Email:</h1>
               <p className="text-[#06213c] text-base md:text-xl font-kaisei_Decol">shree234@gmail.com</p>
@@ -40,8 +40,8 @@ const ContactDetails = () => {
           </div>
 
           {/* Address */}
-          <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-4 text-center lg:text-left">
-            <img src={locationImg} alt="location" className="h-14 w-14 md:h-20 md:w-20" />
+          <div className="flex flex-col lg:flex-row items-center gap-2 md:gap-4 text-center lg:text-left">
+            <img src={locationImg} alt="location" className="h-14 w-14 lg:h-20 lg:w-20" />
             <div>
               <h1 className="text-[#06213c] text-xl md:text-3xl font-kaisei_Decol">Address:</h1>
               <p className="text-[#06213c] text-base md:text-xl font-kaisei_Decol max-w-md">

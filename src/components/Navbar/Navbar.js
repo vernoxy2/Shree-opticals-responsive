@@ -1,42 +1,41 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/aboutus" },
+    { name: "Products", path: "/products" },
+    { name: "Contact Us", path: "/contactus" },
+  ];
+
+  const isActive = (path) => location.pathname === path;
+
+const navLinkClass = (path) =>
+  `relative text-[#06213c] text-xl 2xl:text-[24px] font-kaisei_Decol font-normal pb-1 transition-all duration-300 
+   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-[#06213c] 
+   before:transition-all before:duration-300 before:ease-in-out 
+   ${isActive(path) ? "before:w-full" : "before:w-0 hover:before:w-full"}`;
+
+
 
   return (
-    <nav className="w-full  mx-auto">
-      <div className="w-[70%] bg-white flex flex-row justify-around items-center px-[50px] py-[10px] rounded-b-[20px] -rounded-t-[20px] mx-auto">
+    <nav className="w-full mx-auto">
+      <div className="w-[70%] bg-white flex flex-row justify-around items-center px-[50px] py-[10px] rounded-b-[20px] mx-auto">
         {/* Logo */}
         <img src={logo} alt="logo" className="h-[50px] w-[100px] me-[50px]" />
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex justify-between items-center w-full">
-          <Link
-            to="/"
-            className="text-[#06213c] text-xl 2xl:text-[24px] no-underline font-normal font-kaisei_Decol"
-          >
-            Home
-          </Link>
-          <Link
-            to="/aboutus"
-            className="text-[#06213c] text-xl 2xl:text-[24px] no-underline font-normal font-kaisei_Decol"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/products"
-            className="text-[#06213c] text-xl 2xl:text-[24px] no-underline font-normal font-kaisei_Decol"
-          >
-            Products
-          </Link>
-          <Link
-            to="/contactus"
-            className="text-[#06213c] text-xl 2xl:text-[24px] no-underline font-normal font-kaisei_Decol"
-          >
-            Contact Us
-          </Link>
+        <div className="hidden md:flex justify-between items-center w-full gap-6">
+          {links.map(({ name, path }) => (
+            <Link key={name} to={path} className={navLinkClass(path)}>
+              {name}
+            </Link>
+          ))}
         </div>
 
         {/* Hamburger Icon */}
@@ -72,34 +71,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden px-6 pb-4 space-y-4 bg-white">
-          <Link
-            to="/"
-            className="block text-[#06213c] text-[20px] font-kaisei_Decol"
-            onClick={() => setMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/aboutus"
-            className="block text-[#06213c] text-[20px] font-kaisei_Decol"
-            onClick={() => setMenuOpen(false)}
-          >
-            About Us
-          </Link>
-          <Link
-            to="/products"
-            className="block text-[#06213c] text-[20px] font-kaisei_Decol"
-            onClick={() => setMenuOpen(false)}
-          >
-            Products
-          </Link>
-          <Link
-            to="/contactus"
-            className="block text-[#06213c] text-[20px] font-kaisei_Decol"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact Us
-          </Link>
+          {links.map(({ name, path }) => (
+            <Link
+              key={name}
+              to={path}
+              className={navLinkClass(path)}
+              onClick={() => setMenuOpen(false)}
+            >
+              {name}
+            </Link>
+          ))}
         </div>
       )}
     </nav>
