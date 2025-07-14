@@ -15,22 +15,20 @@ const Navbar = () => {
 
   const isActive = (path) => location.pathname === path;
 
-const navLinkClass = (path) =>
-  `relative text-[#06213c] text-xl 2xl:text-[24px] font-kaisei_Decol font-normal pb-1 transition-all duration-300 
-   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-[#06213c] 
-   before:transition-all before:duration-300 before:ease-in-out 
-   ${isActive(path) ? "before:w-full" : "before:w-0 hover:before:w-full"}`;
-
-
+  const navLinkClass = (path) =>
+    `relative text-[#06213c] text-xl 2xl:text-[24px] font-kaisei_Decol font-normal pb-1 transition-all duration-300 
+     before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-[#06213c] 
+     before:transition-all before:duration-300 before:ease-in-out 
+     ${isActive(path) ? "before:w-full" : "before:w-0 hover:before:w-full"}`;
 
   return (
-    <nav className="w-full mx-auto">
-      <div className="w-[70%] bg-white flex flex-row justify-around items-center px-[50px] py-[10px] rounded-b-[20px] mx-auto">
+    <nav className="w-full bg-white sticky top-0 z-50">
+      <div className="container flex justify-between items-center px-4 py-3 rounded-b-[20px]">
         {/* Logo */}
-        <img src={logo} alt="logo" className="h-[50px] w-[100px] me-[50px]" />
+        <img src={logo} alt="logo" className="h-[50px] w-[100px]" />
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex justify-between items-center w-full gap-6">
+        <div className="hidden md:flex gap-10">
           {links.map(({ name, path }) => (
             <Link key={name} to={path} className={navLinkClass(path)}>
               {name}
@@ -39,10 +37,10 @@ const navLinkClass = (path) =>
         </div>
 
         {/* Hamburger Icon */}
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             <svg
-              className="w-6 h-6 text-[#06213c]"
+              className="w-7 h-7 text-[#06213c]"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -70,17 +68,19 @@ const navLinkClass = (path) =>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden px-6 pb-4 space-y-4 bg-white">
-          {links.map(({ name, path }) => (
-            <Link
-              key={name}
-              to={path}
-              className={navLinkClass(path)}
-              onClick={() => setMenuOpen(false)}
-            >
-              {name}
-            </Link>
-          ))}
+        <div className="md:hidden w-full px-6 pb-4 pt-2 bg-white shadow-md rounded-b-[20px]">
+          <div className="flex flex-col gap-4">
+            {links.map(({ name, path }) => (
+              <Link
+                key={name}
+                to={path}
+                className={navLinkClass(path)}
+                onClick={() => setMenuOpen(false)}
+              >
+                {name}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </nav>

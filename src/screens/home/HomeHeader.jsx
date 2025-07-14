@@ -1,19 +1,17 @@
 import React from "react";
 import headerBgImg from "../../assets/headerBgImg.png";
-import Navbar from "../../components/Navbar/Navbar";
 import SpecsHover from "../../components/specsHover/SpecsHover";
+import PrimaryBtn from "../../components/Primarycompo/PrimaryBtn";
 
 const HomeHeader = () => {
   return (
-    <div className="m-6 ">
+    <div className="">
       <div
-        className="w-full bg-cover bg-center  flex flex-col items-center rounded-3xl "
+        className="bg-cover bg-center py-10 md:py-20 flex flex-col items-center justify-center "
         style={{ backgroundImage: `url(${headerBgImg})` }}
       >
-        <Navbar />
-        <div className="flex flex-row items-center justify-between w-[90%] my-2 sm:my-[100px]">
-          <div className="flex flex-col items-center justify-center h-[80%] w-[45%]">
-            <div className="flex flex-col justify-center gap-5 sm:gap-6 lg:gap-[50px]">
+        <div className=" container grid grid-cols-1 md:grid-cols-2 gap-y-12">
+            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-5 sm:gap-6 lg:gap-10">
               <h1 className="text-2xl sm:text-3xl lg:text-5xl 2xl:text-6xl text-white font-normal font-kaisei_Decol mt-[100px] leading-none">
                 Where Vision <br /> Meets Innovation.
               </h1>
@@ -24,15 +22,9 @@ const HomeHeader = () => {
                 enhancement.
               </p>
 
-              <a
-                href="/contactus"
-                className="w-[150px] sm:w-[200px] h-[45px] sm:h-[50px] bg-[#06213c] text-base sm:text-[20px] text-white flex items-center justify-center font-kaisei_Decol no-underline"
-              >
-                Visit Now
-              </a>
-            </div>
+              <PrimaryBtn to={"/contactus"}>Visit Now</PrimaryBtn>
           </div>
-          <div className="flex flex-col items-center justify-center h-[80%] w-[45%] object-cover">
+          <div className="flex flex-col items-center justify-center  object-cover">
             <SpecsHover />
           </div>
         </div>

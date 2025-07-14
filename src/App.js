@@ -8,10 +8,13 @@ import WomensProduct from './screens/productCategory/womensProduct/WomensProduct
 import KidsProduct from './screens/productCategory/kidsProduct/KidsProduct';
 import Products from './screens/products/Products';
 import ContactUs from './screens/contactUs/ContactUs';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <Router>
+        <Navbar />
+
       <div className="overflow-x-hidden">
         <ScrollToTop />
         <Routes>

@@ -3,16 +3,15 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const Header = ({ backgroundImage, headingText, description, buttonText, onButtonClick }) => {
   return (
-    <div className="w-full h-full md:pb-6 sm:pb-[100px] flex flex-col items-center justify-center">
+    <div className="">
       <div
-        className="w-full bg-cover bg-center h-[850px] flex flex-col items-center"
+        className="bg-cover bg-center py-10 md:py-20 flex flex-col items-center justify-center "
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <Navbar />
 
-        <div className="flex flex-row items-center justify-between w-[90%] my-[100px]">
+        <div className=" container flex flex-row items-center justify-between ">
           {/* Left Text Section */}
-          <div className="flex flex-col items-center justify-center h-[80%] w-[45%]">
+          <div className="flex flex-col items-center justify-center ">
             <div className="flex flex-col justify-center gap-[50px]">
               <h1 className="text-[65px] text-[#06213C] font-normal font-kaisei_Decol mt-[100px]">
                 {headingText}
