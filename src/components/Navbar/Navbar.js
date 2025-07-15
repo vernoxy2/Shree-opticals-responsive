@@ -16,19 +16,19 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const navLinkClass = (path) =>
-    `relative text-[#06213c] text-xl 2xl:text-[24px] font-kaisei_Decol font-normal pb-1 transition-all duration-300 
+    `relative text-[#06213c] text-sm mg:text-lg xl:text-xl 2xl:text-2xl font-kaisei_Decol font-normal pb-1 transition-all duration-300 
      before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-[2px] before:bg-[#06213c] 
      before:transition-all before:duration-300 before:ease-in-out 
      ${isActive(path) ? "before:w-full" : "before:w-0 hover:before:w-full"}`;
 
   return (
-    <nav className="w-full bg-white sticky top-0 z-50">
-      <div className="container flex justify-between items-center px-4 py-3 rounded-b-[20px]">
+    <nav className="w-8/12 mx-auto translate-y-14 lg:translate-y-16 rounded-b-3xl bg-white -mt-16 top-0 z-50">
+      <div className=" flex justify-around items-center px-3 py-2 rounded-b-[20px]">
         {/* Logo */}
-        <img src={logo} alt="logo" className="h-[50px] w-[100px]" />
+        <img src={logo} alt="logo" className="h-[40px] w-[80px] lg:h-[50px] lg:w-[100px]" />
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-10">
+        <div className="hidden md:flex gap-5 lg:gap-12 2xl:gap-x-32">
           {links.map(({ name, path }) => (
             <Link key={name} to={path} className={navLinkClass(path)}>
               {name}

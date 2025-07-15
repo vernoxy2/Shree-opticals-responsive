@@ -7,24 +7,28 @@ import ForWomen from "./ForWomen";
 import ForKids from "./ForKids";
 import EyeLens from "./EyeLens";
 
-const Products = () => {
+const          Products = () => {
   return (
-    <div className="w-full h-full pb-[100px] flex flex-col items-center justify-center">
-      {/* Top Page Header */}
+    <div className="w-full flex flex-col items-center justify-start">
+      {/* Page Header */}
       <Header
         backgroundImage={productsHeaderImg}
         headingText="Products"
         description="Stylish and protective sunglasses for men, designed to elevate your everyday look with confidence."
       />
 
-      {/* Brand Logos Carousel */}
-      <PartnerSlider />
+      {/* Partner Brands Slider */}
+      <div className="w-full">
+        <PartnerSlider />
+      </div>
 
       {/* Product Sections */}
-      <ForMen />
-      <ForWomen />
-      <ForKids />
-      <EyeLens />
+      <section className="w-full">
+        <ForMen />
+        <ForWomen />
+        <ForKids />
+        <EyeLens />
+      </section>
     </div>
   );
 };

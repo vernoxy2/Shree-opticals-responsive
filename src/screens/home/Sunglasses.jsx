@@ -20,7 +20,7 @@ const Sunglasses = () => {
         </div>
 
         {/* Text + CTA + Image Section */}
-        <div className="flex flex-col items-center lg:items-end gap-4 sm:gap-8 text-center lg:text-right leading-tight">
+        <div className="flex flex-col items-center justify-center lg:items-end gap-4 sm:gap-8 text-center lg:text-right leading-tight">
           <h2 className="text-2xl md:text-4xl 2xl:text-5xl text-[#06213c] font-kaisei_Decol font-bold">
             See Style Clearly – Where Fashion Meets Function.
           </h2>
@@ -38,7 +38,7 @@ const Sunglasses = () => {
           <img
             src={sunglassBlackImg}
             alt="Black sunglasses"
-            className="w-[60%] object-cover hidden lg:block mr-auto -translate-y-12"
+            className="w-[60%] object-cover hidden lg:block mr-auto -translate-y-16 -mb-32"
           />
         </div>
       </div>

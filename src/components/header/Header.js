@@ -1,44 +1,43 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
+import PrimaryBtn from "../Primarycompo/PrimaryBtn";
+import Navbar from "../Navbar/Navbar";
 
-const Header = ({ backgroundImage, headingText, description, buttonText, onButtonClick }) => {
+const Header = ({
+  backgroundImage,
+  headingText,
+  description,
+  buttonText,
+}) => {
   return (
-    <div className="">
+    <section className="m-4 md:m-5">
+      <Navbar />
       <div
-        className="bg-cover bg-center py-10 md:py-20 flex flex-col items-center justify-center "
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
+      className="w-full bg-cover bg-center py-52 md:py-72 flex items-center justify-center rounded-3xl "
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="sm:container h-full flex flex-col md:flex-row  justify-center lg:justify-between items-center">
+        {/* Left Text Content */}
+        <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left gap-5 ">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl text-[#06213C] font-kaisei_Decol font-normal leading-tight">
+            {headingText}
+          </h1>
 
-        <div className=" container flex flex-row items-center justify-between ">
-          {/* Left Text Section */}
-          <div className="flex flex-col items-center justify-center ">
-            <div className="flex flex-col justify-center gap-[50px]">
-              <h1 className="text-[65px] text-[#06213C] font-normal font-kaisei_Decol mt-[100px]">
-                {headingText}
-              </h1>
+          <p className="text-base sm:text-lg md:text-xl xl:text-2xl text-[#06213C] font-kanit leading-relaxed w-2/3">
+            {description}
+          </p>
 
-              <p className="w-[400px] text-[24px] text-[#06213C] font-normal font-kaisei_Decol leading-[38px]">
-                {description}
-              </p>
-
-              {buttonText && (
-                <button
-                  onClick={onButtonClick}
-                  className="mt-4 px-6 py-3 bg-[#06213C] text-white text-lg rounded hover:bg-[#04305A] transition-all duration-300"
-                >
-                  {buttonText}
-                </button>
-              )}
+          {buttonText && (
+            <div className="mt-2">
+              <PrimaryBtn to="/contactus">{buttonText}</PrimaryBtn>
             </div>
-          </div>
-
-          {/* Right (Image or Content Area) */}
-          <div className="flex flex-col items-center justify-center h-[80%] w-[45%]">
-            {/* Optional image or content goes here */}
-          </div>
+          )}
         </div>
+
+        {/* Right Section (Optional image or future content) */}
+        <div className="hidden md:block w-[40%]">{/* Add optional image or content */}</div>
       </div>
     </div>
+    </section>
   );
 };
 
