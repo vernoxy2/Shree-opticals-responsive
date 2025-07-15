@@ -59,9 +59,7 @@ const Products = () => {
           </div>
 
           {/* CTA Button */}
-          <a href="/products">
-            <PrimaryBtn>More Products</PrimaryBtn>
-          </a>
+            <PrimaryBtn to="/products">More Products</PrimaryBtn>
         </div>
       </div>
     </div>

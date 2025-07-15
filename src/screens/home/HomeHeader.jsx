@@ -29,7 +29,7 @@ const HomeHeader = () => {
             </p>
 
             <div className="mt-2">
-              <PrimaryBtn to="/contactus">Visit Now</PrimaryBtn>
+              <PrimaryBtn to="/contactus" className="group-hover:text-white"> Visit Now</PrimaryBtn>
             </div>
           </div>
 

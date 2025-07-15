@@ -85,7 +85,7 @@ const MensProduct = () => {
   };
 
   return (
-    <div className="w-full h-full sm:pb-[100px] flex flex-col items-center justify-center">
+    <div className="w-full h-full sm:pb-[100px] flex flex-col items-center ">
       <Header
         backgroundImage={headerContent[headerIndex].backgroundImage}
         headingText={headerContent[headerIndex].headingText}

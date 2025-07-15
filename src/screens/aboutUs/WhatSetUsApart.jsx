@@ -4,7 +4,7 @@ import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 
 const WhatSetUsApart = () => {
   return (
-    <div className="py-10 md:py-20 space-y-4 md:space-y-20">
+    <div className="py-10 md:py-20 space-y-4 md:space-y-7">
       {/* Heading */}
       <PrimaryHeading>What Sets Us Apart</PrimaryHeading>
 

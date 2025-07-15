@@ -9,7 +9,7 @@ import EyeLens from "./EyeLens";
 
 const          Products = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-start">
+    <div className="w-full flex flex-col ">
       {/* Page Header */}
       <Header
         backgroundImage={productsHeaderImg}
