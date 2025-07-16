@@ -9,6 +9,7 @@ import sunglasses2 from "../../../assets/sunglasses2.png";
 import mensHeaderBg from "../../../assets/mensHeaderBg.png";
 import mensHeaderBg2 from "../../../assets/mensHeaderBg2.png";
 import mensHeaderBg3 from "../../../assets/mensHeaderBg3.png";
+import PrimaryHeading from "../../../components/Primarycompo/PrimaryHeading";
 
 const headerContent = [
   {
@@ -85,7 +86,7 @@ const MensProduct = () => {
   };
 
   return (
-    <div className="w-full h-full sm:pb-[100px] flex flex-col items-center ">
+    <div className="w-full h-full flex flex-col  ">
       <Header
         backgroundImage={headerContent[headerIndex].backgroundImage}
         headingText={headerContent[headerIndex].headingText}
@@ -94,9 +95,7 @@ const MensProduct = () => {
 
       <PartnerSlider />
 
-      <h1 className="mt-10 text-2xl md:text-5xl xl:text-6xl font-normal text-[#06213C] font-kaisei_Decol">
-        Our Optical For Men
-      </h1>
+      <PrimaryHeading>Our Optical For Men</PrimaryHeading>
 
       <div className="flex flex-wrap justify-center gap-x-[30px] gap-y-[40px] my-[50px] md:my-[100px]">
         {["Eye Glasses", "Sunglasses", "Eye Lens"].map((category) => {
@@ -137,7 +136,7 @@ const MensProduct = () => {
         })}
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px] p-[20px] w-full max-w-[1200px]">
+      <div className="mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px] p-[20px] w-full max-w-[1200px]">
         {products.map((product) => (
           <div
             key={product.id}
