@@ -32,7 +32,7 @@ const HappyCustomers = () => {
 
       <div
       data-aos="fade-up"
-        className="container flex flex-col lg:flex-row items-center justify-between gap-12"
+        className="container flex flex-col lg:flex-row items-center justify-between gap-12 p-10 sm:p-0"
         onMouseLeave={() => setActiveIndex(1)} // Reset to 2nd card on mouse leave
       >
         {clients.map((client, index) => {

@@ -41,7 +41,7 @@ const Lenses = () => {
 
         {/* Right Image Animation */}
         <div className="w-full flex items-center justify-center px-4">
-          <div className="flex gap-4 max-sm:flex-col max-md:gap-6">
+          <div className="flex gap-4  max-md:gap-6">
             {lensImages.map((img, idx) => {
               const isHovered = hoveredIndex === idx;
               const isDefaultMiddle = hoveredIndex === null && idx === 1;
@@ -61,7 +61,7 @@ const Lenses = () => {
                   <img
                     src={img}
                     alt={`Lens ${idx + 1}`}
-                    className="h-[140px] sm:h-[160px] lg:h-[190px] w-auto"
+                    className="sm:h-[140px] md:h-[160px] lg:h-[190px] w-auto"
                   />
                 </div>
               );
