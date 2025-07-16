@@ -8,8 +8,20 @@ import WomensProduct from './screens/productCategory/womensProduct/WomensProduct
 import KidsProduct from './screens/productCategory/kidsProduct/KidsProduct';
 import Products from './screens/products/Products';
 import ContactUs from './screens/contactUs/ContactUs';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      delay: 200, 
+      offset: 140      // delay in ms
+      // once: true,     // animation only once when scrolling down
+    });
+  })
+
   return (
     <Router>
       <div className="overflow-x-hidden">

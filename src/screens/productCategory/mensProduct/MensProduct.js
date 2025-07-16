@@ -102,6 +102,7 @@ const MensProduct = () => {
           const isActive = selectedCategory === category;
           return (
             <div
+            data-aos="fade-up"
               key={category}
               className="flex flex-col items-center justify-center w-[90px] sm:w-[140px] md:w-[150px]"
             >
@@ -136,7 +137,7 @@ const MensProduct = () => {
         })}
       </div>
 
-      <div className="mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px] p-[20px] w-full max-w-[1200px]">
+      <div data-aos="fade" className="mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[20px] p-[20px] w-full max-w-[1200px]">
         {products.map((product) => (
           <div
             key={product.id}

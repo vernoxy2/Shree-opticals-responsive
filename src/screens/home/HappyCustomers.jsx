@@ -31,6 +31,7 @@ const HappyCustomers = () => {
       <PrimaryHeading className="pb-10">Our Happy Customers</PrimaryHeading>
 
       <div
+      data-aos="fade-up"
         className="container flex flex-col lg:flex-row items-center justify-between gap-12"
         onMouseLeave={() => setActiveIndex(1)} // Reset to 2nd card on mouse leave
       >
@@ -47,7 +48,7 @@ const HappyCustomers = () => {
               onFocus={() => setActiveIndex(index)} // For keyboard users
               className={`flex flex-col space-y-2 items-center text-center transition-all duration-300 ease-in-out 
                 bg-[#E5E7EB]  p-6 cursor-pointer w-full md:w-[80%] lg:w-full
-                ${isActive ? "blur-0 scale-110 bg-[#C4D1D9]" : "blur-[2px] scale-100"}`}
+                ${isActive ? "blur-0 scale-110 bg-blue-100" : "blur-[2px] scale-100"}`}
             >
               <img
                 src={clientImg}

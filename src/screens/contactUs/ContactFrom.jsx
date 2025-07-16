@@ -19,7 +19,7 @@ const ContactForm = () => {
           minHeight: "700px",
         }}
       >
-        <form className="container space-y-4 md:space-y-8 ">
+        <form data-aos="fade-up" className="container space-y-4 md:space-y-8 ">
           {/* Inputs Row */}
           <div className="flex flex-col md:flex-row gap-4 md:gap-6">
             {/* Name Input */}

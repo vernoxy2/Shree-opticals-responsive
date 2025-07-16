@@ -9,7 +9,7 @@ const ContactDetails = () => {
     <div className="py-10 md:py-20">
       <div className="container px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5">
         {/* Left Contact Info */}
-        <div className="flex flex-col justify-center items-center lg:items-start p-4 space-y-6">
+        <div data-aos="fade-right" className="flex flex-col justify-center items-center lg:items-start p-4 space-y-6">
           {/* Call Section */}
           <div className="w-full bg-[#06213c] px-4 py-6 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
@@ -52,7 +52,7 @@ const ContactDetails = () => {
         </div>
 
         {/* Right Map Section */}
-        <div className="relative  h-[400px] sm:h-[500px] lg:h-[600px] flex flex-col justify-end items-center">
+        <div data-aos="zoom-in-left" className="relative  h-[400px] sm:h-[500px] lg:h-[600px] flex flex-col justify-end items-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.848900548641!2d72.93863877599081!3d20.594227302559858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0c3e59a68829f%3A0x9ef062442028e5b6!2sShree%20Optical!5e0!3m2!1sen!2sin!4v1749185031379!5m2!1sen!2sin"
             allowFullScreen

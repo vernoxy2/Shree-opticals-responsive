@@ -18,13 +18,13 @@ const Lenses = () => {
     >
       <PrimaryHeading>Lenses</PrimaryHeading>
 
-      <div className="container pr-0 grid grid-cols-1 lg:grid-cols-2 items-center gap-y-20 gap-x-20">
+      <div data-aos="fade" className="container pr-0 grid grid-cols-1 lg:grid-cols-2 items-center gap-y-20 gap-x-20">
         {/* Left Text Content */}
         <div className="flex flex-col text-center lg:text-left items-center lg:items-start gap-6 xl:gap-10">
-          <h2 className="text-2xl md:text-4xl xl:text-5xl text-[#06213c] font-kaisei_Decol">
+          <h2  data-aos="fade-right" className="text-2xl md:text-4xl xl:text-5xl text-[#06213c] font-kaisei_Decol">
             Eyeglass lens options include various types
           </h2>
-          <p className="text-xs md:text-xl xl:text-2xl text-[#334155] leading-relaxed font-kanit">
+          <p data-aos="fade-right" className="text-xs md:text-xl xl:text-2xl text-[#334155] leading-relaxed font-kanit">
             Explore our wide range of high-quality lenses, including contact
             lenses, anti-reflective, photochromic, and blue light protection —
             designed to enhance vision clarity, comfort, and everyday eye
@@ -51,8 +51,9 @@ const Lenses = () => {
                   key={idx}
                   onMouseEnter={() => setHoveredIndex(idx)}
                   onMouseLeave={() => setHoveredIndex(null)}
+                  
                   className={`
-                    transition-all duration-300 ease-in-out
+                    transition-all duration-500 ease-in-out
                     ${isHovered || isDefaultMiddle ? "scale-[1.3] z-[2]" : "scale-100 z-[0] blur-sm"}
                   `}
                   style={{ filter: "blur(1)", willChange: "transform" }}

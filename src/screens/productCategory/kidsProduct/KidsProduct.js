@@ -90,6 +90,8 @@ const KidsProduct = () => {
           const isActive = selectedCategory === category;
           return (
             <div
+            data-aos="fade-up"
+
               key={category}
               className="flex flex-col items-center justify-center w-[100px] sm:w-[140px] md:w-[160px]"
             >
@@ -124,7 +126,7 @@ const KidsProduct = () => {
         })}
       </div>
 
-      <div className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-5">
+      <div data-aos="fade" className="container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-5">
         {kidsProducts.map((product, index) => (
           <div className="w-[80%] mx-auto aspect-square border-2 border-gray-300 flex items-center justify-center my-6" key={index}>
             <img

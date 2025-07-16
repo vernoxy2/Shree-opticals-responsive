@@ -20,6 +20,7 @@ const ForMen = () => {
       <div className="2xl:container flex flex-col xl:flex-row items-center gap-y-12">
       {/* Banner Image */}
       <img
+       data-aos="zoom-out-up"
         src={productMenCollectionImg}
         alt="Men's Collection"
         className="w-full xl:w-[35%] 2xl:w-[40%] h-full object-cover"
@@ -31,6 +32,7 @@ const ForMen = () => {
 
         {/* Product Grid */}
          <div
+         data-aos="zoom-out-up"
           className="w-[90%] grid grid-cols-3 md:grid-cols-4 justify-items-center items-end"
           onMouseLeave={() => setHoverIndex(null)}
         >

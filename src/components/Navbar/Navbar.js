@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-8/12 mx-auto translate-y-14 lg:translate-y-16 rounded-b-3xl bg-white -mt-16 top-0 z-50">
-      <div className=" flex justify-around items-center px-3 py-2 rounded-b-[20px]">
+      <div  data-aos="fade"  className=" flex justify-around items-center px-3 py-2 rounded-b-[20px]">
         {/* Logo */}
         <img src={logo} alt="logo" className="h-[40px] w-[80px] lg:h-[50px] lg:w-[100px]" />
 

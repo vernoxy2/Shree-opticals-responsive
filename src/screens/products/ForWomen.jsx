@@ -24,6 +24,7 @@ const ForWomen = () => {
 
           {/* Product Grid */}
            <div
+           data-aos="zoom-out-up"
           className="w-[90%] grid grid-cols-3 md:grid-cols-4 justify-items-center items-end"
           onMouseLeave={() => setHoverIndex(null)}
         >
@@ -56,6 +57,7 @@ const ForWomen = () => {
 
         {/* Banner Image */}
         <img
+        data-aos="zoom-out-up"
           src={productWomenCollectionImg}
           alt="productWomenCollectionImg"
           className="w-full xl:w-[35%] 2xl:w-[40%] h-full object-cover"
