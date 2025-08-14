@@ -44,7 +44,7 @@ const ForMen = () => {
                 key={item.id}
                 onMouseEnter={() => setHoverIndex(index)}
                 onClick={() => setClickIndex(index)}
-                className={`relative w-[100px] sm:w-[140px] 2xl:w-[160px] aspect-square bg-center bg-cover rounded-[10px] flex items-end justify-center transition-all duration-300 ease-in-out cursor-pointer
+                className={`relative w-[100px] sm:w-[140px] 2xl:w-[150px] aspect-square bg-center bg-cover rounded-[10px] flex items-end justify-center transition-all duration-300 ease-in-out cursor-pointer
                   ${isActive ? "scale-105" : "scale-100"}
                   ${index > 2 ? "hidden md:flex" : ""}
                 `}

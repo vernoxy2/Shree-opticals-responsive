@@ -37,7 +37,7 @@ const Products = () => {
           {/* Heading */}
           <h2
             data-aos="fade-left"
-            className="text-xl sm:text-2xl md:text-4xl 2xl:text-[45px] text-[#06213c] font-kaisei_Decol font-bold leading-loose"
+            className="text-xl sm:text-2xl md:text-4xl 2xl:text-5xl text-[#06213c] font-kaisei_Decol font-bold leading-loose"
           >
             See Clearly, Wear Confidently
           </h2>

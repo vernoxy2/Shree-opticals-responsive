@@ -36,13 +36,13 @@ const EyeLens = () => {
               data-aos="fade"
 
                 key={item.id}
-                className="p-[4px] rounded-[10px] bg-gradient-to-b from-[#D5FEFF] to-[#92CAD4]"
+                className="p-[3px] rounded-[10px] bg-gradient-to-b from-[#D5FEFF] to-[#92CAD4] group"
               >
-                <div data-aos="zoom-in" className="flex flex-col items-center p-5 rounded-[6px] bg-white">
+                <div data-aos="zoom-in" className="flex flex-col items-center p-4 rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
                   <img
                     src={item.image}
                     alt={item.label}
-                    className="w-full h-auto object-contain"
+                    className="w-full h-auto object-contain group-hover:scale-90 duration-300"
                   />
                   <p className="mt-3 text-base md:text-lg xl:text-xl font-kaisei_Decol text-[#06213c] font-normal text-center">
                     {item.label}

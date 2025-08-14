@@ -17,6 +17,7 @@ module.exports = {
         primary: "#06213c",
         secondary: "#F2F0F0",
         tertiary: "#334155",
+        BorderColr: "#92CAD4"
       },
       keyframes: {
         scrollLeft: {

@@ -3,6 +3,10 @@ import contactSectionBg from "../../assets/contactSectionBg.png";
 import GetQuote from "../../components/getQuote/GetQuote";
 import PartnerSlider from "../../components/partnerSlider/PartnerSlider";
 import HomeHeader from "./HomeHeader";
+import ShopFor from "./ShopFor";
+import Eyeglasses from "./Eyeglasses";
+import Sunglassess from "./Sunglassess";
+import Lensess from "./Lensess";
 
 // Lazy-loaded sections (optional for performance)
 const About = lazy(() => import("./About"));
@@ -23,10 +27,14 @@ const Home = () => {
       
       {/* Lazy-loaded Sections */}
       <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
-        <About />
+        {/* <About />
         <Products />
         <Lenses />
-        <Sunglasses />
+        <Sunglasses /> */}
+        <ShopFor />
+        <Eyeglasses/>
+        <Sunglassess/>
+        <Lensess/>
         <Choose />
         <HappyCustomers />
       </Suspense>

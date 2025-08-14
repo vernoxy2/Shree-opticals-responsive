@@ -13,12 +13,12 @@ const HomeHeader = () => {
       {/* Header Section with Background */}
       <div
       
-        className="w-full bg-cover bg-center py-52 md:py-64 flex items-center justify-center rounded-3xl"
+        className="w-full bg-cover bg-center py-52 md:py-20 flex items-center justify-center rounded-3xl overflow-none"
         style={{ backgroundImage: `url(${headerBgImg})` }}
       >
-        <div  data-aos="fade-up"  className="container mx-auto h-full flex flex-col md:flex-row justify-center lg:justify-between items-center">
+        <div  data-aos="fade-up"  className="container pr-4 mx-auto h-full flex flex-col md:flex-row justify-center lg:justify-between items-center gap-20">
           {/* Left Content */}
-          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left gap-5">
+          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left gap-12 w-[40%]">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl text-white font-kaisei_Decol font-normal leading-tight">
               Where Vision <br /> Meets Innovation.
             </h1>
@@ -35,7 +35,7 @@ const HomeHeader = () => {
           </div>
 
           {/* Right Content */}
-          <div className="hidden md:flex justify-center items-center w-[40%]">
+          <div className="hidden md:flex justify-center items-center w-[60%]">
             <SpecsHover />
           </div>
         </div>

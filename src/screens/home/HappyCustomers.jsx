@@ -58,10 +58,10 @@ const HappyCustomers = () => {
               <h1 className="text-[26px] md:text-[30px] font-semibold text-[#22223b] font-kaisei_Decol">
                 {client.name}
               </h1>
-              <h2 className="text-lg md:text-xl font-medium text-[#3a86ff] font-kaisei_Decol">
+              <h2 className="text-lg md:text-xl font-medium text-[#3a86ff] font-kanit">
                 {client.title}
               </h2>
-              <p className="text-base md:text-lg font-normal text-[#495057] font-kaisei_Decol">
+              <p className="text-base md:text-lg font-normal text-[#495057] font-kanit">
                 {client.description}
               </p>
             </div>
