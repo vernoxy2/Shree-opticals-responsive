@@ -7,6 +7,8 @@ import Hazel from "../../assets/HomePageImgs/Lenses/Lhazel.webp";
 import Honey from "../../assets/HomePageImgs/Lenses/Lhoney.webp";
 import Violet from "../../assets/HomePageImgs/Lenses/Lviolet.webp";
 import lenses from "../../assets/HomePageImgs/Lenses/LensesImg.webp";
+import lensesB from "../../assets/HomePageImgs/Lenses/LensesB.png";
+import lensesT from "../../assets/HomePageImgs/Lenses/LensesT.png";
 
 const LensessData = [
   {
@@ -43,9 +45,11 @@ const LensessData = [
 
 const Lensess = () => {
   return (
-    <div className="py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
+    <div className="relative py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
+      <img src={lensesT} alt="" className="absolute left-0"/>
+      <img src={lensesB} alt="" className="absolute -bottom-24"/>
       <PrimaryHeading>Lenses</PrimaryHeading>
-      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container ">
+      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container pb-20">
         {LensessData.map((item) => (
           <div className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden ">
             <img
@@ -59,7 +63,7 @@ const Lensess = () => {
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
-        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative">
+        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24">
           <img
             src={lenses}
             alt="Eyeglasses showcase"

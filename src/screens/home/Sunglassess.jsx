@@ -7,6 +7,8 @@ import square from "../../assets/HomePageImgs/Sunglassess/Ssquare.webp";
 import hexagonal from "../../assets/HomePageImgs/Sunglassess/Shexagonal.webp";
 import aviator from "../../assets/HomePageImgs/Sunglassess/Saviator.webp";
 import sunglasses from "../../assets/HomePageImgs/Sunglassess/SunglassessImg.webp";
+import SunglassessR from "../../assets/HomePageImgs/Sunglassess/SunglassessR.png";
+import SunglassessL from "../../assets/HomePageImgs/Sunglassess/SunglassessL.png";
 
 const SunglassessData = [
   { id: 1, label: "Cat Eye", image: Cateye },
@@ -19,14 +21,16 @@ const SunglassessData = [
 
 const Sunglassess = () => {
   return (
-    <div className="py-10 md:py-20 space-y-4 md:space-y-8">
+    <div className=" relative py-10 md:py-20 space-y-4 md:space-y-8">
+      <img src={SunglassessR} alt="" className="absolute right-0 -top-7"/>
+      <img src={SunglassessL} alt="" className="absolute"/>
       <PrimaryHeading>Sunglassess</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container">
         {SunglassessData.map((item, index) => (
           <React.Fragment key={item.id}>
             {/* Insert empty space before the 3rd item on XL screens */}
             {index === 2 && (
-              <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative">
+              <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -mr-24">
                 <img src={sunglasses} alt="" className="-mt-20" />
                 <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
                   Fashion

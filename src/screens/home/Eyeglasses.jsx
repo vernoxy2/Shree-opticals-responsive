@@ -7,6 +7,8 @@ import round from "../../assets/HomePageImgs/Eyeglasses/Eround.webp";
 import hexagonal from "../../assets/HomePageImgs/Eyeglasses/Ehexagonal.webp";
 import aviator from "../../assets/HomePageImgs/Eyeglasses/Eaviator.webp";
 import eyeglasses from "../../assets/HomePageImgs/Eyeglasses/SunglassessImg.webp";
+import EyeglassesR from "../../assets/HomePageImgs/Eyeglasses/EyeglassesR.png";
+import EyeglassesL from "../../assets/HomePageImgs/Eyeglasses/EyeglassesL.png";
 
 const EyeglassesData = [
   { id: 1, label: "Cat Eye", image: cateye },
@@ -19,35 +21,40 @@ const EyeglassesData = [
 
 const Eyeglasses = () => {
   return (
-    <div className="py-10 md:py-20 space-y-4 md:space-y-8">
+    <div className="relative py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Eyeglasses</PrimaryHeading>
-
+      <img src={EyeglassesL} alt="" className="absolute -top-24" />
+      <img src={EyeglassesR} alt="" className="absolute -top-24 right-0" />
       <div
         dir="rtl"
         className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container"
       >
-
         {/* Eyeglasses items */}
         {EyeglassesData.map((item) => (
           <div
             key={item.id}
             className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden "
           >
-              <img
-                src={item.image}
-                alt={item.label}
-                className="object-contain group-hover:scale-105 duration-300 mt-auto"
-              />
-              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
-                {item.label}
-              </p>
+            <img
+              src={item.image}
+              alt={item.label}
+              className="object-contain group-hover:scale-105 duration-300 mt-auto"
+            />
+            <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
+              {item.label}
+            </p>
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
-        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative">
-          <img src={eyeglasses} alt="Eyeglasses showcase" className="w-full h-auto" />
-                <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">Glasses</h1>
-
+        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24">
+          <img
+            src={eyeglasses}
+            alt="Eyeglasses showcase"
+            className="w-full h-auto"
+          />
+          <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
+            Glasses
+          </h1>
         </div>
       </div>
     </div>
