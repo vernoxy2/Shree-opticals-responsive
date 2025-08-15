@@ -33,8 +33,8 @@ const ShopFor = () => {
   return (
     <div className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Shop For</PrimaryHeading>
-      <div className="flex flex-col-reverse md:flex-row gap-10 items-center container pr-0">
-        <div className="md:w-1/2 grid grid-cols-2 gap-6 gap-y-20 py-4 px-6">
+      <div className="flex flex-col-reverse lg:flex-row gap-4 md:gap-8 items-center container sm:px-0 md:px-16 sm:pr-0">
+        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 gap-y-10 sm:gap-y-20 py-10 lg:px-6">
           {data.map((item) => (
             <div
               key={item.id}
@@ -43,7 +43,7 @@ const ShopFor = () => {
               <img
                 src={item.img}
                 alt={item.category}
-                className="object-cover -mt-12 group-hover:scale-110 duration-300 ease-in-out"
+                className="object-cover -mt-14 group-hover:scale-105 duration-300 ease-in-out"
               />
               <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2">
                 {item.category}
@@ -52,8 +52,8 @@ const ShopFor = () => {
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 relative">
-          <img src={EyewearImg} alt="" />
+        <div className="lg:w-1/2 relative">
+          <img src={EyewearImg} alt="" className="object-cover" />
           <h1 className="absolute left-10 bottom-10 text-white text-4xl md:text-7xl font-kaisei_Decol">Eyewear</h1>
         </div>
       </div>

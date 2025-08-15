@@ -42,12 +42,12 @@ const LensessData = [
 
 const Lensess = () => {
   return (
-    <div className="py-10 md:py-20 space-y-4 md:space-y-8">
+    <div className="py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
       <PrimaryHeading>Lenses</PrimaryHeading>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 container ">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8 container ">
         {LensessData.map((item) => (
           <div className="p-[3px] rounded-[10px] bg-gradient-to-b from-[#D5FEFF] to-[#92CAD4] group">
-            <div className=" rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
+            <div className="flex flex-col items-end rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
               <img
                 src={item.image}
                 alt={item.label}
