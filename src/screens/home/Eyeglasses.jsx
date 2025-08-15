@@ -31,18 +31,16 @@ const Eyeglasses = () => {
         {EyeglassesData.map((item) => (
           <div
             key={item.id}
-            className="p-[3px] rounded-[10px] bg-gradient-to-t from-[#D5FEFF] to-[#92CAD4] group"
+            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden "
           >
-            <div className="relative flex flex-col items-end rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
               <img
                 src={item.image}
                 alt={item.label}
-                className="h-full object-contain group-hover:scale-105 duration-300"
+                className="object-contain group-hover:scale-105 duration-300 mt-auto"
               />
-              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2">
+              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
                 {item.label}
               </p>
-            </div>
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}

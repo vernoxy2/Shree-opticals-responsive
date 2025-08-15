@@ -47,24 +47,27 @@ const Lensess = () => {
       <PrimaryHeading>Lenses</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container ">
         {LensessData.map((item) => (
-          <div className="p-[3px] rounded-[10px] bg-gradient-to-b from-[#D5FEFF] to-[#92CAD4] group">
-            <div className="relative flex flex-col items-end rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
-              <img
-                src={item.image}
-                alt={item.label}
-                className="object-contain group-hover:scale-90 duration-300"
-              />
-              <p className=" absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2">
-                {item.label}
-              </p>
-            </div>
+          <div className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden ">
+            <img
+              src={item.image}
+              alt={item.label}
+              className="object-contain group-hover:scale-105 duration-300 mt-auto"
+            />
+            <p className=" absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0 right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
+              {item.label}
+            </p>
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
         <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative">
-          <img src={lenses} alt="Eyeglasses showcase" className="w-full h-auto" />
-                <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">Contacts</h1>
-
+          <img
+            src={lenses}
+            alt="Eyeglasses showcase"
+            className="w-full h-auto"
+          />
+          <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
+            Contacts
+          </h1>
         </div>
       </div>
     </div>

@@ -28,20 +28,21 @@ const Sunglassess = () => {
             {index === 2 && (
               <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative">
                 <img src={sunglasses} alt="" className="-mt-20" />
-                <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">Fashion</h1>
+                <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
+                  Fashion
+                </h1>
               </div>
             )}
-            <div className="p-[3px] flex flex-col items-center justify-center rounded-[10px] bg-gradient-to-t from-[#D5FEFF] to-[#92CAD4] group">
-              <div className="relative flex  items-center rounded-[6px] bg-white duration-300 group-hover:bg-[#D5FEFF]">
+            <div className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden">
+              
                 <img
                   src={item.image}
                   alt={item.label}
-                  className="object-contain group-hover:scale-90 duration-300"
+                  className="object-contain group-hover:scale-105 duration-300"
                 />
-                <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2">
+                <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
                   {item.label}
                 </p>
-              </div>
             </div>
           </React.Fragment>
         ))}

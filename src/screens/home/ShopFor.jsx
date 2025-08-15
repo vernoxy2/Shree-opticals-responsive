@@ -45,7 +45,7 @@ const ShopFor = () => {
                 alt={item.category}
                 className="object-cover -mt-14 group-hover:scale-105 duration-300 ease-in-out"
               />
-              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2">
+              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFE] to-[#92CAD4] p-2 px-4">
                 {item.category}
               </p>
               
