@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutValueMissionImg from "../../assets/aboutValueMissionImg.png";
+import aboutValueMissionImg from "../../assets/AboutPageImgs/aboutValueMissionImg.png";
 import PrimaryHeading from '../../components/Primarycompo/PrimaryHeading';
 
 const ValuesAndMission = () => {

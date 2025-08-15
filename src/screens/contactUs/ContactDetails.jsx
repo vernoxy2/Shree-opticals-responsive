@@ -1,8 +1,8 @@
 import React from "react";
-import callImg from "../../assets/callImg.png";
-import mailImg from "../../assets/mailImg.png";
-import locationImg from "../../assets/locationImg.png";
-import mapBgImg from "../../assets/mapBgImg.png";
+import callImg from "../../assets/ContactPageImg/callImg.png";
+import mailImg from "../../assets/ContactPageImg/mailImg.png";
+import locationImg from "../../assets/ContactPageImg/locationImg.png";
+import mapBgImg from "../../assets/ContactPageImg/mapBgImg.png";
 
 const ContactDetails = () => {
   return (

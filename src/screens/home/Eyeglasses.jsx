@@ -1,11 +1,11 @@
 import React from "react";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
-import cateye from "../../assets/Ecateye.webp";
-import oval from "../../assets/Eoval.webp";
-import square from "../../assets/Esquare.webp";
-import round from "../../assets/Eround.webp";
-import hexagonal from "../../assets/Ehexagonal.webp";
-import aviator from "../../assets/Eaviator.webp";
+import cateye from "../../assets/HomePageImgs/Eyeglasses/Ecateye.webp";
+import oval from "../../assets/HomePageImgs/Eyeglasses/Eoval.webp";
+import square from "../../assets/HomePageImgs/Eyeglasses/Esquare.webp";
+import round from "../../assets/HomePageImgs/Eyeglasses/Eround.webp";
+import hexagonal from "../../assets/HomePageImgs/Eyeglasses/Ehexagonal.webp";
+import aviator from "../../assets/HomePageImgs/Eyeglasses/Eaviator.webp";
 
 const EyeglassesData = [
   {

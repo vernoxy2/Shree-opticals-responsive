@@ -1,5 +1,5 @@
 import React from "react";
-import aboutShopImg from "../../assets/aboutShopImg.png";
+import aboutShopImg from "../../assets/AboutPageImgs/aboutShopImg.png";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 
 const Shopstory = () => {

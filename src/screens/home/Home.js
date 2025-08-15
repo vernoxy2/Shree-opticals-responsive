@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import contactSectionBg from "../../assets/contactSectionBg.png";
+import contactSectionBg from "../../assets/ContactPageImg/contactSectionBg.png";
 import GetQuote from "../../components/getQuote/GetQuote";
 import PartnerSlider from "../../components/partnerSlider/PartnerSlider";
 import HomeHeader from "./HomeHeader";

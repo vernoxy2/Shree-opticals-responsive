@@ -1,5 +1,5 @@
 import React from 'react';
-import contactFormBg from "../../assets/contactFormBg.png";
+import contactFormBg from "../../assets/ContactPageImg/contactFormBg.png";
 import PrimaryHeading from '../../components/Primarycompo/PrimaryHeading';
 import PrimaryBtn from '../../components/Primarycompo/PrimaryBtn';
 

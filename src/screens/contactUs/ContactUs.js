@@ -5,7 +5,7 @@ import React from "react";
 // import locationImg from "../../assets/locationImg.png";
 // import mapBgImg from "../../assets/mapBgImg.png";
 // import contactFormBg from "../../assets/contactFormBg.png";     
-import contactHeaderImg from "../../assets/contactHeaderImg.png";
+import contactHeaderImg from "../../assets/ContactPageImg/contactHeaderImg.png";
 import Header from "../../components/header/Header";
 import ContactDetails from "./ContactDetails";
 import ContactFrom from "./ContactFrom";

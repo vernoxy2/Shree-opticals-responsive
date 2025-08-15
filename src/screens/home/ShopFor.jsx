@@ -1,10 +1,10 @@
 import React from "react";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
-import EyewearImg from "../../assets/EyewearImg.png";
-import ManImg from "../../assets/ManImg.webp";
-import WomenImg from "../../assets/WomenImg.webp";
-import KidsImg from "../../assets/KidsImg.webp";
-import UnisexImg from "../../assets/UnisexImg.webp";
+import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
+import ManImg from "../../assets/HomePageImgs/ShopFor/ManImg.webp";
+import WomenImg from "../../assets/HomePageImgs/ShopFor/WomenImg.webp";
+import KidsImg from "../../assets/HomePageImgs/ShopFor/KidsImg.webp";
+import UnisexImg from "../../assets/HomePageImgs/ShopFor/UnisexImg.webp";
 
 const data = [
   {
