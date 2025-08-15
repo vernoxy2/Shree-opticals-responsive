@@ -33,7 +33,7 @@ const ShopFor = () => {
   return (
     <div className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Shop For</PrimaryHeading>
-      <div className="flex flex-col-reverse md:flex-row gap-10 container pr-0">
+      <div className="flex flex-col-reverse md:flex-row gap-10 items-center container pr-0">
         <div className="md:w-1/2 grid grid-cols-2 gap-6 gap-y-20 py-4 px-6">
           {data.map((item) => (
             <div

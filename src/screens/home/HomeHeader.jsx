@@ -1,5 +1,5 @@
 import React from "react";
-import headerBgImg from "../../assets/headerBgImg.png";
+import headerBgImg from "../../assets/HomePageImgs/headerBgImg.webp";
 import SpecsHover from "../../components/specsHover/SpecsHover";
 import PrimaryBtn from "../../components/Primarycompo/PrimaryBtn";
 import Navbar from "../../components/Navbar/Navbar";
@@ -13,7 +13,7 @@ const HomeHeader = () => {
       {/* Header Section with Background */}
       <div
       
-        className="w-full bg-cover bg-center py-52 md:py-20 flex items-center justify-center rounded-3xl overflow-none"
+        className="w-full bg-cover bg-center py-52 md:py-52 flex items-center justify-center rounded-3xl overflow-none"
         style={{ backgroundImage: `url(${headerBgImg})` }}
       >
         <div  data-aos="fade-up"  className="container pr-4 mx-auto h-full flex flex-col md:flex-row justify-center lg:justify-between items-center gap-20">
@@ -35,9 +35,7 @@ const HomeHeader = () => {
           </div>
 
           {/* Right Content */}
-          <div className="hidden md:flex justify-center items-center w-[60%]">
-            <SpecsHover />
-          </div>
+          
         </div>
       </div>
     </section>
