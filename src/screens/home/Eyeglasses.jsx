@@ -23,8 +23,8 @@ const Eyeglasses = () => {
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Eyeglasses</PrimaryHeading>
-      <img src={EyeglassesL} alt="" className="absolute -top-24" />
-      <img src={EyeglassesR} alt="" className="absolute -top-24 right-0" />
+      <img src={EyeglassesL} alt="" className="absolute top-0 md:-top-24 h-14 sm:h-20 xl:h-32" />
+      <img src={EyeglassesR} alt="" className="absolute -top-10 md:-top-24 right-0 h-24 sm:h-32 xl:h-40 " />
       <div
         dir="rtl"
         className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container"

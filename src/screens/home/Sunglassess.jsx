@@ -22,8 +22,8 @@ const SunglassessData = [
 const Sunglassess = () => {
   return (
     <div className=" relative py-10 md:py-20 space-y-4 md:space-y-8">
+      <img src={SunglassessL} alt="" className="absolute h-12 xl:h-auto"/>
       <img src={SunglassessR} alt="" className="absolute right-0 -top-7"/>
-      <img src={SunglassessL} alt="" className="absolute"/>
       <PrimaryHeading>Sunglassess</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container">
         {SunglassessData.map((item, index) => (

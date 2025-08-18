@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../../components/header/Header";
-import productsHeaderImg from "../../assets/productsHeaderImg.png";
+import productsHeaderImg from "../../assets/ProductHeaderImg.png";
 import PartnerSlider from "../../components/partnerSlider/PartnerSlider";
-import ForMen from "./ForMen";
+/* import ForMen from "./ForMen";
 import ForWomen from "./ForWomen";
 import ForKids from "./ForKids";
-import EyeLens from "./EyeLens";
+import EyeLens from "./EyeLens"; */
+import OurProducts from "./OurProducts";
 
 const          Products = () => {
   return (
@@ -13,7 +14,7 @@ const          Products = () => {
       {/* Page Header */}
       <Header
         backgroundImage={productsHeaderImg}
-        headingText="Products"
+        headingText="Sunglasses for man"
         description="Stylish and protective sunglasses for men, designed to elevate your everyday look with confidence."
       />
 
@@ -23,11 +24,12 @@ const          Products = () => {
       </div>
 
       {/* Product Sections */}
-      <section className="w-full">
-        <ForMen />
+      <section className="w-full">\
+        <OurProducts/>
+       {/*  <ForMen />
         <ForWomen />
         <ForKids />
-        <EyeLens />
+        <EyeLens /> */}
       </section>
     </div>
   );

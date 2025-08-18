@@ -33,8 +33,8 @@ const ShopFor = () => {
   return (
     <div className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Shop For</PrimaryHeading>
-      <div className="flex flex-col-reverse lg:flex-row gap-4 md:gap-8 items-center container sm:px-0 md:px-16 sm:pr-0">
-        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 gap-y-10 sm:gap-y-20 py-10 lg:px-6">
+      <div className="flex flex-col-reverse xl:flex-row gap-4 md:gap-8 items-center container sm:px-0 md:px-16 sm:pr-0">
+        <div className="w-full xl:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 gap-y-10 sm:gap-y-20 py-10 lg:px-6">
           {data.map((item) => (
             <div
               key={item.id}
@@ -52,7 +52,7 @@ const ShopFor = () => {
             </div>
           ))}
         </div>
-        <div className="lg:w-1/2 relative">
+        <div className="xl:w-1/2 relative">
           <img src={EyewearImg} alt="" className="object-cover" />
           <h1 className="absolute left-10 bottom-10 text-white text-4xl md:text-7xl font-kaisei_Decol">Eyewear</h1>
         </div>
