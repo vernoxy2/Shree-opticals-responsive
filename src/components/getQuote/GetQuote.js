@@ -22,7 +22,7 @@ const GetQuote = ({ backgroundImage }) => {
             details below. Our team will get back to you as soon as possible.
           </p>
 
-          <PrimaryBtn>Get a Quote</PrimaryBtn>
+          <PrimaryBtn to={"/contactus"}>Get a Quote</PrimaryBtn>
         </div>
       </div>
     </div>

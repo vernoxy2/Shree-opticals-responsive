@@ -45,7 +45,7 @@ const AboutUs = () => {
       <WhatSetUsApart />
       
 
-      <GetQuote backgroundImage={aboutGetQuotebg} />
+      <GetQuote to={"/contactus"} backgroundImage={aboutGetQuotebg} />
     </div>
   );
 };

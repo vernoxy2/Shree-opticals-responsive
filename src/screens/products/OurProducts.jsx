@@ -488,7 +488,7 @@ const OurProducts = () => {
               />
               
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
                   <h3 className="text-lg font-semibold mb-2 line-clamp-2">{product.name}</h3>
                   <div className="flex items-center justify-between">
@@ -496,7 +496,7 @@ const OurProducts = () => {
                     <span className="text-sm bg-white/20 px-2 py-1 rounded-full">{product.brand}</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             {/* Product Info */}
