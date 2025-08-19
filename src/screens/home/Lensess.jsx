@@ -51,13 +51,13 @@ const Lensess = () => {
       <PrimaryHeading>Lenses</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container pb-20">
         {LensessData.map((item) => (
-          <div className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden ">
+          <div className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mt-auto">
             <img
               src={item.image}
               alt={item.label}
-              className="object-contain group-hover:scale-105 duration-300 mt-auto"
+              className="object-contain group-hover:scale-105 duration-300 mt-auto h-36 md:h-60"
             />
-            <p className=" absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0 right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
+            <p className=" absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0 right-0 rounded-br-xl font-norma bg-gradient-to-l from-[#7ddfdf] to-[#92CAD4] p-2 px-4">
               {item.label}
             </p>
           </div>

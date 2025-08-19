@@ -33,7 +33,7 @@ const Sunglassess = () => {
         className="absolute top-8 md:top-14 h-14 md:h-20 xl:h-auto right-0 xl:-right-28"
       />
       <PrimaryHeading>Sunglassess</PrimaryHeading>
-      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container">
+      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 gap-y-12 xl:gap-y-16 container">
         {SunglassessData.map((item, index) => (
           <React.Fragment key={item.id}>
             {/* Insert empty space before the 3rd item on XL screens */}
@@ -45,13 +45,13 @@ const Sunglassess = () => {
                 </h1>
               </div>
             )}
-            <div className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden">
+            <div className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden my-auto">
               <img
                 src={item.image}
                 alt={item.label}
-                className="object-contain group-hover:scale-105 duration-300"
+                className="object-contain group-hover:scale-105 duration-300 h-44 md:h-80 -mt-12"
               />
-              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
+              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol  bottom-0 right-0 rounded-br-xl font-norma bg-gradient-to-l from-[#7ddfdf] to-[#92CAD4] p-2 px-4">
                 {item.label}
               </p>
             </div>

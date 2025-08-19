@@ -27,30 +27,30 @@ const Eyeglasses = () => {
       <img src={EyeglassesR} alt="" className="absolute -top-10 md:-top-24 right-0 h-24 sm:h-32 xl:h-40 " />
       <div
         dir="rtl"
-        className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container"
+        className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 gap-y-12 xl:gap-y-16 container"
       >
         {/* Eyeglasses items */}
         {EyeglassesData.map((item) => (
           <div
             key={item.id}
-            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden "
+            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mb-auto "
           >
             <img
               src={item.image}
               alt={item.label}
-              className="object-contain group-hover:scale-105 duration-300 mt-auto"
+              className="object-contain group-hover:scale-105 duration-300 h-44 md:h-80 -mt-12"
             />
-            <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0  right-1 font-norma bg-gradient-to-l from-[#D5FEFF]/20 to-[#92CAD4] p-2 px-4">
+            <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0 right-0 rounded-br-xl font-norma bg-gradient-to-l from-[#7ddfdf] to-[#92CAD4] p-2 px-4">
               {item.label}
             </p>
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
-        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24">
+        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24 pr-20">
           <img
             src={eyeglasses}
             alt="Eyeglasses showcase"
-            className="w-full h-auto"
+            className="w-full h-auto -mt-12"
           />
           <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
             Glasses
