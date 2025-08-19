@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { CiFilter } from "react-icons/ci";
+import { CiFilter, CiHeart } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
-import img from "../../assets/productsSpecksImg2.png"
+import img from "../../assets/ProductImg.png";
+import { FaHeart } from "react-icons/fa";
 
-// Dummy product data
+// Dummy product data (unique ids ✅)
 const products = [
   {
     id: 1,
     name: "Round, metal-frame sunglasses",
     price: 200,
     shape: "Round",
-    brand: "tommy hilfiger",
+    brand: "Tommy Hilfiger",
     gender: "Men",
     category: "Sunglasses",
     image: img,
@@ -27,10 +28,10 @@ const products = [
   },
   {
     id: 3,
-    name: "Square sunglasses",
+    name: "Square eyeglasses",
     price: 700,
     shape: "Square",
-    brand: "french connection",
+    brand: "French Connection",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img,
@@ -47,7 +48,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Aviator sunglasses",
+    name: "Aviator lenses",
     price: 500,
     shape: "Aviator",
     brand: "Spaco",
@@ -56,52 +57,152 @@ const products = [
     image: img,
   },
   {
-    id: 1,
-    name: "Round, metal-frame sunglasses",
-    price: 200,
+    id: 6,
+    name: "Round eyeglasses",
+    price: 350,
     shape: "Round",
-    brand: "tommy hilfiger",
+    brand: "Scavin",
+    gender: "Women",
+    category: "Eyeglasses",
+    image: img,
+  },
+  {
+    id: 7,
+    name: "Square sunglasses",
+    price: 450,
+    shape: "Square",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Sunglasses",
     image: img,
   },
   {
-    id: 2,
-    name: "Oval sunglasses",
-    price: 400,
+    id: 8,
+    name: "Oval prescription lenses",
+    price: 600,
     shape: "Oval",
-    brand: "Scott",
+    brand: "Ray-Ban",
+    gender: "Unisex",
+    category: "Lenses",
+    image: img,
+  },
+  {
+    id: 9,
+    name: "Hexagonal eyeglasses",
+    price: 900,
+    shape: "Hexagonal",
+    brand: "Boss",
+    gender: "Men",
+    category: "Eyeglasses",
+    image: img,
+  },
+  {
+    id: 10,
+    name: "Classic aviator sunglasses",
+    price: 1100,
+    shape: "Aviator",
+    brand: "Police",
     gender: "Women",
     category: "Sunglasses",
     image: img,
   },
   {
-    id: 3,
-    name: "Square sunglasses",
-    price: 700,
+    id: 11,
+    name: "Round lightweight sunglasses",
+    price: 250,
+    shape: "Round",
+    brand: "Vogue",
+    gender: "Kids",
+    category: "Sunglasses",
+    image: img,
+  },
+  {
+    id: 12,
+    name: "Square bold eyeglasses",
+    price: 750,
     shape: "Square",
-    brand: "french connection",
+    brand: "Prada",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img,
   },
   {
-    id: 4,
-    name: "Hexagonal sunglasses",
-    price: 1200,
+    id: 13,
+    name: "Oval fashion sunglasses",
+    price: 550,
+    shape: "Oval",
+    brand: "Gucci",
+    gender: "Women",
+    category: "Sunglasses",
+    image: img,
+  },
+  {
+    id: 14,
+    name: "Hexagonal rimless lenses",
+    price: 1300,
     shape: "Hexagonal",
-    brand: "Page 4",
+    brand: "Calvin Klein",
+    gender: "Men",
+    category: "Lenses",
+    image: img,
+  },
+  {
+    id: 15,
+    name: "Aviator sporty sunglasses",
+    price: 650,
+    shape: "Aviator",
+    brand: "Adidas",
+    gender: "Unisex",
+    category: "Sunglasses",
+    image: img,
+  },
+  {
+    id: 16,
+    name: "Round retro eyeglasses",
+    price: 480,
+    shape: "Round",
+    brand: "Fastrack",
+    gender: "Women",
+    category: "Eyeglasses",
+    image: img,
+  },
+  {
+    id: 17,
+    name: "Square sleek sunglasses",
+    price: 800,
+    shape: "Square",
+    brand: "Oakley",
     gender: "Men",
     category: "Sunglasses",
     image: img,
   },
   {
-    id: 5,
-    name: "Aviator sunglasses",
-    price: 500,
-    shape: "Aviator",
-    brand: "Spaco",
+    id: 18,
+    name: "Oval stylish eyeglasses",
+    price: 370,
+    shape: "Oval",
+    brand: "Titan",
     gender: "Kids",
+    category: "Eyeglasses",
+    image: img,
+  },
+  {
+    id: 19,
+    name: "Hexagonal gold sunglasses",
+    price: 1400,
+    shape: "Hexagonal",
+    brand: "Versace",
+    gender: "Unisex",
+    category: "Sunglasses",
+    image: img,
+  },
+  {
+    id: 20,
+    name: "Aviator premium lenses",
+    price: 950,
+    shape: "Aviator",
+    brand: "Armani",
+    gender: "Men",
     category: "Lenses",
     image: img,
   },
@@ -112,10 +213,10 @@ const genders = ["Men", "Women", "Kids", "Unisex"];
 const categories = ["Eyeglasses", "Sunglasses", "Lenses"];
 const frameShapes = ["Oval", "Round", "Square", "Hexagonal", "Aviator"];
 const priceRanges = [
-  { label: "below 300₹", min: 0, max: 300 },
+  { label: "below 300₹", min: 0, max: 299 },
   { label: "300₹ - 500₹", min: 300, max: 500 },
-  { label: "500₹ - 1000₹", min: 500, max: 1000 },
-  { label: "Above 1000₹", min: 1000, max: Infinity },
+  { label: "500₹ - 1000₹", min: 501, max: 1000 },
+  { label: "Above 1000₹", min: 1001, max: Infinity },
 ];
 const brands = [
   "tommy hilfiger",
@@ -133,8 +234,9 @@ const OurProducts = () => {
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [selectedGender, setSelectedGender] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
+   // ✅ Track liked product IDs
+  const [likedProducts, setLikedProducts] = useState([]);
 
-  // State for dropdown sections
   const [expandedSections, setExpandedSections] = useState({
     gender: true,
     category: false,
@@ -160,17 +262,28 @@ const OurProducts = () => {
     }));
   };
 
-  // Filtering logic
+    // ✅ Toggle liked status for each product
+  const toggleLike = (id) => {
+    setLikedProducts((prev) =>
+      prev.includes(id) ? prev.filter((pid) => pid !== id) : [...prev, id]
+    );
+  };
+
+  // Filtering logic ✅
   const filteredProducts = products.filter((product) => {
     const shapeMatch =
       selectedShapes.length === 0 || selectedShapes.includes(product.shape);
+
     const brandMatch =
       selectedBrands.length === 0 || selectedBrands.includes(product.brand);
+
     const genderMatch =
       selectedGender.length === 0 || selectedGender.includes(product.gender);
+
     const categoryMatch =
       selectedCategories.length === 0 ||
       selectedCategories.includes(product.category);
+
     const priceMatch =
       selectedPrices.length === 0 ||
       selectedPrices.some((rangeLabel) => {
@@ -184,10 +297,10 @@ const OurProducts = () => {
   });
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 container mx-auto l">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 container mx-auto">
       {/* Sidebar */}
-      <div className="col-span-1 space-y-6 bg-[#BBCED4] p-4 rounded-lg">
-        <h2 className="font-medium text-2xl flex items-center font-kaisei_Decol justify-between gap-2 bg-white px-4 py-1 rounded-md">
+      <div className="col-span-1 space-y-6 bg-[#BBCED4] p-4 rounded-lg h-fit">
+        <h2 className="font-medium text-2xl flex items-center justify-between gap-2 bg-white px-4 py-1 rounded-md">
           Filter
           <CiFilter className="font-bold text-2xl" />
         </h2>
@@ -195,7 +308,7 @@ const OurProducts = () => {
         {/* Gender */}
         <div className="bg-white p-2 px-3 rounded-md">
           <h3
-            className="font-medium text-xl  font-kaisei_Decol flex items-center justify-between cursor-pointer"
+            className="font-medium text-xl flex items-center justify-between cursor-pointer"
             onClick={() => toggleSection("gender")}
           >
             Gender
@@ -206,9 +319,9 @@ const OurProducts = () => {
             />
           </h3>
           {expandedSections.gender && (
-            <div className=" mt-2">
+            <div className="mt-2">
               {genders.map((gender) => (
-                <label key={gender} className="block text-xl font-kanit">
+                <label key={gender} className="block">
                   <input
                     type="checkbox"
                     checked={selectedGender.includes(gender)}
@@ -225,7 +338,7 @@ const OurProducts = () => {
         {/* Category */}
         <div className="bg-white p-2 px-4 rounded-md">
           <h3
-            className="font-medium text-xl font-kaisei_Decol flex items-center justify-between cursor-pointer"
+            className="font-medium text-xl flex items-center justify-between cursor-pointer"
             onClick={() => toggleSection("category")}
           >
             Category
@@ -238,7 +351,7 @@ const OurProducts = () => {
           {expandedSections.category && (
             <div className="mt-2">
               {categories.map((category) => (
-                <label key={category} className="block text-xl font-kanit">
+                <label key={category} className="block">
                   <input
                     type="checkbox"
                     checked={selectedCategories.includes(category)}
@@ -257,7 +370,7 @@ const OurProducts = () => {
         {/* Frame Shape */}
         <div className="bg-white p-2 px-4 rounded-md">
           <h3
-            className="font-medium text-xl  font-kaisei_Decol flex items-center justify-between cursor-pointer"
+            className="font-medium text-xl flex items-center justify-between cursor-pointer"
             onClick={() => toggleSection("frameShape")}
           >
             Frame shape
@@ -270,7 +383,7 @@ const OurProducts = () => {
           {expandedSections.frameShape && (
             <div className="mt-2">
               {frameShapes.map((shape) => (
-                <label key={shape} className="block text-xl font-kanit">
+                <label key={shape} className="block">
                   <input
                     type="checkbox"
                     checked={selectedShapes.includes(shape)}
@@ -287,7 +400,7 @@ const OurProducts = () => {
         {/* Price Range */}
         <div className="bg-white p-2 px-4 rounded-md">
           <h3
-            className="font-medium text-xl font-kaisei_Decol flex items-center justify-between cursor-pointer"
+            className="font-medium text-xl flex items-center justify-between cursor-pointer"
             onClick={() => toggleSection("priceRange")}
           >
             Price range
@@ -300,7 +413,7 @@ const OurProducts = () => {
           {expandedSections.priceRange && (
             <div className="mt-2">
               {priceRanges.map((range) => (
-                <label key={range.label} className="block text-xl font-kanit">
+                <label key={range.label} className="block">
                   <input
                     type="checkbox"
                     checked={selectedPrices.includes(range.label)}
@@ -319,7 +432,7 @@ const OurProducts = () => {
         {/* Brands */}
         <div className="bg-white p-2 px-4 rounded-md">
           <h3
-            className="font-medium text-xl  font-kaisei_Decol flex items-center justify-between cursor-pointer"
+            className="font-medium text-xl flex items-center justify-between cursor-pointer"
             onClick={() => toggleSection("brands")}
           >
             Brand Select
@@ -332,7 +445,7 @@ const OurProducts = () => {
           {expandedSections.brands && (
             <div className="mt-2">
               {brands.map((brand) => (
-                <label key={brand} className="block text-xl font-kanit">
+                <label key={brand} className="block">
                   <input
                     type="checkbox"
                     checked={selectedBrands.includes(brand)}
@@ -352,20 +465,32 @@ const OurProducts = () => {
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="relative h-[340px] border rounded-xl shadow hover:shadow-lg transition"
+            className="relative  border rounded-xl shadow hover:shadow-lg transition overflow-hidden group"
           >
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full  object-contain h-full rounded-md"
-            />
-            <h4 className="mt-2 text-sm font-medium">{product.name}</h4>
-            <p className="text-blue-600 font-semibold">
-              Price {product.price}₹
-            </p>
-            <button className="absolute top-2 right-2 text-gray-400 hover:text-red-500">
-              ♡
+             {/* ✅ Like Button Per Product */}
+            <button
+              onClick={() => toggleLike(product.id)}
+              className="absolute top-2 right-2 p-1 rounded-full transition-colors duration-300"
+            >
+              {likedProducts.includes(product.id) ? (
+                <FaHeart className="w-8 h-8 text-red-500" />
+              ) : (
+                <CiHeart className="w-8 h-8 text-gray-400 hover:text-red-500" />
+              )}
             </button>
+            <div className="w-full  flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="h-full w-full object-cover rounded-md"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className=" absolute bottom-0 left-0 p-4 text-white text-start space-y-4 ">
+                  <h3 className="text-2xl font-kaisei_Decol ">{product.name}</h3>
+                  <p className="text-2xl bg-[#BBCED4] py-1 px-2 flex flex-row w-fit rounded-lg">Price {product.price}</p>
+                </div>
+              </div>
+            </div>
           </div>
         ))}
 

@@ -11,6 +11,7 @@ import ContactUs from './screens/contactUs/ContactUs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import WhatsAppButton from './components/whatsapp/WhatsAppButton';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
     <Router>
       <div className="overflow-x-hidden">
         <ScrollToTop />
+        <WhatsAppButton />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
