@@ -7,6 +7,7 @@ import ForWomen from "./ForWomen";
 import ForKids from "./ForKids";
 import EyeLens from "./EyeLens"; */
 import OurProducts from "./OurProducts";
+import Brand from "./Brand";
 
 const          Products = () => {
   return (
@@ -24,7 +25,8 @@ const          Products = () => {
       </div>
 
       {/* Product Sections */}
-      <section className="w-full">\
+      <section className="w-full">
+        <Brand/>
         <OurProducts/>
        {/*  <ForMen />
         <ForWomen />

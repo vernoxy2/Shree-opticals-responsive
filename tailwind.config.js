@@ -26,7 +26,7 @@ module.exports = {
         },
       },
       animation: {
-        scrollLeft: "scrollLeft 40s linear infinite",
+        scrollLeft: "scrollLeft 100s linear infinite",
       },
       fontFamily: {
         kaisei_Decol: ['"Kaisei Decol"', "serif"],

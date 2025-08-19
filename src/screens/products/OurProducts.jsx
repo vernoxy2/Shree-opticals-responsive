@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { CiFilter, CiHeart } from "react-icons/ci";
+import { CiFilter } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
-import img from "../../assets/ProductImg.png";
-import { FaHeart } from "react-icons/fa";
+import img from "../../assets/OurProductsImg/ProductImg.png";
+import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
+import SunglassesR from "../../assets/HomePageImgs/Sunglassess/SunglassessR.png";
+import SunglassesL from "../../assets/HomePageImgs/Sunglassess/SunglassessL.png";
 
 // Dummy product data (unique ids ✅)
 const products = [
@@ -297,9 +299,15 @@ const OurProducts = () => {
   });
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 container mx-auto">
+    <section className="py-10 md:py-20 space-y-4 md:space-y-8 relative"> 
+    <img src={SunglassesR} alt="" className="absolute top-10 md:top-16 h-14 md:h-20 xl:h-auto right-0 xl:-right-28"/>
+    <img src={SunglassesL} alt="" className="absolute top-0 h-10 md:h-14 xl:h-auto xl:-left-16"/>
+      <PrimaryHeading>Our Products</PrimaryHeading>
+
+    <div className="grid grid-cols-1 md:grid-cols-4 md:gap-6 gap-y-4 container mx-auto">
+      
       {/* Sidebar */}
-      <div className="col-span-1 space-y-6 bg-[#BBCED4] p-4 rounded-lg h-fit">
+      <div className="col-span-1 space-y-6 bg-[#BBCED4] p-4 rounded-lg h-fit w-full">
         <h2 className="font-medium text-2xl flex items-center justify-between gap-2 bg-white px-4 py-1 rounded-md">
           Filter
           <CiFilter className="font-bold text-2xl" />
@@ -460,24 +468,15 @@ const OurProducts = () => {
         </div>
       </div>
 
+
       {/* Products */}
-      <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-6">
+      <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-y-2 sm:gap-4">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
             className="relative bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
           >
-            {/* Like Button Per Product */}
-            <button
-              onClick={() => toggleLike(product.id)}
-              className="absolute top-3 right-3 z-10 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all duration-300"
-            >
-              {likedProducts.includes(product.id) ? (
-                <FaHeart className="w-5 h-5 text-red-500" />
-              ) : (
-                <CiHeart className="w-5 h-5 text-gray-600 hover:text-red-500 transition-colors duration-300" />
-              )}
-            </button>
+            
             
             {/* Product Image Container */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -524,6 +523,7 @@ const OurProducts = () => {
         )}
       </div>
     </div>
+    </section>
   );
 };
 

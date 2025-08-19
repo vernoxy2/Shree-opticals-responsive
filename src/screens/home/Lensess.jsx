@@ -46,8 +46,8 @@ const LensessData = [
 const Lensess = () => {
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
-      <img src={lensesT} alt="" className="absolute left-0"/>
-      <img src={lensesB} alt="" className="absolute -bottom-24"/>
+      <img src={lensesT} alt="" className="absolute left-0 h-16 md:h-24 xl:h-32"/>
+      <img src={lensesB} alt="" className="absolute bottom-0 xl:-bottom-24 h-20 md:h-32 xl:h-40"/>
       <PrimaryHeading>Lenses</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container pb-20">
         {LensessData.map((item) => (
