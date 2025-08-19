@@ -461,43 +461,66 @@ const OurProducts = () => {
       </div>
 
       {/* Products */}
-      <div className="col-span-3 grid grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-6">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
-            className="relative  border rounded-xl shadow hover:shadow-lg transition overflow-hidden group"
+            className="relative bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
           >
-             {/* ✅ Like Button Per Product */}
+            {/* Like Button Per Product */}
             <button
               onClick={() => toggleLike(product.id)}
-              className="absolute top-2 right-2 p-1 rounded-full transition-colors duration-300"
+              className="absolute top-3 right-3 z-10 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all duration-300"
             >
               {likedProducts.includes(product.id) ? (
-                <FaHeart className="w-8 h-8 text-red-500" />
+                <FaHeart className="w-5 h-5 text-red-500" />
               ) : (
-                <CiHeart className="w-8 h-8 text-gray-400 hover:text-red-500" />
+                <CiHeart className="w-5 h-5 text-gray-600 hover:text-red-500 transition-colors duration-300" />
               )}
             </button>
-            <div className="w-full  flex items-center justify-center">
+            
+            {/* Product Image Container */}
+            <div className="relative w-full h-64 overflow-hidden">
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-full w-full object-cover rounded-md"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute top-0 left-0 w-full h-full bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className=" absolute bottom-0 left-0 p-4 text-white text-start space-y-4 ">
-                  <h3 className="text-2xl font-kaisei_Decol ">{product.name}</h3>
-                  <p className="text-2xl bg-[#BBCED4] py-1 px-2 flex flex-row w-fit rounded-lg">Price {product.price}</p>
+              
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <h3 className="text-lg font-semibold mb-2 line-clamp-2">{product.name}</h3>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xl font-bold">₹{product.price}</span>
+                    <span className="text-sm bg-white/20 px-2 py-1 rounded-full">{product.brand}</span>
+                  </div>
                 </div>
+              </div>
+            </div>
+            
+            {/* Product Info */}
+            <div className="p-4">
+              <h3 className="font-medium text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                {product.name}
+              </h3>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-lg font-bold text-gray-900">₹{product.price}</span>
+                <span className="text-sm text-gray-500">{product.brand}</span>
+              </div>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span className="bg-gray-100 px-2 py-1 rounded-full">{product.shape}</span>
+                <span className="bg-gray-100 px-2 py-1 rounded-full">{product.category}</span>
               </div>
             </div>
           </div>
         ))}
 
         {filteredProducts.length === 0 && (
-          <p className="col-span-full text-center text-gray-500">
-            No products found.
-          </p>
+          <div className="col-span-full text-center py-12">
+            <p className="text-gray-500 text-lg">No products found matching your criteria.</p>
+            <p className="text-gray-400 text-sm mt-2">Try adjusting your filters to see more products.</p>
+          </div>
         )}
       </div>
     </div>
