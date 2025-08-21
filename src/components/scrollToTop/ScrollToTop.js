@@ -5,7 +5,20 @@ const ScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    if (location.hash) {
+      // Allow content to render before scrolling
+      setTimeout(() => {
+        const id = location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 0);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
 
   return null; // This component doesn't render anything

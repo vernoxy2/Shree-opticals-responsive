@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { CiFilter } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
@@ -25,6 +26,7 @@ const OurProducts = () => {
   const [selectedGender, setSelectedGender] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [sortBy, setSortBy] = useState("none");
+  const location = useLocation();
 
   const [expandedSections, setExpandedSections] = useState({
     gender: true,
@@ -57,6 +59,21 @@ const OurProducts = () => {
     setSortBy("none");
   };
 
+  // Pre-apply gender filter from query param if present and scroll to section via hash
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const genderParam = params.get("gender");
+    if (genderParam) {
+      const normalized = genderParam.toLowerCase();
+      const map = { men: "Men", women: "Women", kids: "Kids", unisex: "Unisex" };
+      const value = map[normalized] || genderParam;
+      if (genders.includes(value)) {
+        setSelectedGender([value]);
+        setExpandedSections((prev) => ({ ...prev, gender: true }));
+      }
+    }
+  }, [location.search]);
+
   // Filtering logic ✅
   const filteredProducts = productslist.filter((product) => {
     const shapeMatch = selectedShapes.length === 0 || selectedShapes.includes(product.shape);
@@ -81,7 +98,7 @@ const OurProducts = () => {
   });
 
   return (
-    <section className="py-10 md:py-20 space-y-4 md:space-y-8 relative">
+    <section id="our-products" className="py-10 md:py-20 space-y-4 md:space-y-8 relative">
       <img src={SunglassesR} alt="" className="absolute top-10 md:top-16 h-14 md:h-20 xl:h-auto right-0 xl:-right-28" />
       <img src={SunglassesL} alt="" className="absolute top-0 h-10 md:h-14 xl:h-auto xl:-left-16" />
       <PrimaryHeading>Our Products</PrimaryHeading>

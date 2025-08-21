@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
 import ManImg from "../../assets/HomePageImgs/ShopFor/ManImg.webp";
@@ -30,6 +31,14 @@ const data = [
 ];
 
 const ShopFor = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (category) => {
+    const map = { Man: "Men", Woman: "Women", Kids: "Kids", Unisex: "Unisex" };
+    const gender = map[category] || category;
+    navigate({ pathname: "/products", search: `?gender=${encodeURIComponent(gender)}` , hash: "#our-products" });
+  };
+
   return (
     <div className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Shop For</PrimaryHeading>
@@ -38,7 +47,8 @@ const ShopFor = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden"
+              onClick={() => handleNavigate(item.category)}
+              className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden cursor-pointer"
             >
               <img
                 src={item.img}
