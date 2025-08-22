@@ -116,12 +116,14 @@ const OurProducts = () => {
   // Scroll detection for "Scroll to Top" button
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 2000);
+      setShowScrollTop(window.scrollY > 100); // show after 600px
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // check initially
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (!showScrollTop) return null;
 
   // Filtering logic
   const filteredProducts = productslist.filter((product) => {
@@ -158,13 +160,15 @@ const OurProducts = () => {
       className="py-10 md:py-20 space-y-4 md:space-y-8 relative"
     >
       <img
-      data-aos="fade-left" data-aos-duration="2000"
+        data-aos="fade-left"
+        data-aos-duration="2000"
         src={SunglassesR}
         alt=""
         className="absolute top-10 md:top-16 h-14 md:h-20 xl:h-auto right-0 xl:-right-28"
       />
       <img
-      data-aos="fade-right" data-aos-duration="2000"
+        data-aos="fade-right"
+        data-aos-duration="2000"
         src={SunglassesL}
         alt=""
         className="absolute top-0 h-10 md:h-14 xl:h-auto xl:-left-16"
