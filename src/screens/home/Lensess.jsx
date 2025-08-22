@@ -57,12 +57,13 @@ const Lensess = () => {
 
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
-      <img src={lensesT} alt="" className="absolute left-0 h-16 md:h-24 xl:h-32"/>
-      <img src={lensesB} alt="" className="absolute bottom-0 xl:-bottom-24 h-20 md:h-32 xl:h-40"/>
+      <img data-aos="fade-right" data-aos-duration="2000" src={lensesT} alt="" className="absolute left-0 h-16 md:h-24 xl:h-32"/>
+      <img data-aos="fade-right" data-aos-duration="2000" src={lensesB} alt="" className="absolute bottom-0 xl:-bottom-24 h-20 md:h-32 xl:h-40"/>
       <PrimaryHeading>Lenses</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container pb-20">
         {LensessData.map((item) => (
           <div 
+            data-aos="fade-up"
             key={item.id}
             onClick={() => handleLensClick(item.label)}
             className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mt-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
@@ -78,7 +79,7 @@ const Lensess = () => {
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
-        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24">
+        <div data-aos="fade-right" className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24">
           <img
             src={lenses}
             alt="Eyeglasses showcase"

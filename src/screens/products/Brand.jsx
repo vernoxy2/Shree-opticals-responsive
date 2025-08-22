@@ -16,6 +16,7 @@ const Brand = () => {
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-y-10 container">
         {brands.map((brand, idx) => (
           <div
+            data-aos="zoom-in"
             key={idx}
             className="flex items-center justify-center"
           >

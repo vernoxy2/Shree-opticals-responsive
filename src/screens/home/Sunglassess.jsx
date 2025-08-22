@@ -34,11 +34,13 @@ const Sunglassess = () => {
   return (
     <div className=" relative py-10 md:py-20 space-y-4 md:space-y-8">
       <img
+      data-aos="fade-right" data-aos-duration="2000"
         src={SunglassessL}
         alt=""
         className="absolute top-0 h-10 md:h-14 xl:h-auto xl:-left-16"
       />
       <img
+      data-aos="fade-left" data-aos-duration="2000"
         src={SunglassessR}
         alt=""
         className="absolute top-8 md:top-14 h-14 md:h-20 xl:h-auto right-0 xl:-right-28"
@@ -49,7 +51,7 @@ const Sunglassess = () => {
           <React.Fragment key={item.id}>
             {/* Insert empty space before the 3rd item on XL screens */}
             {index === 2 && (
-              <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -mr-24">
+              <div data-aos="fade-left" className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -mr-24">
                 <img src={sunglasses} alt="" className="-mt-20" />
                 <h1 className="absolute left-48 bottom-5 text-white text-4xl md:text-7xl font-kaisei_Decol">
                   Fashion
@@ -57,6 +59,7 @@ const Sunglassess = () => {
               </div>
             )}
             <div 
+            data-aos="fade-up"
               onClick={() => handleSunglassesClick(item.label)}
               className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden my-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
             >

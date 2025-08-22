@@ -34,8 +34,8 @@ const Eyeglasses = () => {
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Eyeglasses</PrimaryHeading>
-      <img src={EyeglassesL} alt="" className="absolute top-0 md:-top-24 h-14 sm:h-20 xl:h-32" />
-      <img src={EyeglassesR} alt="" className="absolute -top-10 md:-top-24 right-0 h-24 sm:h-32 xl:h-40 " />
+      <img data-aos="fade-right" data-aos-duration="2000" src={EyeglassesL} alt="" className="absolute top-0 md:-top-24 h-14 sm:h-20 xl:h-32" />
+      <img data-aos="fade-left" data-aos-duration="2000" src={EyeglassesR} alt="" className="absolute -top-10 md:-top-24 right-0 h-24 sm:h-32 xl:h-40 " />
       <div
         dir="rtl"
         className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 gap-y-12 xl:gap-y-16 container"
@@ -43,6 +43,7 @@ const Eyeglasses = () => {
         {/* Eyeglasses items */}
         {EyeglassesData.map((item) => (
           <div
+            data-aos="fade-up"
             key={item.id}
             onClick={() => handleEyeglassesClick(item.label)}
             className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mb-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
@@ -58,7 +59,7 @@ const Eyeglasses = () => {
           </div>
         ))}
         {/* Eyeglasses big image in col 1-2 */}
-        <div className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24 pr-20">
+        <div data-aos="fade-right" className="hidden xl:block xl:col-start-3 xl:col-span-2 relative -ml-24 pr-20">
           <img
             src={eyeglasses}
             alt="Eyeglasses showcase"

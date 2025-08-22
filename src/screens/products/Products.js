@@ -9,7 +9,7 @@ import EyeLens from "./EyeLens"; */
 import OurProducts from "./OurProducts";
 import Brand from "./Brand";
 
-const          Products = () => {
+const Products = () => {
   return (
     <div className="w-full flex flex-col ">
       {/* Page Header */}
@@ -26,9 +26,9 @@ const          Products = () => {
 
       {/* Product Sections */}
       <section className="w-full">
-        <Brand/>
-        <OurProducts/>
-       {/*  <ForMen />
+        <Brand />
+        <OurProducts />
+        {/*  <ForMen />
         <ForWomen />
         <ForKids />
         <EyeLens /> */}

@@ -46,6 +46,7 @@ const ShopFor = () => {
         <div className="w-full xl:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 gap-y-10 sm:gap-y-20 py-10 lg:px-6">
           {data.map((item) => (
             <div
+            data-aos="fade-up"
               key={item.id}
               onClick={() => handleNavigate(item.category)}
               className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden cursor-pointer"
@@ -62,7 +63,7 @@ const ShopFor = () => {
             </div>
           ))}
         </div>
-        <div className="xl:w-1/2 relative">
+        <div data-aos="fade-left" className="xl:w-1/2 relative">
           <img src={EyewearImg} alt="" className="object-cover" />
           <h1 className="absolute left-10 bottom-10 text-white text-4xl md:text-7xl font-kaisei_Decol">Eyewear</h1>
         </div>
