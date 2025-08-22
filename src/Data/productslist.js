@@ -15,7 +15,7 @@ function getRandomItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-export const productslist = Array.from({ length: 100 }, (_, index) => {
+export const productslist = Array.from({ length: 200 }, (_, index) => {
   const shape = getRandomItem(shapes);
   const category = getRandomItem(categories);
   return {

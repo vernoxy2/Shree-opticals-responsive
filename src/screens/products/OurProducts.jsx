@@ -63,6 +63,10 @@ const OurProducts = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const genderParam = params.get("gender");
+    const categoryParam = params.get("category");
+    const shapeParam = params.get("shape");
+    
+    // Apply gender filter
     if (genderParam) {
       const normalized = genderParam.toLowerCase();
       const map = { men: "Men", women: "Women", kids: "Kids", unisex: "Unisex" };
@@ -72,7 +76,29 @@ const OurProducts = () => {
         setExpandedSections((prev) => ({ ...prev, gender: true }));
       }
     }
-  }, [location.search]);
+    
+    // Apply category filter
+    if (categoryParam && categories.includes(categoryParam)) {
+      setSelectedCategories([categoryParam]);
+      setExpandedSections((prev) => ({ ...prev, category: true }));
+    }
+    
+    // Apply shape filter
+    if (shapeParam && frameShapes.includes(shapeParam)) {
+      setSelectedShapes([shapeParam]);
+      setExpandedSections((prev) => ({ ...prev, frameShape: true }));
+    }
+    
+    // Scroll to section if hash is present
+    if (location.hash === "#our-products") {
+      setTimeout(() => {
+        const element = document.getElementById("our-products");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [location.search, location.hash]);
 
   // Filtering logic ✅
   const filteredProducts = productslist.filter((product) => {
@@ -262,17 +288,53 @@ const OurProducts = () => {
 
         {/* Products */}
         <div className="col-span-3">
-          {/* Sorting Dropdown */}
-          <div className="flex md:justify-end mb-4">
+          {/* Active Filters Display */}
+          {(selectedCategories.length > 0 || selectedShapes.length > 0 || selectedGender.length > 0 || selectedBrands.length > 0 || selectedPrices.length > 0) && (
+            <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+              <h4 className="text-sm font-medium text-blue-800 mb-2">Active Filters:</h4>
+              <div className="flex flex-wrap gap-2">
+                {selectedCategories.map(cat => (
+                  <span key={cat} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                    Category: {cat}
+                  </span>
+                ))}
+                {selectedShapes.map(shape => (
+                  <span key={shape} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                    Shape: {shape}
+                  </span>
+                ))}
+                {selectedGender.map(gender => (
+                  <span key={gender} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                    Gender: {gender}
+                  </span>
+                ))}
+                {selectedBrands.map(brand => (
+                  <span key={brand} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                    Brand: {brand}
+                  </span>
+                ))}
+                {selectedPrices.map(price => (
+                  <span key={price} className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                    Price: {price}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Results Counter and Sorting */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+            <div className="text-sm text-gray-600">
+              Showing {sortedProducts.length} of {productslist.length} products
+            </div>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="border rounded-lg px-3 py-2"
+              className="border rounded-lg px-3 py-2 w-full md:w-auto"
             >
               <option value="none">Sort By</option>
               <option value="priceLow">Price: Low → High</option>
               <option value="priceHigh">Price: High → Low</option>
-             
             </select>
           </div>
 

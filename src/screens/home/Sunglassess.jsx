@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import Cateye from "../../assets/HomePageImgs/Sunglassess/Scateye.webp";
 import oval from "../../assets/HomePageImgs/Sunglassess/Soval.webp";
@@ -20,6 +21,16 @@ const SunglassessData = [
 ];
 
 const Sunglassess = () => {
+  const navigate = useNavigate();
+
+  const handleSunglassesClick = (shape) => {
+    navigate({
+      pathname: "/products",
+      search: `?category=Sunglasses&shape=${encodeURIComponent(shape)}`,
+      hash: "#our-products"
+    });
+  };
+
   return (
     <div className=" relative py-10 md:py-20 space-y-4 md:space-y-8">
       <img
@@ -45,7 +56,10 @@ const Sunglassess = () => {
                 </h1>
               </div>
             )}
-            <div className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden my-auto">
+            <div 
+              onClick={() => handleSunglassesClick(item.label)}
+              className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden my-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
+            >
               <img
                 src={item.image}
                 alt={item.label}

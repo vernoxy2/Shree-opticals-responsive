@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import cateye from "../../assets/HomePageImgs/Eyeglasses/Ecateye.webp";
 import oval from "../../assets/HomePageImgs/Eyeglasses/Eoval.webp";
@@ -20,6 +21,16 @@ const EyeglassesData = [
 ];
 
 const Eyeglasses = () => {
+  const navigate = useNavigate();
+
+  const handleEyeglassesClick = (shape) => {
+    navigate({
+      pathname: "/products",
+      search: `?category=Eyeglasses&shape=${encodeURIComponent(shape)}`,
+      hash: "#our-products"
+    });
+  };
+
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Eyeglasses</PrimaryHeading>
@@ -33,7 +44,8 @@ const Eyeglasses = () => {
         {EyeglassesData.map((item) => (
           <div
             key={item.id}
-            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mb-auto "
+            onClick={() => handleEyeglassesClick(item.label)}
+            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mb-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
           >
             <img
               src={item.image}

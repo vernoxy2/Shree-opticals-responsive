@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import Gray from "../../assets/HomePageImgs/Lenses/Lgray.webp";
 import Brown from "../../assets/HomePageImgs/Lenses/Lbrown.webp";
@@ -44,6 +45,16 @@ const LensessData = [
 ];
 
 const Lensess = () => {
+  const navigate = useNavigate();
+
+  const handleLensClick = (color) => {
+    navigate({
+      pathname: "/products",
+      search: `?category=Lenses`,
+      hash: "#our-products"
+    });
+  };
+
   return (
     <div className="relative py-10 md:py-20 space-y-4 md:space-y-8" dir="rtl">
       <img src={lensesT} alt="" className="absolute left-0 h-16 md:h-24 xl:h-32"/>
@@ -51,7 +62,11 @@ const Lensess = () => {
       <PrimaryHeading>Lenses</PrimaryHeading>
       <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-3 md:gap-8 container pb-20">
         {LensessData.map((item) => (
-          <div className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mt-auto">
+          <div 
+            key={item.id}
+            onClick={() => handleLensClick(item.label)}
+            className="relative flex flex-col items-end justify-start border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden mt-auto cursor-pointer hover:border-[#7ddfdf] transition-colors duration-300"
+          >
             <img
               src={item.image}
               alt={item.label}
