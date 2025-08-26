@@ -18,7 +18,7 @@ const FiltersUI = ({
   const { selectedShapes, selectedPrices, selectedBrands, selectedGender, selectedCategories } = selected;
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 h-full">
       <h2 className="font-medium text-2xl flex items-center justify-between gap-2 bg-white px-4 py-1 rounded-md">
         Filter <CiFilter className="hidden lg:block font-bold text-2xl" />
       </h2>
