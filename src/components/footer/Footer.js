@@ -8,6 +8,39 @@ import { BsTwitterX } from "react-icons/bs";
 import { PiMapPinAreaFill } from "react-icons/pi";
 import { MdAddCall, MdEmail } from "react-icons/md";
 
+const PageList = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Products",
+    url: "/products",
+  },
+  {
+    title: "Contact",
+    url: "/contactus",
+  },
+];
+
+const ProductsList = [
+  {
+    title: "Sunglasses",
+    url: "/sunglasses",
+  },
+  {
+    title: "Eyeglasses",
+    url: "/eyeglasses",
+  },
+  {
+    title: "Lenses",
+    url: "/lenses",
+  },
+]
 const Footer = () => {
   return (
     <div className="w-full flex items-center justify-center">
@@ -62,9 +95,40 @@ const Footer = () => {
             </div>
           </div>
           {/* quick links for Pages */}
-          <div className="w-full bg-primary py-10"></div>
+          <div className="space-y-2 mx-auto ">
+            <h1 className="text-primary font-kaisei_Decol text-2xl md:text-3xl font-bold underline line-clamp-6">
+              Pages
+            </h1>
+            <ul className="flex flex-col gap-2">
+              {PageList.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.url}
+                    className="text-primary font-kanit text-xl"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* quick links for products */}
-          <div className="w-full bg-primary py-10"></div>
+          <div className="space-y-3 mx-auto">
+            <h1 className="text-primary font-kaisei_Decol text-2xl md:text-3xl font-bold underline line-clamp-6">Products</h1>
+            <ul className="flex flex-col gap-2">
+              {ProductsList.map((item, index) => (
+                <li key={index}>
+                  <a
+                    href={item.url}
+                    className="text-primary font-kanit text-xl"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+           
+          </div>
           {/* contact us details */}
           <div className=" space-y-2 ">
             <h1 className="text-primary font-kaisei_Decol text-2xl md:text-3xl font-bold underline line-clamp-6">
@@ -74,21 +138,30 @@ const Footer = () => {
               <div className="flex  items-center">
                 <PiMapPinAreaFill className="text-9xl text-primary mr-4" />
                 <div className="font-kanit text-primary ">
-                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">Address :</h1>
-                  <p className=" md:text- xl:text-lg">pramukh sannidhya complex, B-5, Abrama Village, Valsad, Abrama, Gujarat 396002</p>
+                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">
+                    Address :
+                  </h1>
+                  <p className=" md:text- xl:text-lg">
+                    pramukh sannidhya complex, B-5, Abrama Village, Valsad,
+                    Abrama, Gujarat 396002
+                  </p>
                 </div>
               </div>
               <div className="flex items-center">
                 <MdAddCall className="text-5xl text-primary mr-4" />
                 <div className="font-kanit text-primary">
-                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">Call Us :</h1>
+                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">
+                    Call Us :
+                  </h1>
                   <p className=" md:text- xl:text-lg">+91 99825 76458</p>
                 </div>
               </div>
               <div className="flex  items-center">
                 <MdEmail className="text-5xl text-primary mr-4" />
                 <div className="font-kanit text-primary">
-                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">Email :</h1>
+                  <h1 className="text-lg md:text-xl xl:text-2xl font-bold">
+                    Email :
+                  </h1>
                   <p className=" md:text- xl:text-lg">shree234@gmail.com</p>
                 </div>
               </div>
