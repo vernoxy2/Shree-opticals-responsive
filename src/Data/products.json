@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Round Eyeglasses",
+    "price": 150,
+    "shape": "Round",
+    "brand": "Spaco",
+    "gender": "Women",
+    "category": "Eyeglasses",
+    "image": "Img001.png"
+  },
+  {
+    "id": 2,
+    "name": "Oval Lenses",
+    "price": 250,
+    "shape": "Oval",
+    "brand": "Wolf Eye",
+    "gender": "Women",
+    "category": "Lenses",
+    "image": "Img002.png"
+  },
+  {
+    "id": 3,
+    "name": "Round Sunglasses",
+    "price": 400,
+    "shape": "Round",
+    "brand": "Tommy Hilfiger",
+    "gender": "Kids",
+    "category": "Sunglasses",
+    "image": "Img003.png"
+  },
+  {
+    "id": 4,
+    "name": "Square Sunglasses",
+    "price": 500,
+    "shape": "Square",
+    "brand": "Spaco",
+    "gender": "Men",
+    "category": "Sunglasses",
+    "image": "Img004.png"
+  },
+  {
+    "id": 5,
+    "name": "Square Sunglasses",
+    "price": 800,
+    "shape": "Square",
+    "brand": "Spaco",
+    "gender": "Women",
+    "category": "Sunglasses",
+    "image": "Img005.png"
+  },
+  {
+"id": 6,
+    "name": "Square Sunglasses",
+    "price": 1000,
+    "shape": "Square",
+    "brand": "Spaco",
+    "gender": "Women",
+    "category": "Sunglasses",
+    "image": "Img006.png"
+  }
+]

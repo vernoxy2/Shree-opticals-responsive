@@ -6,9 +6,9 @@ import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import SunglassesR from "../../assets/HomePageImgs/Sunglassess/SunglassessR.png";
 import SunglassesL from "../../assets/HomePageImgs/Sunglassess/SunglassessL.png";
 import { productslist } from "../../Data/productslist";
+// import productslist from "../../Data/products.json";
 import FiltersUI from "./FiltersUI"; // ✅ new component
 import { FaLongArrowAltUp } from "react-icons/fa";
-
 // Filter options
 const genders = ["Men", "Women", "Kids", "Unisex"];
 const categories = ["Eyeglasses", "Sunglasses", "Lenses"];
@@ -21,12 +21,41 @@ const priceRanges = [
 ];
 const brands = [
   "Tommy Hilfiger",
+  "Ray-Ban",
   "Scott",
+  "Para ",
   "French Connection",
-  "Page 4",
+  "Fuel",
   "Scavin",
-  "Wolf Eye",
   "Spaco",
+  "Wolf Eye",
+  "Xite",
+  "Specsmith",
+  "Page 4",
+  "U eyewear",
+  "Rotino",
+  "Sprint ",
+  "Super Fuo",
+  "SCORPLUS",
+  "Infinity Pro Kids",
+  "fueel KIDS",
+  "Wonder",
+  "ANTIPAAT",
+  "Hybrid Junior",
+  "Arham Kids",
+  "ANTEAT",
+  "TVE NERGO",
+  "Ted Jerry",
+  "escott",
+  "Sorrento",
+  "Wonder Line",
+  "CARRERA",
+  "Tom Hardy",
+  "HEAVY",
+  "Tom Hardy",
+  "Dolkar Lady",
+  "Roberto Gabriel",
+  "Believer",
 ];
 
 const OurProducts = () => {
@@ -44,10 +73,8 @@ const OurProducts = () => {
     priceRange: false,
     brands: false,
   });
-
   const [showScrollTop, setShowScrollTop] = useState(false);
   const location = useLocation();
-
   const toggleSelection = (value, setSelected) => {
     setSelected((prev) =>
       prev.includes(value)
@@ -345,16 +372,23 @@ const OurProducts = () => {
                 className="relative bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group"
               >
                 <div className="relative w-full sm:h-64 overflow-hidden">
+                  {/* <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full sm:h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    /> */}
                   <img
-                    src={product.image}
+                    src={product.image} // ✅ single image now
                     alt={product.name}
+                    onClick={() => console.log("Clicked Product ID:", product)}
                     className="w-full sm:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-4">
                   <h3 className="font-medium text-sm md:text-base text-gray-900 mb-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
                     {(() => {
-                      console.log(product.name);
+                      //   console.log("ID:", product.id);
+                      //   console.log(product.name);
                       return product.name;
                     })()}
                   </h3>
@@ -377,6 +411,7 @@ const OurProducts = () => {
                     <span className="bg-gray-100 px-2 py-1 rounded-full">
                       {product.category}
                     </span>
+                    <span className="bg-gray-100 px-2 py-1 rounded-full">{product.number}</span>
                   </div>
                 </div>
               </div>
@@ -392,7 +427,6 @@ const OurProducts = () => {
         </div>
       </div>
 
-      {/* Drawer for Mobile/Tablet */}
       {/* Drawer for Mobile/Tablet */}
       <div
         className={`fixed inset-0 z-[9999] flex mt-6 ${
@@ -456,7 +490,7 @@ const OurProducts = () => {
         >
           <FaLongArrowAltUp />
         </button>
-      )}   
+      )}
     </section>
   );
 };
