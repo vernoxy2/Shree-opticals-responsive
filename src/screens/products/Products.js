@@ -8,6 +8,7 @@ import ForKids from "./ForKids";
 import EyeLens from "./EyeLens"; */
 import OurProducts from "./OurProducts";
 import Brand from "./Brand";
+// import DataList from "./DataList";
 
 const Products = () => {
   return (
@@ -27,6 +28,7 @@ const Products = () => {
       {/* Product Sections */}
       <section className="w-full">
         <Brand />
+        {/* <DataList /> */}
         <OurProducts />
         {/*  <ForMen />
         <ForWomen />
