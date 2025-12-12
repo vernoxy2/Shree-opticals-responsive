@@ -6,7 +6,6 @@ import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import SunglassesR from "../../assets/HomePageImgs/Sunglassess/SunglassessR.png";
 import SunglassesL from "../../assets/HomePageImgs/Sunglassess/SunglassessL.png";
 import { productslist } from "../../Data/productslist";
-// import productslist from "../../Data/products.json";
 import FiltersUI from "./FiltersUI"; // ✅ new component
 import { FaLongArrowAltUp } from "react-icons/fa";
 // Filter options
