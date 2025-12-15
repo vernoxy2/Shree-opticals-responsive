@@ -6,13 +6,12 @@ import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import SunglassesR from "../../assets/HomePageImgs/Sunglassess/SunglassessR.png";
 import SunglassesL from "../../assets/HomePageImgs/Sunglassess/SunglassessL.png";
 import { productslist } from "../../Data/productslist";
-// import productslist from "../../Data/products.json";
 import FiltersUI from "./FiltersUI"; // ✅ new component
 import { FaLongArrowAltUp } from "react-icons/fa";
 // Filter options
 const genders = ["Men", "Women", "Kids", "Unisex"];
 const categories = ["Eyeglasses", "Sunglasses", "Lenses"];
-const frameShapes = ["Oval", "Round", "Square", "Hexagonal", "Aviator"];
+const frameShapes = ["Oval", "Round", "square", "Hexagonal", "Aviator", "Rectangle", "CatEye"];
 const priceRanges = [
   { label: "below 300₹", min: 0, max: 299 },
   { label: "300₹ - 500₹", min: 300, max: 500 },
