@@ -146,9 +146,9 @@ import img144 from "../assets/ProductlistImgs/All/144.webp";
 const Opticaldata = [{
     id: 1,
     number: 1,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "1500",
+    shape: "Rectangle",
+    brand: "Sprint",
     gender: "Kids",
     category: "Eyeglasses",
     image: img1,
@@ -166,9 +166,9 @@ const Opticaldata = [{
   {
     id: 3,
     number: 3,
-    price: "",
+    price: "700",
     shape: "Round",
-    brand: "",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img3,
@@ -176,9 +176,9 @@ const Opticaldata = [{
   {
     id: 4,
     number: 4,
-    price: "",
+    price: "1599",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img4,
@@ -186,17 +186,17 @@ const Opticaldata = [{
   {
     id: 5,
     number: 5,
-    price: "",
-    shape: "Aviator",
-    brand: "",
-    gender: "Kids",
+    price: "2499",
+    shape: "Rectangle",
+    brand: "Wolf Eye",
+    gender: "Men",
     category: "Eyeglasses",
     image: img5,
   },
   {
     id: 6,
     number: 6,
-    price: "",
+    price: "999",
     shape: "Round",
     brand: "Para",
     gender: "Kids",
@@ -206,9 +206,9 @@ const Opticaldata = [{
   {
     id: 7,
     number: 7,
-    price: "",
+    price: "499",
     shape: "Round",
-    brand: "",
+    brand: "Store collection",
     gender: "Kids",
     category: "Sunglasses",
     image: img7,
@@ -216,9 +216,9 @@ const Opticaldata = [{
   {
     id: 8,
     number: 8,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img8,
@@ -236,9 +236,9 @@ const Opticaldata = [{
   {
     id: 10,
     number: 10,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1499",
+    shape: "Oval",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img10,
@@ -246,9 +246,9 @@ const Opticaldata = [{
   {
     id: 11,
     number: 11,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "1499",
+    shape: "Rectangle",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img11,
@@ -256,9 +256,9 @@ const Opticaldata = [{
   {
     id: 12,
     number: 12,
-    price: "",
+    price: "799",
     shape: "Round",
-    brand: "",
+    brand: "X10",
     gender: "Kids",
     category: "Sunglasses",
     image: img12,
@@ -266,7 +266,7 @@ const Opticaldata = [{
   {
     id: 13,
     number: 13,
-    price: "",
+    price: "899",
     shape: "Round",
     brand: "Para",
     gender: "Kids",
@@ -276,9 +276,9 @@ const Opticaldata = [{
   {
     id: 14,
     number: 14,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img14,
@@ -286,9 +286,9 @@ const Opticaldata = [{
   {
     id: 15,
     number: 15,
-    price: "",
+    price: "799",
     shape: "Round",
-    brand: "",
+    brand: "X10",
     gender: "Kids",
     category: "Sunglasses",
     image: img15,
@@ -296,9 +296,9 @@ const Opticaldata = [{
   {
     id: 16,
     number: 16,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1499",
+    shape: "Oval",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img16,
@@ -306,9 +306,9 @@ const Opticaldata = [{
   {
     id: 17,
     number: 17,
-    price: "",
+    price: "799",
     shape: "Round",
-    brand: "",
+    brand: "X10",
     gender: "Kids",
     category: "Sunglasses",
     image: img17,
@@ -316,9 +316,9 @@ const Opticaldata = [{
   {
     id: 18,
     number: 18,
-    price: "",
+    price: "899",
     shape: "Round",
-    brand: "",
+    brand: "SCORPLUS",
     gender: "Kids",
     category: "Eyeglasses",
     image: img18,
@@ -326,9 +326,9 @@ const Opticaldata = [{
   {
     id: 19,
     number: 19,
-    price: "",
-    shape: "Round",
-    brand: "Hybrid Junior",
+    price: "399",
+    shape: "Oval",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img19,
@@ -336,7 +336,7 @@ const Opticaldata = [{
   {
     id: 20,
     number: 20,
-    price: "",
+    price: "899",
     shape: "Round",
     brand: "Para",
     gender: "Kids",
@@ -346,9 +346,9 @@ const Opticaldata = [{
   {
     id: 21,
     number: 21,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img21,
@@ -356,9 +356,9 @@ const Opticaldata = [{
   {
     id: 22,
     number: 22,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1499",
+    shape: "Oval",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img22,
@@ -366,9 +366,9 @@ const Opticaldata = [{
   {
     id: 23,
     number: 23,
-    price: "",
+    price: "399",
     shape: "Round",
-    brand: "",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img23,
@@ -376,9 +376,9 @@ const Opticaldata = [{
   {
     id: 24,
     number: 24,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1499",
+    shape: "oval",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img24,
@@ -386,9 +386,9 @@ const Opticaldata = [{
   {
     id: 25,
     number: 25,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "799",
+    shape: "Rectangle",
+    brand: "X 10",
     gender: "Kids",
     category: "Sunglasses",
     image: img25,
@@ -396,9 +396,9 @@ const Opticaldata = [{
   {
     id: 26,
     number: 26,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "1499",
+    shape: "Rectangle",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img26,
@@ -406,9 +406,9 @@ const Opticaldata = [{
   {
     id: 27,
     number: 27,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img27,
@@ -416,9 +416,9 @@ const Opticaldata = [{
   {
     id: 28,
     number: 28,
-    price: "",
-    shape: "Round",
-    brand: "Para",
+    price: "150",
+    shape: "Rectangle",
+    brand: "Store collection",
     gender: "Kids",
     category: "Sunglasses",
     image: img28,
@@ -426,9 +426,9 @@ const Opticaldata = [{
   {
     id: 29,
     number: 29,
-    price: "",
-    shape: "Cateye",
-    brand: "",
+    price: "399",
+    shape: "oval",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img29,
@@ -436,9 +436,9 @@ const Opticaldata = [{
   {
     id: 30,
     number: 30,
-    price: "",
+    price: "399",
     shape: "Rectangle",
-    brand: "",
+    brand: "Store collection",
     gender: "Kids",
     category: "Sunglasses",
     image: img30,
@@ -446,9 +446,9 @@ const Opticaldata = [{
   {
     id: 31,
     number: 31,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "1499",
+    shape: "Rectangle",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img31,
@@ -456,9 +456,9 @@ const Opticaldata = [{
   {
     id: 32,
     number: 32,
-    price: "",
+    price: "899",
     shape: "Round",
-    brand: "",
+    brand: "Para",
     gender: "Kids",
     category: "Eyeglasses",
     image: img32,
@@ -466,9 +466,9 @@ const Opticaldata = [{
   {
     id: 33,
     number: 33,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img33
@@ -476,9 +476,9 @@ const Opticaldata = [{
   {
     id: 34,
     number: 34,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img34
@@ -486,9 +486,9 @@ const Opticaldata = [{
   {
     id: 35,
     number: 35,
-    price: "",
+    price: "399",
     shape: "Rectangle",
-    brand: "",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img35
@@ -496,9 +496,9 @@ const Opticaldata = [{
   {
     id: 36,
     number: 36,
-    price: "",
+    price: "899",
     shape: "Round",
-    brand: "",
+    brand: "Para",
     gender: "Kids",
     category: "Eyeglasses",
     image: img36
@@ -506,9 +506,9 @@ const Opticaldata = [{
   {
     id: 37,
     number: 37,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1499",
+    shape: "Oval",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img37
@@ -516,9 +516,9 @@ const Opticaldata = [{
   {
     id: 38,
     number: 38,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "399",
+    shape: "Rectangle",
+    brand: "Store collection",
     gender: "Kids",
     category: "Sunglasses",
     image: img38
@@ -526,9 +526,9 @@ const Opticaldata = [{
   {
     id: 39,
     number: 39,
-    price: "",
-    shape: "Round",
-    brand: "",
+    price: "1299",
+    shape: "Oval",
+    brand: "Rotino",
     gender: "Kids",
     category: "Eyeglasses",
     image: img39
@@ -536,9 +536,9 @@ const Opticaldata = [{
   {
     id: 40,
     number: 40,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "499",
+    shape: "Rectangle",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img40
@@ -546,9 +546,9 @@ const Opticaldata = [{
   {
     id: 41,
     number: 41,
-    price: "",
+    price: "799",
     shape: "Round",
-    brand: "Super Fuo",
+    brand: "Store collection",
     gender: "Kids",
     category: "Eyeglasses",
     image: img41
@@ -556,8 +556,8 @@ const Opticaldata = [{
   {
     id: 42,
     number: 42,
-    price: "",
-    shape: "cateye",
+    price: "799",
+    shape: "",
     brand: "Ted Jerry",
     gender: "Kids",
     category: "Sunglasses",
@@ -566,9 +566,9 @@ const Opticaldata = [{
   {
     id: 43,
     number: 43,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img43
@@ -576,9 +576,9 @@ const Opticaldata = [{
   {
     id: 44,
     number: 44,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Fuel",
     gender: "Kids",
     category: "Eyeglasses",
     image: img44
@@ -586,9 +586,9 @@ const Opticaldata = [{
   {
     id: 45,
     number: 45,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Kids",
     category: "Eyeglasses",
     image: img45
@@ -596,9 +596,9 @@ const Opticaldata = [{
   {
     id: 46,
     number: 46,
-    price: "",
+    price: "999",
     shape: "Round",
-    brand: "",
+    brand: "Scorplus",
     gender: "Kids",
     category: "Eyeglasses",
     image: img46
@@ -606,9 +606,9 @@ const Opticaldata = [{
   {
     id: 47,
     number: 47,
-    price: "",
-    shape: "Square",
-    brand: "",
+    price: "999",
+    shape: "Rectangle",
+    brand: "Scorplus",
     gender: "Kids",
     category: "Eyeglasses",
     image: img47
@@ -616,9 +616,9 @@ const Opticaldata = [{
   {
     id: 48,
     number: 48,
-    price: "",
+    price: "2299",
     shape: "Aviator",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img48
@@ -626,9 +626,9 @@ const Opticaldata = [{
   {
     id: 49,
     number: 49,
-    price: "",
+    price: "799",
     shape: "Aviator",
-    brand: "Para",
+    brand: "Force",
     gender: "Men",
     category: "Sunglasses",
     image: img49
@@ -636,9 +636,9 @@ const Opticaldata = [{
   {
     id: 50,
     number: 50,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img50
@@ -646,9 +646,9 @@ const Opticaldata = [{
   {
     id: 51,
     number: 51,
-    price: "",
+    price: "799",
     shape: "Aviator",
-    brand: "",
+    brand: "Force",
     gender: "Men",
     category: "Sunglasses",
     image: img51
@@ -656,9 +656,9 @@ const Opticaldata = [{
   {
     id: 52,
     number: 52,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img52
@@ -666,9 +666,9 @@ const Opticaldata = [{
   {
     id: 53,
     number: 53,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img53
@@ -676,9 +676,9 @@ const Opticaldata = [{
   {
     id: 54,
     number: 54,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img54
@@ -686,9 +686,9 @@ const Opticaldata = [{
   {
     id: 55,
     number: 55,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Scavin",
     gender: "Men",
     category: "Sunglasses",
     image: img55
@@ -696,9 +696,9 @@ const Opticaldata = [{
   {
     id: 56,
     number: 56,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img56
@@ -706,9 +706,9 @@ const Opticaldata = [{
   {
     id: 57,
     number: 57,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Sunglasses",
     image: img57
@@ -716,9 +716,9 @@ const Opticaldata = [{
   {
     id: 58,
     number: 58,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Scavin",
     gender: "Men",
     category: "Sunglasses",
     image: img58
@@ -726,9 +726,9 @@ const Opticaldata = [{
   {
     id: 59,
     number: 59,
-    price: "",
+    price: "499",
     shape: "Aviator",
-    brand: "",
+    brand: "Store collection",
     gender: "Men",
     category: "Eyeglasses",
     image: img59
@@ -736,9 +736,9 @@ const Opticaldata = [{
   {
     id: 60,
     number: 60,
-    price: "",
+    price: "799",
     shape: "Aviator",
-    brand: "",
+    brand: "Store collection",
     gender: "Men",
     category: "Eyeglasses",
     image: img60
@@ -746,9 +746,9 @@ const Opticaldata = [{
   {
     id: 61,
     number: 61,
-    price: "",
+    price: "2099",
     shape: "Aviator",
-    brand: "",
+    brand: "Scavin",
     gender: "Men",
     category: "Sunglasses",
     image: img61
@@ -756,9 +756,9 @@ const Opticaldata = [{
   {
     id: 62,
     number: 62,
-    price: "",
+    price: "1499",
     shape: "Aviator",
-    brand: "",
+    brand: "X 10",
     gender: "Men",
     category: "Sunglasses",
     image: img62
@@ -766,9 +766,9 @@ const Opticaldata = [{
   {
     id: 63,
     number: 63,
-    price: "",
+    price: "2299",
     shape: "Aviator",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img63
@@ -776,9 +776,9 @@ const Opticaldata = [{
   {
     id: 64,
     number: 64,
-    price: "",
+    price: "1999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Sprint",
     gender: "Men",
     category: "Eyeglasses",
     image: img64
@@ -786,9 +786,9 @@ const Opticaldata = [{
   {
     id: 65,
     number: 65,
-    price: "",
+    price: "1499",
     shape: "Rectangle",
-    brand: "",
+    brand: "Sorrento",
     gender: "Men",
     category: "Eyeglasses",
     image: img65
@@ -796,9 +796,9 @@ const Opticaldata = [{
   {
     id: 66,
     number: 66,
-    price: "",
+    price: "2699",
     shape: "Rectangle",
-    brand: "",
+    brand: "Scott",
     gender: "Men",
     category: "Eyeglasses",
     image: img66
@@ -806,9 +806,9 @@ const Opticaldata = [{
   {
     id: 67,
     number: 67,
-    price: "",
+    price: "1599",
     shape: "Rectangle",
-    brand: "",
+    brand: "Rotino",
     gender: "Men",
     category: "Eyeglasses",
     image: img67
@@ -816,9 +816,9 @@ const Opticaldata = [{
   {
     id: 68,
     number: 68,
-    price: "",
+    price: "1499",
     shape: "Rectangle",
-    brand: "",
+    brand: "patrick",
     gender: "Men",
     category: "Eyeglasses",
     image: img68
@@ -826,9 +826,9 @@ const Opticaldata = [{
   {
     id: 69,
     number: 69,
-    price: "",
+    price: "2999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Scott",
     gender: "Men",
     category: "Eyeglasses",
     image: img69
@@ -836,9 +836,9 @@ const Opticaldata = [{
   {
     id: 70,
     number: 70,
-    price: "",
+    price: "2499",
     shape: "Rectangle",
-    brand: "",
+    brand: "Scott",
     gender: "Men",
     category: "Eyeglasses",
     image: img70
@@ -846,9 +846,9 @@ const Opticaldata = [{
   {
     id: 71,
     number: 71,
-    price: "",
+    price: "1999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Page 4",
     gender: "Men",
     category: "Eyeglasses",
     image: img71
@@ -856,9 +856,9 @@ const Opticaldata = [{
   {
     id: 72,
     number: 72,
-    price: "",
+    price: "1999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img72
@@ -866,108 +866,108 @@ const Opticaldata = [{
   {
     id: 73,
     number: 73,
-    price: "",
+    price: "1999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Fuel",
     gender: "Men",
     category: "Eyeglasses",
     image: img73
   }, {
     id: 74,
     number: 74,
-    price: "",
+    price: "999",
     shape: "Round",
-    brand: "",
+    brand: "Sorrento",
     gender: "Men",
     category: "Eyeglasses",
     image: img74
   }, {
     id: 75,
     number: 75,
-    price: "",
+    price: "1999",
     shape: "Round",
-    brand: "",
+    brand: "page 4",
     gender: "Men",
     category: "Eyeglasses",
     image: img75
   }, {
     id: 76,
     number: 76,
-    price: "",
+    price: "1599",
     shape: "Round",
-    brand: "",
+    brand: "Rotino",
     gender: "Men",
     category: "Eyeglasses",
     image: img76
   }, {
     id: 77,
     number: 77,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Sorrento",
     gender: "Men",
     category: "Eyeglasses",
     image: img77
   }, {
     id: 78,
     number: 78,
-    price: "",
+    price: "1999",
     shape: "Round",
-    brand: "",
+    brand: "page 4",
     gender: "Men",
     category: "Eyeglasses",
     image: img78
   }, {
     id: 79,
     number: 79,
-    price: "",
+    price: "1299",
     shape: "Round",
-    brand: "",
+    brand: "Spaco",
     gender: "Men",
     category: "Eyeglasses",
     image: img79
   }, {
     id: 80,
     number: 80,
-    price: "",
+    price: "1599",
     shape: "Round",
-    brand: "",
+    brand: "Rotino",
     gender: "Men",
     category: "Eyeglasses",
     image: img80
   }, {
     id: 81,
     number: 81,
-    price: "",
+    price: "1599",
     shape: "Round",
-    brand: "",
+    brand: "Rotino",
     gender: "Men",
     category: "Eyeglasses",
     image: img81
   }, {
     id: 82,
     number: 82,
-    price: "",
+    price: "1299",
     shape: "Round",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img82
   }, {
     id: 83,
     number: 83,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Sprint",
     gender: "Men",
     category: "Eyeglasses",
     image: img83
   }, {
     id: 84,
     number: 84,
-    price: "",
+    price: "1299",
     shape: "Round",
-    brand: "",
+    brand: "Tom Hardy",
     gender: "Men",
     category: "Eyeglasses",
     image: img84
@@ -992,54 +992,54 @@ const Opticaldata = [{
   }, {
     id: 87,
     number: 87,
-    price: "",
+    price: "2999",
     shape: "Square",
-    brand: "",
+    brand: "Scott",
     gender: "Men",
     category: "Eyeglasses",
     image: img87
   }, {
     id: 88,
     number: 88,
-    price: "",
+    price: "1499",
     shape: "Square",
-    brand: "",
+    brand: "Infinity",
     gender: "Men",
     category: "Eyeglasses",
     image: img88
   }, {
     id: 89,
     number: 89,
-    price: "",
+    price: "6999",
     shape: "Square",
-    brand: "",
+    brand: "FC UK",
     gender: "Men",
     category: "Eyeglasses",
     image: img89
   }, {
     id: 90,
     number: 90,
-    price: "",
+    price: "999",
     shape: "Square",
-    brand: "",
+    brand: "Sorrento",
     gender: "Men",
     category: "Eyeglasses",
     image: img90
   }, {
     id: 91,
     number: 91,
-    price: "",
+    price: "1499",
     shape: "Square",
-    brand: "",
+    brand: "Sorrento",
     gender: "Men",
     category: "Eyeglasses",
     image: img91
   }, {
     id: 92,
     number: 92,
-    price: "",
+    price: "1999",
     shape: "Square",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img92
@@ -1047,9 +1047,9 @@ const Opticaldata = [{
   {
     id: 93,
     number: 93,
-    price: "",
+    price: "1499",
     shape: "CatEye",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img93
@@ -1057,9 +1057,9 @@ const Opticaldata = [{
   {
     id: 94,
     number: 94,
-    price: "",
+    price: "1599",
     shape: "CatEye",
-    brand: "",
+    brand: "Sprint",
     gender: "Women",
     category: "Eyeglasses",
     image: img94
@@ -1067,9 +1067,9 @@ const Opticaldata = [{
   {
     id: 95,
     number: 95,
-    price: "",
+    price: "2999",
     shape: "CatEye",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Sunglasses",
     image: img95
@@ -1077,9 +1077,9 @@ const Opticaldata = [{
   {
     id: 96,
     number: 96,
-    price: "",
+    price: "1499",
     shape: "CatEye",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img96
@@ -1087,9 +1087,9 @@ const Opticaldata = [{
   {
     id: 97,
     number: 97,
-    price: "",
+    price: "1499",
     shape: "CatEye",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img97
@@ -1097,9 +1097,9 @@ const Opticaldata = [{
   {
     id: 98,
     number: 98,
-    price: "",
+    price: "2999",
     shape: "CatEye",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Eyeglasses",
     image: img98
@@ -1115,72 +1115,72 @@ const Opticaldata = [{
   }, {
     id: 100,
     number: 100,
-    price: "",
+    price: "1999",
     shape: "CatEye",
-    brand: "",
+    brand: "Page 4",
     gender: "Women",
     category: "Eyeglasses",
     image: img100
   }, {
     id: 101,
     number: 101,
-    price: "",
+    price: "1499",
     shape: "CatEye",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img101
   }, {
     id: 102,
     number: 102,
-    price: "",
+    price: "1999",
     shape: "CatEye",
-    brand: "",
+    brand: "Iaara",
     gender: "Women",
     category: "Sunglasses",
     image: img102
   }, {
     id: 103,
     number: 103,
-    price: "",
+    price: "2499",
     shape: "CatEye",
-    brand: "",
+    brand: "Scavin",
     gender: "Women",
     category: "Sunglasses",
     image: img103
   }, {
     id: 104,
     number: 104,
-    price: "",
+    price: "2499",
     shape: "CatEye",
-    brand: "",
+    brand: "Scavin",
     gender: "Women",
     category: "Sunglasses",
     image: img104
   }, {
     id: 105,
     number: 105,
-    price: "",
+    price: "1499",
     shape: "CatEye",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img105
   }, {
     id: 106,
     number: 106,
-    price: "",
+    price: "999",
     shape: "CatEye",
-    brand: "",
+    brand: "Believer",
     gender: "Women",
     category: "Eyeglasses",
     image: img106
   }, {
     id: 107,
     number: 107,
-    price: "",
+    price: "2499",
     shape: "CatEye",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Eyeglasses",
     image: img107
@@ -1197,81 +1197,81 @@ const Opticaldata = [{
   {
     id: 109,
     number: 109,
-    price: "",
+    price: "2499",
     shape: "Hexagonal",
-    brand: "",
+    brand: "Scavin",
     gender: "Women",
     category: "Sunglasses",
     image: img109
   }, {
     id: 110,
     number: 110,
-    price: "",
+    price: "1999",
     shape: "Hexagonal",
-    brand: "",
+    brand: "Scavin",
     gender: "Women",
     category: "Sunglasses",
     image: img110
   }, {
     id: 111,
     number: 111,
-    price: "",
+    price: "2999",
     shape: "Hexagonal",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Sunglasses",
     image: img111
   }, {
     id: 112,
     number: 112,
-    price: "",
+    price: "1999",
     shape: "Hexagonal",
-    brand: "",
+    brand: "Scavin",
     gender: "Women",
     category: "Sunglasses",
     image: img112
   }, {
     id: 113,
     number: 113,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Rotino",
     gender: "Women",
     category: "Eyeglasses",
     image: img113
   }, {
     id: 114,
     number: 114,
-    price: "",
+    price: "1999",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Women",
     category: "Eyeglasses",
     image: img114,
   }, {
     id: 115,
     number: 115,
-    price: "",
+    price: "1999",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Women",
     category: "Eyeglasses",
     image: img115
   }, {
     id: 116,
     number: 116,
-    price: "",
+    price: "1499",
     shape: "Round",
-    brand: "",
+    brand: "Rotino",
     gender: "Women",
     category: "Eyeglasses",
     image: img116
   }, {
     id: 117,
     number: 117,
-    price: "",
+    price: "999",
     shape: "Round",
-    brand: "",
+    brand: "Sorrento",
     gender: "Women",
     category: "Eyeglasses",
     image: img117
@@ -1287,18 +1287,18 @@ const Opticaldata = [{
   }, {
     id: 119,
     number: 119,
-    price: "",
+    price: "199",
     shape: "square",
-    brand: "",
+    brand: "Store collection",
     gender: "Women",
     category: "Sunglasses",
     image: img119
   }, {
     id: 120,
     number: 120,
-    price: "",
+    price: "199",
     shape: "square",
-    brand: "",
+    brand: "Store collection",
     gender: "Women",
     category: "Sunglasses",
     image: img120
@@ -1314,9 +1314,9 @@ const Opticaldata = [{
   }, {
     id: 122,
     number: 122,
-    price: "",
+    price: "2999",
     shape: "square",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Sunglasses",
     image: img122
@@ -1324,9 +1324,9 @@ const Opticaldata = [{
   {
     id: 123,
     number: 123,
-    price: "",
+    price: "2999",
     shape: "square",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Sunglasses",
     image: img123
@@ -1342,18 +1342,18 @@ const Opticaldata = [{
   },  {
     id: 125,
     number: 125,
-    price: "",
+    price: "2999",
     shape: "square",
-    brand: "",
+    brand: "Scott",
     gender: "Women",
     category: "Eyeglasses",
     image: img125
   }, {
     id: 126,
     number: 126,
-    price: "",
+    price: "1999",
     shape: "square",
-    brand: "",
+    brand: "Page 4",
     gender: "Women",
     category: "Eyeglasses",
     image: img126
@@ -1361,9 +1361,9 @@ const Opticaldata = [{
   {
     id: 127,
     number: 127,
-    price: "",
+    price: "1999",
     shape: "square",
-    brand: "",
+    brand: "Page 4",
     gender: "Women",
     category: "Eyeglasses",
     image: img127
@@ -1379,9 +1379,9 @@ const Opticaldata = [{
   }, {
     id: 129,
     number: 129,
-    price: "",
+    price: "1999",
     shape: "square",
-    brand: "",
+    brand: "Specsmith",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img129
@@ -1407,72 +1407,72 @@ const Opticaldata = [{
   {
     id: 132,
     number: 132,
-    price: "",
-    shape: "square",
-    brand: "",
+    price: "1499",
+    shape: "Rectangle",
+    brand: "Sprint",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img132
   }, {
     id: 133,
     number: 133,
-    price: "",
+    price: "1999",
     shape: "square",
-    brand: "",
+    brand: "Sprint",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img133
   }, {
     id: 134,
     number: 134,
-    price: "",
+    price: "1499",
     shape: "square",
-    brand: "",
+    brand: "Sorrento",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img134
   }, {
     id:135,
     number: 135,
-    price: "",
+    price: "1999",
     shape: "Rectangle",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img135
   }, {
     id: 136,
     number: 136,
-    price: "",
+    price: "1999",
     shape: "Hexagonal",
-    brand: "",
+    brand: "Wolf Eye",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img136
   }, {
     id: 137,
     number: 137,
-    price: "",
+    price: "2499",
     shape: "Cateye",
-    brand: "",
+    brand: "Scott",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img137
   }, {
     id: 138,
     number: 138,
-    price: "",
+    price: "1999",
     shape: "Round",
-    brand: "",
+    brand: "Page 4",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img138
   }, {
     id: 139,
     number: 139,
-    price: "",
-    shape: "Rectangle",
-    brand: "",
+    price: "2499",
+    shape: "Cateye",
+    brand: "Scott",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img139
@@ -1497,27 +1497,27 @@ const Opticaldata = [{
   }, {
     id:142,
     number: 142,
-    price: "",
-    shape: "Rectangle",
-    brand: "",
+    price: "2599",
+    shape: "Square",
+    brand: "Scott",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img142 
   }, {
     id: 143,
     number: 143,
-    price: "",
+    price: "2999",
     shape: "Cateye",
-    brand: "",
+    brand: "Scavin",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img143
   }, {
     id: 144,
     number: 144,
-    price: "",
+    price: "1999",
     shape: "square",
-    brand: "",
+    brand: "Scavin",
     gender: "Unisex",
     category: "Eyeglasses",
     image: img144
