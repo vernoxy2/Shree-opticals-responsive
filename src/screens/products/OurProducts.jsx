@@ -11,7 +11,7 @@ import { FaLongArrowAltUp } from "react-icons/fa";
 // Filter options
 const genders = ["Men", "Women", "Kids", "Unisex"];
 const categories = ["Eyeglasses", "Sunglasses", "Lenses"];
-const frameShapes = ["Oval", "Round", "square", "Hexagonal", "Aviator", "Rectangle", "CatEye"];
+const frameShapes = ["Oval", "Round", "Square", "Hexagonal", "Aviator", "Rectangle", "CatEye"];
 const priceRanges = [
   { label: "below 300₹", min: 0, max: 299 },
   { label: "300₹ - 500₹", min: 300, max: 500 },
@@ -23,38 +23,21 @@ const brands = [
   "Ray-Ban",
   "Scott",
   "Para ",
-  "French Connection",
   "Fuel",
   "Scavin",
   "Spaco",
   "Wolf Eye",
-  "Xite",
   "Specsmith",
   "Page 4",
-  "U eyewear",
   "Rotino",
   "Sprint ",
-  "Super Fuo",
-  "SCORPLUS",
-  "Infinity Pro Kids",
-  "fueel KIDS",
-  "Wonder",
-  "ANTIPAAT",
-  "Hybrid Junior",
-  "Arham Kids",
-  "ANTEAT",
-  "TVE NERGO",
+  "Scorplus",
   "Ted Jerry",
-  "escott",
   "Sorrento",
-  "Wonder Line",
-  "CARRERA",
   "Tom Hardy",
-  "HEAVY",
-  "Tom Hardy",
-  "Dolkar Lady",
-  "Roberto Gabriel",
   "Believer",
+  "X10", 
+  "Force"
 ];
 
 const OurProducts = () => {
