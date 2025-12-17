@@ -9,16 +9,16 @@ import { productslist } from "../../Data/productslist";
 import FiltersUI from "./FiltersUI"; // ✅ new component
 import { FaLongArrowAltUp } from "react-icons/fa";
 // Filter options
-const genders = ["Men", "Women", "Kids", "Unisex"];
-const categories = ["Eyeglasses", "Sunglasses", "Lenses"];
-const frameShapes = ["Oval", "Round", "Square", "Hexagonal", "Aviator", "Rectangle", "CatEye"];
-const priceRanges = [
+const gender = ["Men", "Women", "Kids", "Unisex"];
+const category = ["Eyeglasses", "Sunglasses", "Lenses"];
+const shape = ["Oval", "Round", "Square", "Hexagonal", "Aviator", "Rectangle", "CatEye"];
+const price = [
   { label: "below 300₹", min: 0, max: 299 },
   { label: "300₹ - 500₹", min: 300, max: 500 },
   { label: "500₹ - 1000₹", min: 501, max: 1000 },
   { label: "Above 1000₹", min: 1001, max: Infinity },
 ];
-const brands = [
+const brand = [
   "Tommy Hilfiger",
   "Ray-Ban",
   "Scott",
@@ -97,18 +97,18 @@ const OurProducts = () => {
         unisex: "Unisex",
       };
       const value = map[normalized] || genderParam;
-      if (genders.includes(value)) {
+      if (gender.includes(value)) {
         setSelectedGender([value]);
         setExpandedSections((prev) => ({ ...prev, gender: true }));
       }
     }
 
-    if (categoryParam && categories.includes(categoryParam)) {
+    if (categoryParam && category.includes(categoryParam)) {
       setSelectedCategories([categoryParam]);
       setExpandedSections((prev) => ({ ...prev, category: true }));
     }
 
-    if (shapeParam && frameShapes.includes(shapeParam)) {
+    if (shapeParam && shape.includes(shapeParam)) {
       setSelectedShapes([shapeParam]);
       setExpandedSections((prev) => ({ ...prev, frameShape: true }));
     }
@@ -148,7 +148,7 @@ const OurProducts = () => {
     const priceMatch =
       selectedPrices.length === 0 ||
       selectedPrices.some((rangeLabel) => {
-        const range = priceRanges.find((r) => r.label === rangeLabel);
+        const range = price.find((r) => r.label === rangeLabel);
         return product.price >= range.min && product.price <= range.max;
       });
 
@@ -215,11 +215,11 @@ const OurProducts = () => {
               setSelectedCategories,
             }}
             clearAllFilters={clearAllFilters}
-            genders={genders}
-            categories={categories}
-            frameShapes={frameShapes}
-            priceRanges={priceRanges}
-            brands={brands}
+            genders={gender}
+            categories={category}
+            frameShapes={shape}
+            priceRanges={price}
+            brands={brand}
           />
         </div>
 
@@ -454,11 +454,11 @@ const OurProducts = () => {
               setSelectedCategories,
             }}
             clearAllFilters={clearAllFilters}
-            genders={genders}
-            categories={categories}
-            frameShapes={frameShapes}
-            priceRanges={priceRanges}
-            brands={brands}
+            genders={gender}
+            categories={category}
+            frameShapes={shape}
+            priceRanges={price}
+            brands={brand}
           />
         </div>
       </div>
