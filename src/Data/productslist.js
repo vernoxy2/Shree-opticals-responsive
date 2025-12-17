@@ -1,12 +1,12 @@
 import img1 from "../assets/ProductlistImgs/Children/img1.webp";
-import img2 from "../assets/ProductlistImgs/Children/img2.webp";
+// import img2 from "../assets/ProductlistImgs/Children/img2.webp";
 import img3 from "../assets/ProductlistImgs/Children/img3.webp";
 import img4 from "../assets/ProductlistImgs/Children/img4.webp";
 import img5 from "../assets/ProductlistImgs/Children/img5.webp";
 import img6 from "../assets/ProductlistImgs/Children/img6.webp";
 import img7 from "../assets/ProductlistImgs/Children/img7.webp";
 import img8 from "../assets/ProductlistImgs/Children/img8.webp";
-import img9 from "../assets/ProductlistImgs/Children/img9.webp";
+// import img9 from "../assets/ProductlistImgs/Children/img9.webp";
 import img10 from "../assets/ProductlistImgs/Children/img10.webp";
 import img11 from "../assets/ProductlistImgs/Children/img11.webp";
 import img12 from "../assets/ProductlistImgs/Children/img12.webp";
@@ -39,7 +39,7 @@ import img38 from "../assets/ProductlistImgs/Children/img38.webp";
 import img39 from "../assets/ProductlistImgs/Children/img39.webp";
 import img40 from "../assets/ProductlistImgs/Children/img40.webp";
 import img41 from "../assets/ProductlistImgs/Children/img41.webp";
-import img42 from "../assets/ProductlistImgs/Children/img42.webp";
+// import img42 from "../assets/ProductlistImgs/Children/img42.webp";
 import img43 from "../assets/ProductlistImgs/Children/img43.webp";
 import img44 from "../assets/ProductlistImgs/Children/img44.webp";
 import img45 from "../assets/ProductlistImgs/Children/img45.webp";
@@ -82,8 +82,8 @@ import img81 from "../assets/ProductlistImgs/Men/img81.webp";
 import img82 from "../assets/ProductlistImgs/Men/img82.webp";
 import img83 from "../assets/ProductlistImgs/Men/img83.webp";
 import img84 from "../assets/ProductlistImgs/Men/img84.webp";
-import img85 from "../assets/ProductlistImgs/Men/img85.webp";
-import img86 from "../assets/ProductlistImgs/Men/img86.webp";
+// import img85 from "../assets/ProductlistImgs/Men/img85.webp";
+// import img86 from "../assets/ProductlistImgs/Men/img86.webp";
 import img87 from "../assets/ProductlistImgs/Men/img87.webp";
 import img88 from "../assets/ProductlistImgs/Men/img88.webp";
 import img89 from "../assets/ProductlistImgs/Men/img89.webp";
@@ -96,7 +96,7 @@ import img95 from "../assets/ProductlistImgs/Women/img95.webp";
 import img96 from "../assets/ProductlistImgs/Women/img96.webp";
 import img97 from "../assets/ProductlistImgs/Women/img97.webp";
 import img98 from "../assets/ProductlistImgs/Women/img98.webp";
-import img99 from "../assets/ProductlistImgs/Women/img99.webp";
+// import img99 from "../assets/ProductlistImgs/Women/img99.webp";
 import img100 from "../assets/ProductlistImgs/Women/img100.webp";
 import img101 from "../assets/ProductlistImgs/Women/img101.webp";
 import img102 from "../assets/ProductlistImgs/Women/img102.webp";
@@ -105,7 +105,7 @@ import img104 from "../assets/ProductlistImgs/Women/img104.webp";
 import img105 from "../assets/ProductlistImgs/Women/img105.webp";
 import img106 from "../assets/ProductlistImgs/Women/img106.webp";
 import img107 from "../assets/ProductlistImgs/Women/img107.webp";
-import img108 from "../assets/ProductlistImgs/Women/img108.webp";
+// import img108 from "../assets/ProductlistImgs/Women/img108.webp";
 import img109 from "../assets/ProductlistImgs/Women/img109.webp";
 import img110 from "../assets/ProductlistImgs/Women/img110.webp";
 import img111 from "../assets/ProductlistImgs/Women/img111.webp";
@@ -115,30 +115,30 @@ import img114 from "../assets/ProductlistImgs/Women/img114.webp";
 import img115 from "../assets/ProductlistImgs/Women/img115.webp";
 import img116 from "../assets/ProductlistImgs/Women/img116.webp";
 import img117 from "../assets/ProductlistImgs/Women/img117.webp";
-import img118 from "../assets/ProductlistImgs/Women/img118.webp";
+// import img118 from "../assets/ProductlistImgs/Women/img118.webp";
 import img119 from "../assets/ProductlistImgs/Women/img119.webp";
 import img120 from "../assets/ProductlistImgs/Women/img120.webp";
-import img121 from "../assets/ProductlistImgs/Women/img121.webp";
+// import img121 from "../assets/ProductlistImgs/Women/img121.webp";
 import img122 from "../assets/ProductlistImgs/Women/img122.webp";
 import img123 from "../assets/ProductlistImgs/Women/img123.webp";
-import img124 from "../assets/ProductlistImgs/Women/img124.webp";
+// import img124 from "../assets/ProductlistImgs/Women/img124.webp";
 import img125 from "../assets/ProductlistImgs/Women/img125.webp";
 import img126 from "../assets/ProductlistImgs/Women/img126.webp";
 import img127 from "../assets/ProductlistImgs/Women/img127.webp";
-import img128 from "../assets/ProductlistImgs/Reactangle/img128.webp";
-import img129 from "../assets/ProductlistImgs/Reactangle/img129.webp";
-import img130 from "../assets/ProductlistImgs/Reactangle/img130.webp";
-import img131 from "../assets/ProductlistImgs/Reactangle/img131.webp";
-import img132 from "../assets/ProductlistImgs/Reactangle/img132.webp";
-import img133 from "../assets/ProductlistImgs/Reactangle/img133.webp";
-import img134 from "../assets/ProductlistImgs/Reactangle/img134.webp";
+// import img128 from "../assets/ProductlistImgs/Rectangle/img128.webp";
+import img129 from "../assets/ProductlistImgs/Rectangle/img129.webp";
+// import img130 from "../assets/ProductlistImgs/Rectangle/img130.webp";
+// import img131 from "../assets/ProductlistImgs/Rectangle/img131.webp";
+import img132 from "../assets/ProductlistImgs/Rectangle/img132.webp";
+import img133 from "../assets/ProductlistImgs/Rectangle/img133.webp";
+import img134 from "../assets/ProductlistImgs/Rectangle/img134.webp";
 import img135 from "../assets/ProductlistImgs/All/img135.webp";
 import img136 from "../assets/ProductlistImgs/All/img136.webp";
 import img137 from "../assets/ProductlistImgs/All/img137.webp";
 import img138 from "../assets/ProductlistImgs/All/img138.webp";
 import img139 from "../assets/ProductlistImgs/All/img139.webp";
-import img140 from "../assets/ProductlistImgs/All/img140.webp";
-import img141 from "../assets/ProductlistImgs/All/img141.webp";
+// import img140 from "../assets/ProductlistImgs/All/img140.webp";
+// import img141 from "../assets/ProductlistImgs/All/img141.webp";
 import img142 from "../assets/ProductlistImgs/All/img142.webp";
 import img143 from "../assets/ProductlistImgs/All/img143.webp";
 import img144 from "../assets/ProductlistImgs/All/img144.webp";
@@ -188,7 +188,7 @@ const Opticaldata = [{
     number: 5,
     price: "2499",
     shape: "Rectangle",
-    brands: "Wolf Eye",
+    brand: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img5,
