@@ -153,16 +153,16 @@ const Opticaldata = [{
     category: "Eyeglasses",
     image: img1,
   },
-  {
-    id: 2,
-    number: 2,
-    // price: "",
-    shape: "Round",
-    // brand: "",
-    gender: "Kids",
-    category: "Sunglasses",
-    image: img2,
-  },
+  // {
+  //   id: 2,
+  //   number: 2,
+  //   // price: "",
+  //   shape: "Round",
+  //   // brand: "",
+  //   gender: "Kids",
+  //   category: "Sunglasses",
+  //   image: img2,
+  // },
   {
     id: 3,
     number: 3,
@@ -223,16 +223,16 @@ const Opticaldata = [{
     category: "Eyeglasses",
     image: img8,
   },
-  {
-    id: 9,
-    number: 9,
-    // price: "",
-    shape: "Square",
-    // brand: "",
-    gender: "Kids",
-    category: "Sunglasses",
-    image: img9,
-  },
+  // {
+  //   id: 9,
+  //   number: 9,
+  //   // price: "",
+  //   shape: "Square",
+  //   // brand: "",
+  //   gender: "Kids",
+  //   category: "Sunglasses",
+  //   image: img9,
+  // },
   {
     id: 10,
     number: 10,
@@ -553,16 +553,16 @@ const Opticaldata = [{
     category: "Eyeglasses",
     image: img41
   },
-  {
-    id: 42,
-    number: 42,
-    price: "799",
-    // shape: "",
-    brand: "Ted Jerry",
-    gender: "Kids",
-    category: "Sunglasses",
-    image: img42
-  },
+  // {
+  //   id: 42,
+  //   number: 42,
+  //   price: "799",
+  //   // shape: "",
+  //   brand: "Ted Jerry",
+  //   gender: "Kids",
+  //   category: "Sunglasses",
+  //   image: img42
+  // },
   {
     id: 43,
     number: 43,
@@ -971,25 +971,28 @@ const Opticaldata = [{
     gender: "Men",
     category: "Eyeglasses",
     image: img84
-  }, {
-    id: 85,
-    number: 85,
-    // price: "",
-    shape: "Round",
-    // brand: "",
-    gender: "Men",
-    category: "Eyeglasses",
-    image: img85
-  }, {
-    id: 86,
-    number: 86,
-    // price: "",
-    shape: "Square",
-    // brand: "",
-    gender: "Men",
-    category: "Eyeglasses",
-    image: img86
-  }, {
+  },
+  //  {
+  //   id: 85,
+  //   number: 85,
+  //   // price: "",
+  //   shape: "Round",
+  //   // brand: "",
+  //   gender: "Men",
+  //   category: "Eyeglasses",
+  //   image: img85
+  // }, 
+  // {
+  //   id: 86,
+  //   number: 86,
+  //   // price: "",
+  //   shape: "Square",
+  //   // brand: "",
+  //   gender: "Men",
+  //   category: "Eyeglasses",
+  //   image: img86
+  // },
+   {
     id: 87,
     number: 87,
     price: "2999",
@@ -1103,16 +1106,18 @@ const Opticaldata = [{
     gender: "Women",
     category: "Eyeglasses",
     image: img98
-  }, {
-    id: 99,
-    number: 99,
-    // price: //,
-    shape: "CatEye",
-    // brand: //,
-    gender: "Women",
-    category: "Eyeglasses",
-    image: img99
-  }, {
+  },
+  //  {
+  //   id: 99,
+  //   number: 99,
+  //   // price: //,
+  //   shape: "CatEye",
+  //   // brand: //,
+  //   gender: "Women",
+  //   category: "Eyeglasses",
+  //   image: img99
+  // },
+   {
     id: 100,
     number: 100,
     price: "1999",
@@ -1184,16 +1189,17 @@ const Opticaldata = [{
     gender: "Women",
     category: "Eyeglasses",
     image: img107
-  }, {
-    id: 108,
-    number: 108,
-    // price: //,
-    shape: "CatEye",
-    // brand: //,
-    gender: "Women",
-    category: "Eyeglasses",
-    image: img108
-  },
+  }, 
+  // {
+  //   id: 108,
+  //   number: 108,
+  //   // price: //,
+  //   shape: "CatEye",
+  //   // brand: //,
+  //   gender: "Women",
+  //   category: "Eyeglasses",
+  //   image: img108
+  // },
   {
     id: 109,
     number: 109,
@@ -1275,16 +1281,18 @@ const Opticaldata = [{
     gender: "Women",
     category: "Eyeglasses",
     image: img117
-  }, {
-    id: 118,
-    number: 118,
-    // price: //,
-    shape: "Round",
-    // brand: //,
-    gender: "Women",
-    category: "Eyeglasses",
-    image: img118
-  }, {
+  },
+  //  {
+  //   id: 118,
+  //   number: 118,
+  //   // price: //,
+  //   shape: "Round",
+  //   // brand: //,
+  //   gender: "Women",
+  //   category: "Eyeglasses",
+  //   image: img118
+  // },
+   {
     id: 119,
     number: 119,
     price: "199",
@@ -1302,16 +1310,18 @@ const Opticaldata = [{
     gender: "Women",
     category: "Sunglasses",
     image: img120
-  }, {
-    id: 121,
-    number: 121,
-    // price: //,
-    shape: "Square",
-    // brand: //,
-    gender: "Women",
-    category: "Eyeglasses",
-    image: img121
-  }, {
+  },
+  //  {
+  //   id: 121,
+  //   number: 121,
+  //   // price: //,
+  //   shape: "Square",
+  //   // brand: //,
+  //   gender: "Women",
+  //   category: "Eyeglasses",
+  //   image: img121
+  // }, 
+  {
     id: 122,
     number: 122,
     price: "2999",
@@ -1330,16 +1340,18 @@ const Opticaldata = [{
     gender: "Women",
     category: "Sunglasses",
     image: img123
-  }, {
-    id: 124,
-    number: 124,
-    // price: //,
-    shape: "Square",
-    // brand: //,
-    gender: "Women",
-    category: "Eyeglasses",
-    image: img124
-  },  {
+  },
+  //  {
+  //   id: 124,
+  //   number: 124,
+  //   // price: //,
+  //   shape: "Square",
+  //   // brand: //,
+  //   gender: "Women",
+  //   category: "Eyeglasses",
+  //   image: img124
+  // }, 
+   {
     id: 125,
     number: 125,
     price: "2999",
@@ -1367,16 +1379,18 @@ const Opticaldata = [{
     gender: "Women",
     category: "Eyeglasses",
     image: img127
-  }, {
-    id: 128,
-    number: 128,
-    // price: //,
-    shape: "Square",
-    // brand: //,
-    gender: "Unisex",
-    category: "Eyeglasses",
-    image: img128
-  }, {
+  }, 
+  // {
+  //   id: 128,
+  //   number: 128,
+  //   // price: //,
+  //   shape: "Square",
+  //   // brand: //,
+  //   gender: "Unisex",
+  //   category: "Eyeglasses",
+  //   image: img128
+  // },
+   {
     id: 129,
     number: 129,
     price: "1999",
@@ -1385,25 +1399,27 @@ const Opticaldata = [{
     gender: "Unisex",
     category: "Eyeglasses",
     image: img129
-  }, {
-    id: 130,
-    number: 130,
-    // price: //,
-    shape: "Square",
-    // brand: //,
-    gender: "Unisex",
-    category: "Eyeglasses",
-    image: img130
-  }, {
-    id: 131,
-    number: 131,
-    // price: //,
-    shape: "Square",
-    // brand: //,
-    gender: "Unisex",
-    category: "Eyeglasses",
-    image: img131
   },
+  //  {
+  //   id: 130,
+  //   number: 130,
+  //   // price: //,
+  //   shape: "Square",
+  //   // brand: //,
+  //   gender: "Unisex",
+  //   category: "Eyeglasses",
+  //   image: img130
+  // },
+  //  {
+  //   id: 131,
+  //   number: 131,
+  //   // price: //,
+  //   shape: "Square",
+  //   // brand: //,
+  //   gender: "Unisex",
+  //   category: "Eyeglasses",
+  //   image: img131
+  // },
   {
     id: 132,
     number: 132,
@@ -1476,25 +1492,28 @@ const Opticaldata = [{
     gender: "Unisex",
     category: "Eyeglasses",
     image: img139
-  }, {
-    id: 140,
-    number: 140,
-    // price: "",
-    shape: "CatEye",
-    // brand: "",
-    gender: "Unisex",
-    category: "Eyeglasses",
-    image: img140
-  }, {
-    id: 141,
-    number: 141,
-    // price: "",
-    shape: "Square",
-    // brand: "",
-    gender: "Unisex",
-    category: "Eyeglasses",
-    image: img141
-  }, {
+  }, 
+  // {
+  //   id: 140,
+  //   number: 140,
+  //   // price: "",
+  //   shape: "CatEye",
+  //   // brand: "",
+  //   gender: "Unisex",
+  //   category: "Eyeglasses",
+  //   image: img140
+  // },
+  //  {
+  //   id: 141,
+  //   number: 141,
+  //   // price: "",
+  //   shape: "Square",
+  //   // brand: "",
+  //   gender: "Unisex",
+  //   category: "Eyeglasses",
+  //   image: img141
+  // }, 
+  {
     id:142,
     number: 142,
     price: "2599",
