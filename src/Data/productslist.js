@@ -188,7 +188,7 @@ const Opticaldata = [{
     number: 5,
     price: "2499",
     shape: "Rectangle",
-    brand: "Wolf Eye",
+    brands: "Wolf Eye",
     gender: "Men",
     category: "Eyeglasses",
     image: img5,
