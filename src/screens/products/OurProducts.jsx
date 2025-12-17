@@ -37,7 +37,9 @@ const brand = [
   "Tom Hardy",
   "Believer",
   "X10", 
-  "Force"
+  "Force",
+  "patrick", 
+  "Store collection"
 ];
 
 const OurProducts = () => {
