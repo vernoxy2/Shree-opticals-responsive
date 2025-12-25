@@ -134,7 +134,7 @@ const OurProducts = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!showScrollTop) return null;
+  // if (!showScrollTop) return null;
 
   // Filtering logic
   const filteredProducts = productslist.filter((product) => {
