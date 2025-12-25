@@ -115,7 +115,7 @@ const DataList = () => {
   }, [location.search, location.hash]);
 
   // Scroll detection for "Scroll to Top" button
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 100); // show after 600px
     };
@@ -124,7 +124,7 @@ const DataList = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!showScrollTop) return null;
+  // if (!showScrollTop) return null;
 
   // Filtering logic
   const filteredProducts = productslist.filter((product) => {
