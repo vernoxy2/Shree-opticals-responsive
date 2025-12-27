@@ -115,7 +115,7 @@ const OurProducts = () => {
       setExpandedSections((prev) => ({ ...prev, frameShape: true }));
     }
 
-    if (location.hash === "#our-products") {
+    if (location.hash === "#our-products" && typeof document !== 'undefined') {
       setTimeout(() => {
         const element = document.getElementById("our-products");
         if (element)
@@ -126,6 +126,8 @@ const OurProducts = () => {
 
   // Scroll detection for "Scroll to Top" button
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 100); // show after 600px
     };

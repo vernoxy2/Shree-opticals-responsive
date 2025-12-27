@@ -5,6 +5,11 @@ const ScrollToTop = () => {
   const location = useLocation();
 
   useEffect(() => {
+    // Only run in browser environment
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
+
     if (location.hash) {
       // Allow content to render before scrolling
       setTimeout(() => {

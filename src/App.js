@@ -8,19 +8,21 @@ import WomensProduct from './screens/productCategory/womensProduct/WomensProduct
 import KidsProduct from './screens/productCategory/kidsProduct/KidsProduct';
 import Products from './screens/products/Products';
 import ContactUs from './screens/contactUs/ContactUs';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
     // Only initialize AOS in the browser environment
-    if (typeof window !== 'undefined') {
-      AOS.init({
-        duration: 1000, // animation duration in ms
-        delay: 200, 
-        offset: 140      // delay in ms
-        // once: true,     // animation only once when scrolling down
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      // Dynamically import AOS to avoid SSR issues
+      import('aos').then((AOS) => {
+        AOS.default.init({
+          duration: 1000, // animation duration in ms
+          delay: 200, 
+          offset: 140      // delay in ms
+          // once: true,     // animation only once when scrolling down
+        });
       });
     }
   }, [])
