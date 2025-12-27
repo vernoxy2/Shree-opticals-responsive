@@ -14,13 +14,16 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // animation duration in ms
-      delay: 200, 
-      offset: 140      // delay in ms
-      // once: true,     // animation only once when scrolling down
-    });
-  })
+    // Only initialize AOS in the browser environment
+    if (typeof window !== 'undefined') {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        delay: 200, 
+        offset: 140      // delay in ms
+        // once: true,     // animation only once when scrolling down
+      });
+    }
+  }, [])
 
   return (
     <Router>
