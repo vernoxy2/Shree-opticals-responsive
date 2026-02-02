@@ -1,6 +1,7 @@
 import ScrollToTop from './components/scrollToTop/ScrollToTop';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './screens/home/Home';
+// import Home from './screens/home/Home';
+import Home from './NewScreens/homeMain/Home'
 import AboutUs from './screens/aboutUs/AboutUs';
 import Footer from './components/footer/Footer';
 import MensProduct from './screens/productCategory/mensProduct/MensProduct';

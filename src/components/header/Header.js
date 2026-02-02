@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryBtn from "../Primarycompo/PrimaryBtn";
 import Navbar from "../Navbar/Navbar";
+import NavBar from "../NavBarMain/NavBar";
 
 const Header = ({
   backgroundImage,
@@ -10,7 +11,8 @@ const Header = ({
 }) => {
   return (
     <section className="m-4 md:m-5">
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavBar />
       <div
       
       className="w-full bg-cover bg-center py-52 md:py-72 flex items-center justify-center rounded-3xl "

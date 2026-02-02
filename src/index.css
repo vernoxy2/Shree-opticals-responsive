@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Zoom In/Out Animation for Shop For Cards */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.zoom-animation:hover img {
+  animation: zoomInOut 1.5s ease-in-out infinite;
+}
