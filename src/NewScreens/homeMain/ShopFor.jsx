@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
 import Man from "../../assets/HomePageImgs/ShopFor/Img/Man.webp";
-import women from "../../assets/HomePageImgs/ShopFor/Img/Women.webp";
+import Women from "../../assets/HomePageImgs/ShopFor/Img/Women.webp";
 import Kids from "../../assets/HomePageImgs/ShopFor/Img/Kids.webp";
-import unisex from "../../assets/HomePageImgs/ShopFor/Img/Unisex.webp";
+import Unisex from "../../assets/HomePageImgs/ShopFor/Img/Unisex.webp";
 
 const data = [
   {
@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 2,
-    img: women,
+    img: Women,
     category: "Woman",
     alt: "Women's eyewear collection"
   },
@@ -28,7 +28,7 @@ const data = [
   },
   {
     id: 4,
-    img: unisex,
+    img: Unisex,
     category: "Unisex",
     alt: "Unisex eyewear collection"
   },
