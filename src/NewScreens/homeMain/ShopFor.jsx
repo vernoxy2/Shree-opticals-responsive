@@ -56,7 +56,7 @@ const ShopFor = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (category) => {
-    const map = { Man: "Men", Woman: "Women", Kids: "Kids", Unisex: "Unisex" };
+    const map = { Man: "Men", Women: "Women", Kids: "Kids", Unisex: "Unisex" };
     const gender = map[category] || category;
     navigate({ 
       pathname: "/products", 
