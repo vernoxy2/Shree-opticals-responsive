@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
 import Man from "../../assets/HomePageImgs/ShopFor/Img/Man.webp";
-import Women from "../../assets/HomePageImgs/ShopFor/Img/Women.webp";
+// import Women from "../../assets/HomePageImgs/ShopFor/Img/Women.webp";
 import Kids from "../../assets/HomePageImgs/ShopFor/Img/Kids.webp";
 import Unisex from "../../assets/HomePageImgs/ShopFor/Img/Unisex.webp";
 
@@ -14,12 +14,12 @@ const data = [
     category: "Man",
     alt: "Men's eyewear collection"
   },
-  {
-    id: 2,
-    img: Women,
-    category: "Women",
-    alt: "Women's eyewear collection"
-  },
+  // {
+  //   id: 2,
+  //   img: Women,
+  //   category: "Woman",
+  //   alt: "Women's eyewear collection"
+  // },
   {
     id: 3,
     img: Kids,
@@ -56,7 +56,7 @@ const ShopFor = () => {
   const navigate = useNavigate();
 
   const handleNavigate = (category) => {
-    const map = { Man: "Men", Woman: "Women", Kids: "Kids", Unisex: "Unisex" };
+    const map = { Man: "Men",  Kids: "Kids", Unisex: "Unisex" };
     const gender = map[category] || category;
     navigate({ 
       pathname: "/products", 
