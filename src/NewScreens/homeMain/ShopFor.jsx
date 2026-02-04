@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
 import ManImg from "../../assets/HomePageImgs/ShopFor/Img/ManImg.webp";
-import WomenImg from "../../assets/HomePageImgs/ShopFor/Img/ManImg.webp";
+import WomenImg from "../../assets/HomePageImgs/ShopFor/Img/WomenImg.webp";
 import KidsImg from "../../assets/HomePageImgs/ShopFor/Img/KidsImg.webp";
 import UnisexImg from "../../assets/HomePageImgs/ShopFor/Img/UnisexImg.webp";
 
