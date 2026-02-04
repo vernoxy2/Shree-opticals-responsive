@@ -2,48 +2,43 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
-import Man from "../../assets/HomePageImgs/ShopFor/Img/Man.webp";
-import Women from "../../assets/HomePageImgs/ShopFor/Img/Women.webp";
-import Kids from "../../assets/HomePageImgs/ShopFor/Img/Kids.webp";
-import Unisex from "../../assets/HomePageImgs/ShopFor/Img/Unisex.webp";
+import ManImg from "../../assets/HomePageImgs/ShopFor/Img/ManImg.webp";
+import WomenImg from "../../assets/HomePageImgs/ShopFor/Img/WomenImg.webp";
+import KidsImg from "../../assets/HomePageImgs/ShopFor/Img/KidsImg.webp";
+import UnisexImg from "../../assets/HomePageImgs/ShopFor/Img/UnisexImg.webp";
 
 const data = [
   {
     id: 1,
-    img: Man,
+    img: ManImg,
     category: "Man",
-    alt: "Men's eyewear collection"
   },
   {
     id: 2,
-    img: Women,
+    img: WomenImg,
     category: "Woman",
-    alt: "Women's eyewear collection"
   },
   {
     id: 3,
-    img: Kids,
+    img: KidsImg,
     category: "Kids",
-    alt: "Kids' eyewear collection"
   },
   {
     id: 4,
-    img: Unisex,
+    img: UnisexImg,
     category: "Unisex",
-    alt: "Unisex eyewear collection"
   },
 ];
-
 // Arrow Icon Component
 const ArrowIcon = () => (
-  <svg 
-    width="24" 
-    height="24" 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
     strokeLinejoin="round"
     className="w-5 h-5 md:w-6 md:h-6"
   >
@@ -58,15 +53,15 @@ const ShopFor = () => {
   const handleNavigate = (category) => {
     const map = { Man: "Men", Woman: "Women", Kids: "Kids", Unisex: "Unisex" };
     const gender = map[category] || category;
-    navigate({ 
-      pathname: "/products", 
+    navigate({
+      pathname: "/products",
       search: `?gender=${encodeURIComponent(gender)}`,
-      hash: "#our-products" 
+      hash: "#our-products",
     });
   };
 
   const handleKeyPress = (e, category) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       handleNavigate(category);
     }
@@ -75,7 +70,7 @@ const ShopFor = () => {
   return (
     <div className="py-10 md:py-20 space-y-6 md:space-y-10">
       <PrimaryHeading>Shop For</PrimaryHeading>
-      
+
       {/* Horizontal Cards Grid */}
       <div className="container px-4 sm:px-6 md:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
