@@ -2,10 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import PrimaryHeading from "../../components/Primarycompo/PrimaryHeading";
 import EyewearImg from "../../assets/HomePageImgs/ShopFor/EyewearImg.png";
-import ManImg from "../../assets/HomePageImgs/ShopFor/Img/ManImg.webp";
-import WomenImg from "../../assets/HomePageImgs/ShopFor/Img/WomenImg.webp";
-import KidsImg from "../../assets/HomePageImgs/ShopFor/Img/KidsImg.webp";
-import UnisexImg from "../../assets/HomePageImgs/ShopFor/Img/UnisexImg.webp";
+import ManImg from "../../assets/HomePageImgs/ShopFor/ManImg.webp";
+import WomenImg from "../../assets/HomePageImgs/ShopFor/WomenImg.webp";
+import KidsImg from "../../assets/HomePageImgs/ShopFor/KidsImg.webp";
+import UnisexImg from "../../assets/HomePageImgs/ShopFor/UnisexImg.webp";
 
 const data = [
   {
@@ -29,23 +29,6 @@ const data = [
     category: "Unisex",
   },
 ];
-// Arrow Icon Component
-const ArrowIcon = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="w-5 h-5 md:w-6 md:h-6"
-  >
-    <line x1="7" y1="17" x2="17" y2="7"></line>
-    <polyline points="7 7 17 7 17 17"></polyline>
-  </svg>
-);
 
 const ShopFor = () => {
   const navigate = useNavigate();
@@ -53,54 +36,36 @@ const ShopFor = () => {
   const handleNavigate = (category) => {
     const map = { Man: "Men", Woman: "Women", Kids: "Kids", Unisex: "Unisex" };
     const gender = map[category] || category;
-    navigate({
-      pathname: "/products",
-      search: `?gender=${encodeURIComponent(gender)}`,
-      hash: "#our-products",
-    });
-  };
-
-  const handleKeyPress = (e, category) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      handleNavigate(category);
-    }
+    navigate({ pathname: "/products", search: `?gender=${encodeURIComponent(gender)}` , hash: "#our-products" });
   };
 
   return (
-    <div className="py-10 md:py-20 space-y-6 md:space-y-10">
+    <div className="py-10 md:py-20 space-y-4 md:space-y-8">
       <PrimaryHeading>Shop For</PrimaryHeading>
-
-      {/* Horizontal Cards Grid */}
-      <div className="container px-4 sm:px-6 md:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
-          {data.map((item, index) => (
+      <div className="flex flex-col-reverse xl:flex-row gap-4 md:gap-8 items-center container sm:px-0 md:px-16 sm:pr-0">
+        <div className="w-full xl:w-1/2 grid grid-cols-2 gap-3 sm:gap-6 gap-y-10 sm:gap-y-20 py-10 lg:px-6">
+          {data.map((item) => (
             <div
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
+            data-aos="fade-up"
               key={item.id}
               onClick={() => handleNavigate(item.category)}
-              onKeyPress={(e) => handleKeyPress(e, item.category)}
-              tabIndex={0}
-              role="button"
-              aria-label={`Shop ${item.category} eyewear`}
-              className="relative bg-gray-50 rounded-2xl overflow-hidden hover:bg-primary cursor-pointer group transition-all duration-300 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#92CAD4] focus:ring-offset-2"
+              className="relative flex flex-col items-start justify-end border-[3px] border-BorderColr rounded-[16px] group overflow-b-hidden cursor-pointer"
             >
-              {/* Arrow Icon - RIGHT SIDE */}
-              <div className="absolute top-3 right-3 z-10 bg-white/90 rounded-full p-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-md group-hover:rotate-45">
-                <ArrowIcon />
-              </div>
-
-              {/* Image Container */}
-              <div className="aspect-[3/4] relative overflow-hidden flex items-end justify-center">
-                <img
-                  src={item.img}
-                  alt={item.alt}
-                  className="w-[80%] h-[80%] object-contain group-hover:scale-105 transition-transform duration-500 ease-out "
-                />
-              </div>
+              <img
+                src={item.img}
+                alt={item.category}
+                className="object-cover h-44 md:h-80 -mt-12 group-hover:scale-105 duration-300 ease-in-out"
+              />
+              <p className="absolute text-sm md:text-3xl text-white font-kaisei_Decol bottom-0 right-0 rounded-br-xl font-norma bg-gradient-to-l from-[#7ddfdf] to-[#92CAD4] p-2 px-4">
+                {item.category}
+              </p>
+              
             </div>
           ))}
+        </div>
+        <div data-aos="fade-left" className="xl:w-1/2 relative">
+          <img src={EyewearImg} alt="" className="object-cover" />
+          <h1 className="absolute left-10 bottom-10 text-white text-4xl md:text-7xl font-kaisei_Decol">Eyewear</h1>
         </div>
       </div>
     </div>
