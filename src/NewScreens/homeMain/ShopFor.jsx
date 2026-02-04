@@ -17,7 +17,7 @@ const data = [
   {
     id: 2,
     img: Women,
-    category: "Woman",
+    category: "Women",
     alt: "Women's eyewear collection"
   },
   {
